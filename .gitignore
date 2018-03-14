@@ -8,10 +8,10 @@ bin/freetype.dll
 bin/glut32.dll
 bin/libeay32.dll
 bin/ssleay32.dll
-bin/win_original_debug.exp
-bin/win_original_debug.ilk
-bin/win_original_debug.lib
-bin/win_original_debug.pdb
+bin/win_travel_debug.exp
+bin/win_travel_debug.ilk
+bin/win_travel_debug.lib
+bin/win_travel_debug.pdb
 icon.rc
 obj/
 win_travel.VC.VC.opendb
