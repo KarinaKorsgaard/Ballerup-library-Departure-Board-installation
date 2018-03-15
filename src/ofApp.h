@@ -34,6 +34,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    double timeSinceLastFlip;
+    void doRandomFlip(int amount);
 //    ofArduino arduino;
 //    ofMesh mesh1, mesh2;
 //
@@ -55,6 +57,7 @@ class ofApp : public ofBaseApp{
     
     ofxPanel gui;
     ofParameter<float>animationTime;
+    ofParameter<float>randomFlipInterval;
     std::map<char,char> map;
     
     vector<ofTexture>textures;

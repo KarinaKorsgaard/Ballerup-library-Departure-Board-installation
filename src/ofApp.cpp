@@ -35,6 +35,7 @@ void ofApp::setup(){
     
     gui.setup();
     gui.add(animationTime.set("AnimationTime",1.,5.,0.01));
+    gui.add(randomFlipInterval.set("max FlipInterval",1.,0.,10.));
     gui.loadFromFile("settings.xml");
     
 
@@ -65,9 +66,7 @@ void ofApp::setup(){
         ofClear(0);
         ofSetColor(0);
         roundedRect(0,0,charWidth,charHeight,5);
-        
-        
-        
+
         ofSetColor(255);
         font.drawString(_alphabet[i], x, y);
         
@@ -155,6 +154,7 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
+    timeSinceLastFlip += ofGetLastFrameTime();
     
     for(int i = 0; i<NUM_DESTINATIONS;i++){
         wh_destination[i].update(animationTime);
@@ -219,10 +219,11 @@ void ofApp::update(){
                     wh_destination[i].changeString(desitnations[d].destination);
                     wh_number[i].changeString(desitnations[d].number);
                     wh_material[i].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))]);
-                    
-                    
-                    
+    
                 }
+            }
+            else if(input > 6){
+                doRandomFlip(input-5);
             }
             
             //cout << fa<<" "<<ofToInt(fromArduino)<<" "<<int(fa) << " bytes "<< nBytesRead << " time " << nTimesRead << endl;
@@ -262,6 +263,30 @@ void ofApp::printBoardingPass(int d){
     
     
 }
+void ofApp::doRandomFlip(int amount){
+    if(timeSinceLastFlip>randomFlipInterval){
+        
+        for(int i = 0; i<amount; i++){
+            
+            int a = floorf(ofRandom(NUM_DESTINATIONS));
+            int b = floorf(ofRandom(NUM_DESTINATIONS));
+            int c = floorf(ofRandom(NUM_DESTINATIONS));
+            
+            int aa =(int)ofRandom(wh_number[a].characters.size());
+            int bb =(int)ofRandom(wh_destination[b].characters.size());
+            int cc =(int)ofRandom(wh_material[c].characters.size());
+            
+            int ls = textures.size();
+            wh_number[a].characters[aa].from=(wh_number[a].characters[aa].from+int(ofRandom(ls-10,ls))) % ls;
+            wh_destination[b].characters[bb].from=(wh_destination[b].characters[bb].from+int(ofRandom(ls-10,ls))) % ls;
+            wh_material[c].characters[cc].from=(wh_material[c].characters[cc].from+int(ofRandom(ls-10,ls))) % ls;
+        }
+    }
+    // if it is constant noise, nothing happens as it is reset all the time...
+    timeSinceLastFlip = 0.0;
+    
+        
+}
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
 
@@ -269,7 +294,7 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-    
+    doRandomFlip(5);
 }
 
 //--------------------------------------------------------------

@@ -18,7 +18,7 @@ public:
     vector<CharacterFlip>characters;
     std::map<string,int> map;
     bool weird;
-    vector<int>chars;
+
     int max_length = 30;
     
     void setup(int cw, int ch, float at, vector<ofTexture> * _tex, int _max_length, string letters){
