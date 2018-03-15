@@ -10,8 +10,13 @@ void ofApp::setup(){
     // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
     // arduino users check in arduino app....
     int baud = 9600;
+#ifdef __APPLE__
     serial.setup(0, baud); //open the first device
-    //serial.setup("COM4", baud); // windows example
+    cout << "on mac"<< endl;
+#elif
+    serial.setup("COM4", baud); // windows example
+    cout << "on windows"<< endl;
+#endif
     //serial.setup("/dev/tty.usbserial-A4001JEC", baud); // mac osx example
     //serial.setup("/dev/ttyUSB0", baud); //linux example
     
@@ -149,6 +154,8 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    ofSetWindowTitle(ofToString(ofGetFrameRate()));
+    
     for(int i = 0; i<NUM_DESTINATIONS;i++){
         wh_destination[i].update(animationTime);
         wh_number[i].update(animationTime);
