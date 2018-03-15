@@ -36,6 +36,9 @@ class ofApp : public ofBaseApp{
     
     double timeSinceLastFlip;
     void doRandomFlip(int amount);
+    
+    int boardingWidth = 200;
+    int boardingHeight = 400;
 //    ofArduino arduino;
 //    ofMesh mesh1, mesh2;
 //
@@ -61,6 +64,8 @@ class ofApp : public ofBaseApp{
     std::map<char,char> map;
     
     vector<ofTexture>textures;
+    
+    void generateBoardingPasses();
     
     void roundedRect(float x, float y, float w, float h, float r) {
         ofBeginShape();
@@ -98,6 +103,7 @@ class ofApp : public ofBaseApp{
 
     ofSerial    serial;
     
+    string pathToDataFolder;
    // ofArduino arduino;
     
 };
