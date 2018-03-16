@@ -18,7 +18,7 @@ void ofApp::setup(){
 #ifdef __APPLE__
     serial.setup(0, baud); //open the first device
     cout << "on mac"<< endl;
-#elif
+#else
     serial.setup("COM4", baud); // windows example
     cout << "on windows"<< endl;
 #endif
@@ -133,7 +133,7 @@ void ofApp::setup(){
         const Json::Value& beskrivelse = result[i];
         desitnations[i].destination = beskrivelse["destination"].asString();
         desitnations[i].number = beskrivelse["DK5"].asString();
-        
+		desitnations[i].str = beskrivelse["destination"].asString()+".png";
         for(int u = 0; u<5; u++){
             desitnations[i].material.push_back(beskrivelse["materiale"+ofToString(u+1)].asString());
             desitnations[i].materialDescription.push_back(beskrivelse["materialeBeskriv"+ofToString(u+1)].asString());
@@ -190,50 +190,7 @@ void ofApp::update(){
     // or just read three every time. now, we will be sure to
     // read as much as we can in groups of three...
     //
-    nTimesRead = 0;
-    nBytesRead = 0;
-    int nRead  = 0;  // a temp variable to keep count per read
-    
-    unsigned char bytesReturned[3];
-    
-    memset(bytesReadString, 0, 4);
-    memset(bytesReturned, 0, 3);
-    
-    while( (nRead = serial.readBytes( bytesReturned, 3)) > 0){
-        nTimesRead++;
-        nBytesRead = nRead;
-    };
-    
-    if(nBytesRead>0){
-        memcpy(bytesReadString, bytesReturned, 3);
-        
-        bSendSerialMessage = false;
-        readTime = ofGetElapsedTimef();
-        
-        string fromArduino = string(bytesReadString);
-        char fa = fromArduino[0];
-        if(int(fa>15)){
-            int input = ofToInt(fromArduino);
-            if(input < 5)printBoardingPass(input);
-            else if(input == 5){
-                for(int i=0;i<NUM_DESTINATIONS;i++){
-                    destination_indxes[i]+=NUM_DESTINATIONS;
-                    destination_indxes[i]=destination_indxes[i]%desitnations.size();
-                    
-                    int d = destination_indxes[i];
-                    wh_destination[i].changeString(desitnations[d].destination);
-                    wh_number[i].changeString(desitnations[d].number);
-                    wh_material[i].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))]);
-    
-                }
-            }
-            else if(input > 6){
-                doRandomFlip(input-5);
-            }
-            
-            //cout << fa<<" "<<ofToInt(fromArduino)<<" "<<int(fa) << " bytes "<< nBytesRead << " time " << nTimesRead << endl;
-        }
-    }
+
     //}
     //string read = arduino.getString();
     
@@ -265,13 +222,59 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::printBoardingPass(int d){
     // print..
-    
+	string command = "SumatraPDF.exe -print-to-default " + pathToDataFolder + desitnations[d].str;
+	system(command.c_str());
     //system("lpr -o landscape -o scaling=75 -o media=A4 filename.jpg");
 }
 void ofApp::generateBoardingPasses() {
 
 }
+void ofApp::initArduino() {
+	nTimesRead = 0;
+	nBytesRead = 0;
+	int nRead = 0;  // a temp variable to keep count per read
 
+	unsigned char bytesReturned[3];
+
+	memset(bytesReadString, 0, 4);
+	memset(bytesReturned, 0, 3);
+
+	while ((nRead = serial.readBytes(bytesReturned, 3)) > 0) {
+		nTimesRead++;
+		nBytesRead = nRead;
+	};
+
+	if (nBytesRead>0) {
+		memcpy(bytesReadString, bytesReturned, 3);
+
+		bSendSerialMessage = false;
+		readTime = ofGetElapsedTimef();
+
+		string fromArduino = string(bytesReadString);
+		char fa = fromArduino[0];
+		if (int(fa>15)) {
+			int input = ofToInt(fromArduino);
+			if (input < 5)printBoardingPass(input);
+			else if (input == 5) {
+				for (int i = 0; i<NUM_DESTINATIONS; i++) {
+					destination_indxes[i] += NUM_DESTINATIONS;
+					destination_indxes[i] = destination_indxes[i] % desitnations.size();
+
+					int d = destination_indxes[i];
+					wh_destination[i].changeString(desitnations[d].destination);
+					wh_number[i].changeString(desitnations[d].number);
+					wh_material[i].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))]);
+
+				}
+			}
+			else if (input > 6) {
+				doRandomFlip(input - 5);
+			}
+
+			//cout << fa<<" "<<ofToInt(fromArduino)<<" "<<int(fa) << " bytes "<< nBytesRead << " time " << nTimesRead << endl;
+		}
+	}
+}
 void ofApp::doRandomFlip(int amount){
     if(timeSinceLastFlip>randomFlipInterval){
         
@@ -304,6 +307,9 @@ void ofApp::keyPressed(int key){
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
     doRandomFlip(5);
+	int k = key - '0';
+	if(k<desitnations.size())
+		printBoardingPass(k);
 }
 
 //--------------------------------------------------------------

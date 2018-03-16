@@ -13,6 +13,7 @@ struct Destinations{
     vector<string>material;
     vector<string>materialDescription;
     double time;
+	string str;
 };
 
 class ofApp : public ofBaseApp{
@@ -40,7 +41,8 @@ class ofApp : public ofBaseApp{
     int charWidth;
     int charHeight;
     ofTrueTypeFont font;
-  
+	void initArduino();
+
     vector<int>destination_indxes;
     vector<WordHandeler> wh_number;
     vector<WordHandeler> wh_destination;
