@@ -37,16 +37,6 @@ class ofApp : public ofBaseApp{
     double timeSinceLastFlip;
     void doRandomFlip(int amount);
     
-    int boardingWidth = 200;
-    int boardingHeight = 400;
-//    ofArduino arduino;
-//    ofMesh mesh1, mesh2;
-//
-//    string string_a;
-//    ofFbo characterFbo;
-//
-//    double time = 0.0;
-    
     int charWidth;
     int charHeight;
     ofTrueTypeFont font;

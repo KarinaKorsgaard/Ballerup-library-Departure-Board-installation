@@ -266,39 +266,10 @@ void ofApp::draw(){
 void ofApp::printBoardingPass(int d){
     // print..
     
-    system("lpr -o landscape -o scaling=75 -o media=A4 filename.jpg");
+    //system("lpr -o landscape -o scaling=75 -o media=A4 filename.jpg");
 }
 void ofApp::generateBoardingPasses() {
-    ofFbo fbo;
-    fbo.allocate(boardingWidth, boardingHeight);
-    
-    ofTrueTypeFont small;
-    small.load("circular.ttf", 10);
-    ofTrueTypeFont medium;
-    small.load("circular.ttf", 20);
-    ofTrueTypeFont big;
-    small.load("circular.ttf", 30);
-    
-    for(int i = 0; i<desitnations.size();i++){
-        Destinations d = desitnations[i];
-        fbo.begin();
-        ofClear(255);
-        ofSetColor(0);
-        
-        big.drawString("BOARDINGPASS // BIB:BALLERUP JOURNEYS", 10, 30);
-        small.drawString("Bibliotektes anbefalinger til destinatioen", 10, 60);
-        
-        for(int u = 0; u<d.material.size();u++){
-            ofRectangle r = medium.getStringBoundingBox(d.material[u], 0, 0);
-            medium.drawString(d.material[u], 10, 90*i);
-            
-        }
-        
-        fbo.end();
-        ofPixels pix;
-        
-        //ofSaveImage(fbo.getTexture(), "/boardingPasses");
-    }
+
 }
 
 void ofApp::doRandomFlip(int amount){
