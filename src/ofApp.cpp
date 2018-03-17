@@ -6,10 +6,6 @@ void ofApp::setup(){
     serial.listDevices();
     vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
     
-    string path = "/boardingPasses";
-    pathToDataFolder = ofFilePath::getCurrentWorkingDirectory();
-    pathToDataFolder = ofSplitString(pathToDataFolder, "bin")[0]+"bin/data"+path+"/";
-    cout << pathToDataFolder << endl;
     
     // this should be set to whatever com port your serial device is connected to.
     // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
@@ -222,9 +218,33 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::printBoardingPass(int d){
     // print..
-	string command = "SumatraPDF.exe -print-to-default " + pathToDataFolder + desitnations[d].str;
+	string cwd = ofFilePath::getCurrentWorkingDirectory();
+
+#ifdef __APPLE__
+	string command = "lp "+ pathToDataFolder + "/data/boardingPasses/"+ desitnations[d].str;
 	system(command.c_str());
-    //system("lpr -o landscape -o scaling=75 -o media=A4 filename.jpg");
+#else
+	string command = "SumatraPDF.exe -print-to-default \\data\\boardingPasses\\"+ desitnations[d].str;
+	//system(command.c_str());
+
+	//system(command.c_str());
+	string path = ofToDataPath("Newfilename.bat");
+	ofFile file(path, ofFile::WriteOnly);
+	cout <<path << endl;
+	file << "@echo off";
+	file << "\r\n";
+	file << "cd \""+cwd+"\"";
+	file << "\r\n";
+	file << command;
+	file.close();
+
+	system(command.c_str());
+
+	//string t = ofToDataPath("test.bat");
+	//cout << path << endl;
+	
+#endif
+
 }
 void ofApp::generateBoardingPasses() {
 
