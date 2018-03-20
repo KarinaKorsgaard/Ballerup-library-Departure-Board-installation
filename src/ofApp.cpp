@@ -224,9 +224,10 @@ void ofApp::printBoardingPass(int d){
 	string command = "lp "+ pathToDataFolder + "/data/boardingPasses/"+ desitnations[d].str;
 	system(command.c_str());
 #else
-	string command = "SumatraPDF.exe -print-to-default \\data\\boardingPasses\\"+ desitnations[d].str;
+	string command = "SumatraPDF.exe -print-to-default "+ cwd +"\\data\\boardingPasses\\"+ desitnations[d].str;
 	//system(command.c_str());
-
+	cout << command <<" "<< cwd << endl;
+/*
 	//system(command.c_str());
 	string path = ofToDataPath("Newfilename.bat");
 	ofFile file(path, ofFile::WriteOnly);
@@ -237,7 +238,7 @@ void ofApp::printBoardingPass(int d){
 	file << "\r\n";
 	file << command;
 	file.close();
-
+*/
 	system(command.c_str());
 
 	//string t = ofToDataPath("test.bat");
