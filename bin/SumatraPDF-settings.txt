@@ -57,8 +57,8 @@ RememberOpenedFiles = true
 EnableTeXEnhancements = false
 DefaultDisplayMode = automatic
 DefaultZoom = fit page
-WindowState = 1
-WindowPos = 0 0 0 0
+WindowState = 2
+WindowPos = 44 -1 1344 1740
 ShowToc = true
 SidebarDx = 0
 TocDy = 0
@@ -66,8 +66,74 @@ ShowStartPage = true
 UseTabs = true
 
 FileStates [
+	[
+		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\boardingPasses\øØÅåæÆ.png
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = 0 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 44 -1 1344 1740
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Karina\Desktop\new trest.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 44 -1 1344 1740
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
 ]
 SessionData [
+	[
+		TabStates [
+			[
+				FilePath = C:\Users\Karina\Desktop\new trest.pdf
+				DisplayMode = continuous
+				PageNo = 1
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = -1 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\boardingPasses\øØÅåæÆ.png
+				DisplayMode = single page
+				PageNo = 1
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = 0 -1
+				ShowToc = false
+			]
+		]
+		TabIndex = 2
+		WindowState = 2
+		WindowPos = 44 -1 1344 1740
+		SidebarDx = 0
+	]
 ]
 TimeOfLastUpdateCheck = 0 0
 OpenCountWeek = 376
