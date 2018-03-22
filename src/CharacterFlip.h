@@ -17,17 +17,29 @@ public:
     double localTime;
     int from, to;
     bool getNewChar;
+    
+    ofSoundPlayer p;
 
+    ofTexture * emoji;
+    
     vector<ofTexture> * tex;
     
-    void setup(int cw, int ch, float at, vector<ofTexture> * _tex){
+    void setEmoji(ofTexture * t){
+        emoji = t;
+    }
+    
+    void setup(int cw, int ch, float at, vector<ofTexture> * _tex, ofTexture * tUp, ofTexture * tLow){
         charWidth = cw;
         charHeight = ch;
         animationTime = at;
         getNewChar = false;
 
-        tex = _tex;
+       // grade.load("grade");
+        p.load("flip3.wav");
+        p.setLoop(false);
         
+        tex = _tex;
+
         localTime = 0.0;
         from = '0';
 
@@ -51,13 +63,17 @@ public:
         mesh.addTexCoord(ofVec2f(charWidth, charHeight));
         
         mesh.setMode(OF_PRIMITIVE_TRIANGLE_STRIP);
+        
+        shadeUpper = tUp;
+        shadeLower = tLow;
+
     }
     
     void update(double time, int _from, int next, int end, float at){
         
         if(next!=end){
-           // cout << next <<" "<< end << endl;
-            localTime+=time;
+            // cout << next <<" "<< end << endl;
+            if(!stopAtEmoji)localTime+=time;
             animationTime = at;
             
             from = _from;
@@ -71,7 +87,7 @@ public:
                 float ypos = aTime*(charHeight/2);
                 float xpos = ypos*0.4;
                 
-                mesh.getVertices()[0].set(ofVec2f(-xpos, ypos));
+                mesh.getVertices()[0].set(ofVec2f(0-xpos, ypos));
                 mesh.getVertices()[1].set(ofVec2f(charWidth+xpos, ypos));
                 
                 mesh.getVertices()[4].set(ofVec2f(0, charHeight));
@@ -89,17 +105,50 @@ public:
                 mesh.getVertices()[0].set(ofVec2f(0, 0));
                 mesh.getVertices()[1].set(ofVec2f(charWidth, 0));
                 
-                mesh.getVertices()[4].set(ofVec2f(-xpos, ypos+charHeight/2));
+                mesh.getVertices()[4].set(ofVec2f(0-xpos, ypos+charHeight/2));
                 mesh.getVertices()[5].set(ofVec2f(charWidth+xpos, ypos+charHeight/2));
             }
             if(localTime > animationTime){
+                if(to == swapToEmoji && doEmoji) {
+                    stopAtEmoji = true;
+                    correctMesh();
+                }
+                else {
+                    localTime = 0.0;
+                    from = next;
+                    getNewChar = true;
+                    correctMesh();
+                }
+            }
+            
+            if(stopAtEmoji){
+                stopAtEmojiC+=ofGetLastFrameTime();
+            }
+            if(stopAtEmojiC>3.0){
+                stopAtEmojiC = 0.0;
+                stopAtEmoji = false; // start the time again
+                
+                
                 localTime = 0.0;
                 from = next;
                 getNewChar = true;
                 correctMesh();
-                //cout <<"done "<< next <<" "<< end << endl;
+            }
+            if(doEmoji && pastEmoji(to, swapToEmoji)){
+                doEmoji = false;
             }
         }
+        
+        else{
+            doEmoji = false;
+        }
+    }
+    bool pastEmoji(int a, int b){
+        bool result = false;
+
+        if(a > (b + 2)%tex->size())result = true;
+
+        return result;
     }
     void correctMesh(){
         mesh.getVertices()[0].set(ofVec2f(0, 0));
@@ -114,24 +163,89 @@ public:
     
     
     void draw(){
+        
+        
         if(to<tex->size() && from < tex->size()){
             if(localTime < animationTime/2){
                 //draw a on top of b
-                tex->at(to).draw(0,0);
+                ofSetColor(255);
                 
-                tex->at(from).bind();
+                
+                
+                if(to == swapToEmoji && doEmoji)emoji->draw(0,0);
+                else tex->at(to).draw(0,0); // behind
+                
+                
+                if(from == swapToEmoji && doEmoji)emoji->bind();
+                else tex->at(from).bind();
                 mesh.draw();
-                tex->at(from).unbind();
+                if(from == swapToEmoji && doEmoji)emoji->unbind();
+                else tex->at(from).unbind();
+                
+                
+                ofSetColor(0,localTime/(animationTime/2)*255);
+              
+                shadeUpper->bind();
+                mesh.draw();
+                shadeUpper->unbind();
+                
+               // ofDrawRectangle(0,mesh.getVertices()[0].y,tex->at(from).getWidth(),mesh.getVertices()[0].y);   
             }
             if(localTime > animationTime/2){
                 // be on top of a
-                tex->at(from).draw(0,0);
-                tex->at(to).bind();
+                ofSetColor(255);
+                if(from == swapToEmoji && doEmoji)
+                    emoji->draw(0,0);
+                else tex->at(from).draw(0,0); // behind
+                
+               // grade.begin();
+               // grade.setUniform1f("amount", localTime/animationTime * 255);
+                
+                if(to == swapToEmoji && doEmoji)emoji->bind();
+                else tex->at(to).bind();
                 mesh.draw();
-                tex->at(to).unbind();
+                if(to == swapToEmoji && doEmoji)emoji->unbind();
+                else tex->at(to).unbind();
+                
+                ofSetColor(100,255-(localTime-animationTime/2)/(animationTime/2)*255);
+                shadeLower->bind();
+                mesh.draw();
+                shadeLower->unbind();
+                
+                p.play();
+                
+             //   grade.end();
             }
+            
         }
     }
+    
+    void flipToEmoji(){
+        int ls = tex->size();
+        int r = int(ofRandom(ls-20,ls));
+        
+        from = (from + r) % ls;
+        doEmoji = true;
+        swapToEmoji = (from + r/2)%ls;
+        
+    }
+    void flip(){
+        int ls = tex->size();
+        int r = int(ofRandom(ls-20,ls));
+        from = (from + r) % ls;
+        doEmoji = false;
+    }
+
+
+    ofTexture * shadeUpper;
+    ofTexture * shadeLower;
+    
+    int swapToEmoji;
+    bool doEmoji = false;
+    int roundsAfterEmoiji = 0;
+    
+    bool stopAtEmoji = false;
+    double stopAtEmojiC = 0.0;
 };
 
 

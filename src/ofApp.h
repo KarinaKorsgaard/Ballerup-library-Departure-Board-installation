@@ -5,16 +5,19 @@
 #include "ofxJSON.h"
 
 #include "wordHandeler.h"
-#define NUM_DESTINATIONS 5
+#include "commonStructs.h"
+#include "boadingPassGenerator.h"
+#include <codecvt>
+#define NUM_DESTINATIONS 10
 
-struct Destinations{
+/*struct Destinations{
     string destination;
     string number;
     vector<string>material;
     vector<string>materialDescription;
     double time;
 	string str;
-};
+};*/
 
 class ofApp : public ofBaseApp{
 
@@ -34,30 +37,50 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    
+  
     double timeSinceLastFlip;
     void doRandomFlip(int amount);
+    std::map<string,ofTexture>emojis;
     
     int charWidth;
     int charHeight;
     ofTrueTypeFont font;
-	void initArduino();
 
     vector<int>destination_indxes;
     vector<WordHandeler> wh_number;
     vector<WordHandeler> wh_destination;
     vector<WordHandeler> wh_material;
+    vector<WordHandeler> wh_numberOfMaterials;
     
     vector<Destinations>desitnations;
     
     ofxPanel gui;
     ofParameter<float>animationTime;
     ofParameter<float>randomFlipInterval;
+    ofParameter<float>materialSwapTime;
+    
     std::map<char,char> map;
     
     vector<ofTexture>textures;
+    vector<ofTexture>textures_yellow;
+
+    ofTexture arrow, empty;
     
-    void generateBoardingPasses();
+    void printBoardingPass(int d);
+    BoardingPassGenerator bpg;
+    
+    bool        bSendSerialMessage;            // a flag for sending serial
+    char        bytesRead[3];                // data from serial, we will be trying to read 3
+    char        bytesReadString[4];            // a string needs a null terminator, so we need 3 + 1 bytes
+    int            nBytesRead;                    // how much did we read?
+    int            nTimesRead;                    // how many times did we read?
+    float        readTime;                    // when did we last read?
+
+    ofSerial    serial;
+    void initialiseArdiono();
+    void readArduino();
+    int input = -1;
+    bool isInitialized = false;
     
     void roundedRect(float x, float y, float w, float h, float r) {
         ofBeginShape();
@@ -82,20 +105,50 @@ class ofApp : public ofBaseApp{
         // finally call cubic Bezier curve function
         ofBezierVertex(cp1x, cp1y, cp2x, cp2y, x, y);
     };
-    
-    void printBoardingPass(int d);
+    ofTexture tUp, tLo;
 
-    
-    bool        bSendSerialMessage;            // a flag for sending serial
-    char        bytesRead[3];                // data from serial, we will be trying to read 3
-    char        bytesReadString[4];            // a string needs a null terminator, so we need 3 + 1 bytes
-    int            nBytesRead;                    // how much did we read?
-    int            nTimesRead;                    // how many times did we read?
-    float        readTime;                    // when did we last read?
 
-    ofSerial    serial;
+    ofBufferObject drawTexture(ofColor c, int w, int h, string l, ofImage emoji){
+        ofFbo fbo;
+        fbo.allocate(w, h, GL_RGBA);
+        
+        ofRectangle r;
+        if(l != "")
+            r = font.getStringBoundingBox(l, 0, 0);
+        else
+            r = ofRectangle(0,0,emoji.getWidth(),emoji.getHeight());
+        
+        int x = w/2 - r.width/2;
+        int y = h/2 - r.height/2;
+        if(l != "")y+=font.getLineHeight()/2 + 3;
+        
+        fbo.begin();
+        ofClear(0);
+        ofSetColor(20);
+        roundedRect(0,0,charWidth,charHeight,5);
+        
+        ofSetColor(c);
+        if(l!="")font.drawString(l, x, y);
+        else emoji.draw(x,y);
+        ofNoFill();
+        ofSetLineWidth(0.5);
+        ofSetColor(50);
+        //roundedRect(0.5,0.5,charWidth-1,charHeight-1,6);
+        //ofDrawRectangle(0.5, 0.5, charWidth-1, charHeight-1);
+        //ofDrawLine(0.5, charHeight/2, charWidth-0.5, charHeight/2);
+        ofFill();
+        ofSetColor(255);
+        //ofBackground(ofRandom(255), ofRandom(255), ofRandom(255));
+        fbo.end();
+        
+        ofBufferObject buffer;
+        buffer.allocate(charWidth * charHeight * 4, GL_STATIC_DRAW);
+        fbo.getTexture().copyTo(buffer);
+        
+        return buffer;
+    }
     
-    string pathToDataFolder;
-   // ofArduino arduino;
+    bool debug = true;
+
     
 };
