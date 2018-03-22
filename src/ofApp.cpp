@@ -18,10 +18,14 @@ void ofApp::setup(){
     serial.setup(0, baud); //open the first device
     cout << "on mac"<< endl;
 #else
-    system("net stop spooler");
-    system("del %systemroot%\System32\spool\printers\* /Q");
-    system("net start spooler");
-    serial.setup("COM4", baud); // windows example
+   // system("net stop spooler");
+   // system("del %systemroot%\System32\spool\printers\* /Q /F /S");
+   // system("net start spooler");
+	string cwd = ofFilePath::getCurrentWorkingDirectory();
+	string command = cwd + "\\data\\clearPrinter.bat";
+	system(command.c_str());
+
+    //serial.setup("COM3", baud); // windows example
     cout << "on windows"<< endl;
 #endif
     //serial.setup("/dev/tty.usbserial-A4001JEC", baud); // mac osx example
@@ -64,7 +68,10 @@ void ofApp::setup(){
     ofEnableAntiAliasing();
     ofEnableAlphaBlending();
     
-    
+	string slash = "\\";
+#ifdef __APPLE__
+	slash = "/";
+#endif
 
     ofDirectory dir;
     dir.listDir("emojis");
@@ -75,9 +82,10 @@ void ofApp::setup(){
         ofImage e;
         e.load(dir.getPath(i));
         e.resize(charWidth, charWidth * e.getHeight()/e.getWidth());
+		cout << dir.getPath(i) << endl;
         ofBufferObject b = drawTexture(ofColor(255), charWidth, charHeight, "", e);
-        emojis[ofSplitString(dir.getPath(i),"/")[1]].allocate(charWidth, charHeight, GL_RGBA);
-        emojis[ofSplitString(dir.getPath(i),"/")[1]].loadData(b, GL_RGBA, GL_UNSIGNED_BYTE);
+        emojis[ofSplitString(dir.getPath(i),slash)[1]].allocate(charWidth, charHeight, GL_RGBA);
+        emojis[ofSplitString(dir.getPath(i),slash)[1]].loadData(b, GL_RGBA, GL_UNSIGNED_BYTE);
         cout << dir.getPath(i)<< endl;
     }
     
@@ -323,7 +331,7 @@ void ofApp::printBoardingPass(int d){
     if(!debug)system(command.c_str());
    // cout << "lp "+ ofSplitString(cwd,"/bin")[0] + "/bin/data/boardingPasses/"+ desitnations[d].str << endl;
 #else
-	string command = "SumatraPDF.exe -print-to-default "+ cwd +"\\data\\boardingPasses\\"+ desitnations[d].str;
+	string command = "SumatraPDF.exe -print-to-default "+ cwd +"\\data\\boardingPasses\\"+ boardingPass;
 	//system(command.c_str());
 	cout << command <<" "<< cwd << endl;
 
@@ -377,8 +385,8 @@ void ofApp::initialiseArdiono(){
 #ifdef __APPLE__
     serial.setup(0, baud); //open the first device
     cout << "on mac"<< endl;
-#elif
-    serial.setup("COM4", baud); // windows example
+#else
+    serial.setup(0, baud); // windows example
     cout << "on windows"<< endl;
 #endif
     //serial.setup("COM4", baud); // windows example
