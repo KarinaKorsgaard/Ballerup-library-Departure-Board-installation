@@ -18,3 +18,5 @@ win_travel.VC.VC.opendb
 win_travel.VC.db
 bin/sumatrapdfcache/*
 Ballerup_travel.VC.VC.opendb
+bin/Ballerup_travel_debug.ilk
+bin/Ballerup_travel_debug.pdb
