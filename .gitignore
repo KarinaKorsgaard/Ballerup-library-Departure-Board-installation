@@ -16,3 +16,4 @@ icon.rc
 obj/
 win_travel.VC.VC.opendb
 win_travel.VC.db
+bin/sumatrapdfcache/*
