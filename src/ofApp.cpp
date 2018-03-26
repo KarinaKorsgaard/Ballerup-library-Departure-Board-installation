@@ -49,20 +49,20 @@ void ofApp::setup(){
     
     //cout << "num letters " << _alphabet.size() << endl;
     
-    font.load("fonts/BergenMono/BergenMono-Regular.otf", 20);
+    font.load("fonts/BergenMono/BergenMono-Regular.otf", 45);
     font.setLetterSpacing(0.8);
     ofRectangle r = font.getStringBoundingBox("Åg", 0, 0);
     charWidth = r.width*1.2; //
     charHeight = r.height*2.;
     
     //getting 16:9 w 12 lines and 4+17+17+4+2
-    int lines = 12;
+    float lines = 12;
     float rows = 4+17+17+4+2;
-    float w_total = 1920;
-	charWidth = w_total/rows;
+    float w_total = 1920.f*2;
+	charWidth = w_total/(rows*1.05);
     float h_total = (w_total*9.f)/16.f;
     //cout<< w_total <<" "<<h_total<<endl;
-    charHeight = 1080/lines;
+    charHeight = (2*1080.f)/(lines*1.05);
     
     //cout << charWidth << " "<< charHeight <<endl;
     ofEnableAntiAliasing();
