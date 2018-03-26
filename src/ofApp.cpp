@@ -49,7 +49,7 @@ void ofApp::setup(){
     
     //cout << "num letters " << _alphabet.size() << endl;
     
-    font.load("fonts/BergenMono/BergenMono-Regular.otf", 20);
+    font.load("fonts/BergenMono/BergenMono-Regular.otf", 40);
     font.setLetterSpacing(0.8);
     ofRectangle r = font.getStringBoundingBox("Åg", 0, 0);
     charWidth = r.width*1.2; //
@@ -58,7 +58,8 @@ void ofApp::setup(){
     //getting 16:9 w 12 lines and 4+17+17+4+2
     int lines = 12;
     float rows = 4+17+17+4+2;
-    float w_total = rows*charWidth;
+    float w_total = 1920*2;
+	charWidth = w_total/rows;
     float h_total = (w_total*9.f)/16.f;
     //cout<< w_total <<" "<<h_total<<endl;
     charHeight = h_total/lines;
@@ -71,7 +72,7 @@ void ofApp::setup(){
 #ifdef __APPLE__
 	slash = "/";
 #endif
-
+	
     ofDirectory dir;
     dir.listDir("emojis");
     dir.allowExt(".png");
@@ -212,6 +213,7 @@ void ofApp::setup(){
         wh_numberOfMaterials[i].changeString("+"+ofToString(desitnations[i].material.size()));
         desitnations[d].time = ofRandom(15);
     }
+	ofSetWindowShape(1920 * 2, 1080 * 2);
 
 }
 
@@ -392,6 +394,7 @@ void ofApp::initialiseArdiono(){
     // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
     // arduino users check in arduino app....
     int baud = 9600;
+	if(deviceList.size()>0) {
 #ifdef __APPLE__
     serial.setup(0, baud); //open the first device
     cout << "on mac"<< endl;
@@ -407,7 +410,8 @@ void ofApp::initialiseArdiono(){
     nBytesRead = 0;
     readTime = 0;
     memset(bytesReadString, 0, 4);
-    
+	}
+
     isInitialized = serial.isInitialized();
     if(isInitialized)cout << "arduino is on"<<endl;
 }

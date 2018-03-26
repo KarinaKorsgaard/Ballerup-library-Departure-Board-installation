@@ -212,7 +212,7 @@ public:
                 mesh.draw();
                 shadeLower->unbind();
                 
-                p.play();
+              //  p.play();
                 
              //   grade.end();
             }
