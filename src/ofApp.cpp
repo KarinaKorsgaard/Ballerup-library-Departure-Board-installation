@@ -133,7 +133,7 @@ void ofApp::setup(){
     
     // json crap
     ofxJSONElement result;
-    std::string file = "example.json";
+    std::string file = "travelData.json";
     
     // Now parse the JSON
     bool parsingSuccessful = result.open(file);
@@ -460,7 +460,12 @@ void ofApp::keyReleased(int key){
 	if(k<desitnations.size())
 		printBoardingPass(k);
     
-    if(key == 'd')debug = !debug;
+    if(key == 'd') {
+		debug = !debug;
+		if (!debug)ofSetFullscreen(true);
+		else ofSetFullscreen(false);
+
+	}
 }
 
 //--------------------------------------------------------------
