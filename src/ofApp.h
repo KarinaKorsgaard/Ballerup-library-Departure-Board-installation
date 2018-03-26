@@ -9,6 +9,7 @@
 #include "boadingPassGenerator.h"
 #include <codecvt>
 #define NUM_DESTINATIONS 10
+#define MOTION_INPUT 10
 
 /*struct Destinations{
     string destination;
@@ -80,6 +81,8 @@ class ofApp : public ofBaseApp{
     void initialiseArdiono();
     void readArduino();
     int input = -1;
+    int p_input = -1;
+    bool motioninput = false;
     bool isInitialized = false;
     
     void roundedRect(float x, float y, float w, float h, float r) {
@@ -149,6 +152,7 @@ class ofApp : public ofBaseApp{
     }
     
     bool debug = true;
+
 
     
 };

@@ -16,6 +16,10 @@ class BoardingPassGenerator{
 public:
     ofTrueTypeFont fontS;
     
+    
+    ofFile printNumberFile;
+    int printNumber;
+    
     void setup(){
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
@@ -35,6 +39,23 @@ public:
         layout["matb2"] = rects[7];
         layout["matb3"] = rects[8];
         
+        string newLine = "\r\n";
+#ifdef __APPLE__
+        newLine = "\n";
+#endif
+        
+        if(ofFile::doesFileExist(ofToDataPath("printNumberFile.txt"))) {
+            cout<< "print number exists exists"<< endl;
+            auto lines = ofSplitString(ofBufferFromFile("printNumberFile.txt").getText(), newLine);
+            printNumber = ofToInt(ofSplitString(lines.back()," ")[0]);
+            cout<<"lines: "<< printNumber<<" num lines "<< lines.size()<<endl;
+        }else {
+            ofFile newFile(ofToDataPath("printNumberFile.txt"),ofFile::WriteOnly); //file doesn't exist yet
+            newFile.create(); // now file exists
+            newFile.open(ofToDataPath("printNumberFile.txt"),ofFile::WriteOnly);
+            newFile << "0 beginning";
+            newFile.close();
+        }
     }
     
     string generate(Destinations d, int current){
@@ -106,6 +127,11 @@ public:
             fontS.drawString(d.material[mi], a.x*scale, a.y*scale);
             drawCollumn(d.materialDescription[mi],b.x*scale, b.y*scale, 2);
         }
+        
+        ofSetColor(255);
+        string number = ofToString(writeToFile(),6,'0');
+        
+        fontS.drawString(number,fbo.getWidth()-100,50);
         
         ofPopMatrix();
         fbo.end();
@@ -202,6 +228,22 @@ public:
             img.draw(0,0);
         }
     }
+    
+    int writeToFile(){
+        
+        string newLine = "\r\n";
+#ifdef __APPLE__
+        newLine = "\n";
+#endif
+        
+        printNumber++;
+        ofFile newFile;
+        newFile.open(ofToDataPath("printNumberFile.txt"),ofFile::Append);
+        newFile <<newLine + ofToString(printNumber)+" "+ofGetTimestampString("%Y-%m-%d-%H");
+        newFile.close();
+        return printNumber;
+    }
+
     
 private:
     map<string,ofRectangle> layout;

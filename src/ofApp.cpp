@@ -7,8 +7,7 @@ void ofApp::setup(){
     vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
     bpg.setup();
     
-    
-    
+
     // this should be set to whatever com port your serial device is connected to.
     // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
     // arduino users check in arduino app....
@@ -16,7 +15,7 @@ void ofApp::setup(){
 #ifdef __APPLE__
     system("cancel -a"); // clears print que
     serial.setup(0, baud); //open the first device
-    cout << "on mac"<< endl;
+   // cout << "on mac"<< endl;
 #else
    // system("net stop spooler");
    // system("del %systemroot%\System32\spool\printers\* /Q /F /S");
@@ -26,7 +25,7 @@ void ofApp::setup(){
 	system(command.c_str());
 
     //serial.setup("COM3", baud); // windows example
-    cout << "on windows"<< endl;
+    //cout << "on windows"<< endl;
 #endif
     //serial.setup("/dev/tty.usbserial-A4001JEC", baud); // mac osx example
     //serial.setup("/dev/ttyUSB0", baud); //linux example
@@ -48,7 +47,7 @@ void ofApp::setup(){
     _alphabet.push_back(" ");
     
     
-    cout << "num letters " << _alphabet.size() << endl;
+    //cout << "num letters " << _alphabet.size() << endl;
     
     font.load("fonts/BergenMono/BergenMono-Regular.otf", 20);
     font.setLetterSpacing(0.8);
@@ -61,10 +60,10 @@ void ofApp::setup(){
     float rows = 4+17+17+4+2;
     float w_total = rows*charWidth;
     float h_total = (w_total*9.f)/16.f;
-    cout<< w_total <<" "<<h_total<<endl;
+    //cout<< w_total <<" "<<h_total<<endl;
     charHeight = h_total/lines;
     
-    cout << charWidth << " "<< charHeight <<endl;
+    //cout << charWidth << " "<< charHeight <<endl;
     ofEnableAntiAliasing();
     ofEnableAlphaBlending();
     
@@ -76,17 +75,17 @@ void ofApp::setup(){
     ofDirectory dir;
     dir.listDir("emojis");
     dir.allowExt(".png");
-    cout<< "emoji dir "<< dir.size()<<endl;
+   // cout<< "emoji dir "<< dir.size()<<endl;
     
     for(int i = 0; i<dir.size();i++){
         ofImage e;
         e.load(dir.getPath(i));
         e.resize(charWidth, charWidth * e.getHeight()/e.getWidth());
-		cout << dir.getPath(i) << endl;
+		//cout << dir.getPath(i) << endl;
         ofBufferObject b = drawTexture(ofColor(255), charWidth, charHeight, "", e);
         emojis[ofSplitString(dir.getPath(i),slash)[1]].allocate(charWidth, charHeight, GL_RGBA);
         emojis[ofSplitString(dir.getPath(i),slash)[1]].loadData(b, GL_RGBA, GL_UNSIGNED_BYTE);
-        cout << dir.getPath(i)<< endl;
+       // cout << dir.getPath(i)<< endl;
     }
     
     ofImage arr;
@@ -145,7 +144,7 @@ void ofApp::setup(){
     
     
     desitnations.resize(result.size());
-    cout << "detinations "<< desitnations.size()<<endl;
+    //cout << "detinations "<< desitnations.size()<<endl;
     
     for(int i = 0; i<desitnations.size();i++){
         const Json::Value& beskrivelse = result[i];
@@ -158,8 +157,10 @@ void ofApp::setup(){
             desitnations[i].emoji = &emojis[em];
         else if(emojis.find(em+".png")!=emojis.end())
             desitnations[i].emoji = &emojis[em+".png"];
+        else if(emojis.find(em+".jpg")!=emojis.end())
+            desitnations[i].emoji = &emojis[em+".jpg"];
         else
-            cout << "could not find emoji"<< endl;
+            desitnations[i].emoji = &emojis["emojis/standart.png"];
         
         int mat = 0;
         int u = 0;
@@ -211,11 +212,6 @@ void ofApp::setup(){
         wh_numberOfMaterials[i].changeString("+"+ofToString(desitnations[i].material.size()));
         desitnations[d].time = ofRandom(15);
     }
-    string test = "æ";
-    cout<< test[0]<<endl;
-    cout<< test[1]<<endl;
-    
-    //auto substr = ofUTF8ToString(test);
 
 }
 
@@ -262,10 +258,14 @@ void ofApp::update(){
                 
             }
         }
-        if (input == 10) {
-            doRandomFlip(5);
-        }
+
+        
+        input = -1;
         //if(debug)cout <<"processed "<< input << endl;
+    }
+    if (motioninput) {
+        doRandomFlip(5);
+        motioninput=false;
     }
     
 }
@@ -346,7 +346,7 @@ void ofApp::printBoardingPass(int d){
 
 //--------------------------------------------------------------
 void ofApp::readArduino(){
-    input = -1;
+    int tempinput = -1;
     nTimesRead = 0;
     nBytesRead = 0;
     int nRead  = 0;  // a temp variable to keep count per read
@@ -369,9 +369,19 @@ void ofApp::readArduino(){
 
     string fromArduino = string(bytesReadString);
     char fa = fromArduino[0]-'0';
-    input = fa;
-
-    if(debug && fromArduino!="")cout <<"From Arduino "<< input << endl;
+    tempinput = fa;
+    
+    if(tempinput == MOTION_INPUT){
+        motioninput = true;
+    }
+    else if(tempinput>-1) {
+        
+        if(p_input!=tempinput){
+            p_input=tempinput;
+            input = tempinput;
+            if(debug)cout <<"From Arduino "<< input << endl;
+        }
+    }
 }
 //--------------------------------------------------------------
 void ofApp::initialiseArdiono(){
