@@ -145,7 +145,7 @@ public:
         fbores.end();
         
         fbores.readToPixels(pix);
-        ofSaveImage(pix, "bin/boardingpasses/latest.png", OF_IMAGE_QUALITY_BEST);
+        ofSaveImage(pix, "latest.png", OF_IMAGE_QUALITY_BEST);
         latest = "bin/boardingpasses/"+d.destination+".png";
         return "latest.png";
     }
