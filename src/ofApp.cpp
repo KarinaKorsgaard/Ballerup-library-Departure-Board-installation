@@ -49,7 +49,7 @@ void ofApp::setup(){
     
     //cout << "num letters " << _alphabet.size() << endl;
     
-    font.load("fonts/BergenMono/BergenMono-Regular.otf", 40);
+    font.load("fonts/BergenMono/BergenMono-Regular.otf", 20);
     font.setLetterSpacing(0.8);
     ofRectangle r = font.getStringBoundingBox("Åg", 0, 0);
     charWidth = r.width*1.2; //
@@ -58,11 +58,11 @@ void ofApp::setup(){
     //getting 16:9 w 12 lines and 4+17+17+4+2
     int lines = 12;
     float rows = 4+17+17+4+2;
-    float w_total = 1920*2;
+    float w_total = 1920;
 	charWidth = w_total/rows;
     float h_total = (w_total*9.f)/16.f;
     //cout<< w_total <<" "<<h_total<<endl;
-    charHeight = h_total/lines;
+    charHeight = 1080/lines;
     
     //cout << charWidth << " "<< charHeight <<endl;
     ofEnableAntiAliasing();
@@ -213,7 +213,9 @@ void ofApp::setup(){
         wh_numberOfMaterials[i].changeString("+"+ofToString(desitnations[i].material.size()));
         desitnations[d].time = ofRandom(15);
     }
-	ofSetWindowShape(1920 * 2, 1080 * 2);
+	ofSetWindowShape(1920, 1080);
+	ofSetFullscreen(true);
+	debug = false;
 
 }
 
