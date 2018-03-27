@@ -14,8 +14,8 @@
 
 class BoardingPassGenerator{
 public:
-    ofTrueTypeFont fontS,fontB;
-    
+    ofTrueTypeFont tidSted_f,mat_f;
+    ofTrueTypeFont matb_f, number_f;
     
     ofFile printNumberFile;
     int printNumber;
@@ -23,8 +23,11 @@ public:
     void setup(){
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
-        fontS.load("fonts/BergenMono/BergenMono-Regular.otf",18);
-        fontB.load("fonts/BergenMono/BergenMono-Bold.otf",18);
+        tidSted_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",25);
+        mat_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",15);
+        matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",14);
+        number_f.load("fonts/BergenMono/BergenMono-Bold.otf",20);
+        
         rects = getPolyline(svg);
         shader.load("bp_generator/sharpen");
         
@@ -64,8 +67,8 @@ public:
         
         ofImage bg;
         bg.load("bp_generator/boarding_back-01.png");
-        int w = bg.getWidth()/2.f;
-        int h = bg.getHeight()/2.f;
+        int w = bg.getWidth();
+        int h = bg.getHeight();
         
         float scale = h/rects[0].height;
         
@@ -82,9 +85,7 @@ public:
         
         shader.load("bp_generator/sharpen");
         
-        ofTrueTypeFont fontL;
-        fontL.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",38);
-        
+ 
  
         ofPushMatrix();
         fbo.begin();
@@ -94,10 +95,11 @@ public:
         bg.draw(0,0,w,h);
         
         ofSetColor(0);
-        ofTranslate(0, 14);
+        ofTranslate(0, 18);
         int numL = 1;
         string strupper = ofToUpper(d.destination);
-        fontL.drawString(strupper, layout["dest"].x*scale, layout["dest"].y*scale+25);
+        tidSted_f.drawString(strupper, layout["dest"].x*scale, layout["dest"].y*scale);
+        tidSted_f.drawString(ofGetTimestampString("%H%M"), layout["time"].x*scale, layout["time"].y*scale);
 
         vector<int>materialIndx;
         materialIndx.resize(3);
@@ -112,7 +114,7 @@ public:
                 temporary = floorf(ofRandom(d.material.size()));
             materialIndx[2] = temporary;
             
-            cout <<"numbers: "<< materialIndx[0]<<materialIndx[1]<<materialIndx[2]<<endl;
+           // cout <<"numbers: "<< materialIndx[0]<<materialIndx[1]<<materialIndx[2]<<endl;
         }
         else{
             for(int u = 0; u<MIN(3,d.material.size());u++)
@@ -125,14 +127,14 @@ public:
             
             ofRectangle a = rects[u+3];
             ofRectangle b = rects[u+6];
-            fontS.drawString(d.material[mi], a.x*scale, a.y*scale);
+            mat_f.drawString(d.material[mi], a.x*scale, a.y*scale);
             drawCollumn(d.materialDescription[mi],b.x*scale, b.y*scale, 2);
         }
         
         ofSetColor(255);
         string number = ofToString(writeToFile(),6,'0');
         
-        fontB.drawString(number,fbo.getWidth()-100,50);
+        number_f.drawString(number,fbo.getWidth()-115,27);
         
         ofPopMatrix();
         fbo.end();
@@ -176,7 +178,7 @@ public:
             }
             appending.append(c);
             
-            if(fontS.stringWidth(appending) > w){
+            if(matb_f.stringWidth(appending) > w){
                 // find last space
                 string thisLine;
                 string toNextLine;
@@ -201,7 +203,7 @@ public:
             s[maxLine-1].append("...");
         }
         for(int i = 0; i < MIN(s.size(),maxLine); i++){
-            fontS.drawString(s[i], x, y+i*fontS.getLineHeight() );
+            matb_f.drawString(s[i], x, y+i*matb_f.getLineHeight() );
         }
     }
     bool isSpace(unsigned int c){
