@@ -21,9 +21,9 @@ void ofApp::setup(){
    // system("del %systemroot%\System32\spool\printers\* /Q /F /S");
    // system("net start spooler");
 	string cwd = ofFilePath::getCurrentWorkingDirectory();
-	string command = cwd + "\\bin\\data\\clearPrinterShortcut.lnk";
+	string command = cwd + "\\data\\clearPrinterShortcut.lnk";
 	system(command.c_str());
-
+	cout << command << endl;
     //serial.setup("COM3", baud); // windows example
     //cout << "on windows"<< endl;
 #endif
