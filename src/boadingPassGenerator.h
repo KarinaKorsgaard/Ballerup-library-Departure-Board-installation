@@ -95,11 +95,11 @@ public:
         bg.draw(0,0,w,h);
         
         ofSetColor(0);
-        ofTranslate(0, 9);
+        ofTranslate(0, 18);
         int numL = 1;
         string strupper = ofToUpper(d.destination);
         tidSted_f.drawString(strupper, layout["dest"].x*scale, layout["dest"].y*scale);
-        tidSted_f.drawString(ofGetTimestampString("%H%M"), layout["time"].x*scale, layout["time"].y*scale);
+        tidSted_f.drawString(ofGetTimestampString("%H%M"), layout["time"].x*scale-3, layout["time"].y*scale);
 
         vector<int>materialIndx;
         materialIndx.resize(3);
@@ -134,7 +134,7 @@ public:
         ofSetColor(255);
         string number = ofToString(writeToFile(),6,'0');
         
-        number_f.drawString(number,fbo.getWidth()-115,27/2);
+        number_f.drawString(number,fbo.getWidth()-115,27);
         
         ofPopMatrix();
         fbo.end();
