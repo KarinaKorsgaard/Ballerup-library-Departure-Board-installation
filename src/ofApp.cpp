@@ -335,7 +335,7 @@ void ofApp::printBoardingPass(int d){
     if(!debug)system(command.c_str());
    // cout << "lp "+ ofSplitString(cwd,"/bin")[0] + "/bin/data/boardingPasses/"+ desitnations[d].str << endl;
 #else
-	string command =cwd+"\\bin\\SumatraPDF.exe -print-to-default -print-settings \"noscale\""+ cwd +"\\bin\\data\\"+ boardingPass;
+	string command =cwd+"\\bin\\SumatraPDF.exe -print-to-default -print-settings \"noscale\" "+ cwd +"\\bin\\data\\"+ boardingPass;
 	//system(command.c_str());
 	cout << command << endl;
 	cout << cwd << endl;

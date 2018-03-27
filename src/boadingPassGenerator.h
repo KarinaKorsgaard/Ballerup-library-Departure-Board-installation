@@ -64,8 +64,8 @@ public:
         
         ofImage bg;
         bg.load("bp_generator/boarding_back-01.png");
-        int w = bg.getWidth();
-        int h = bg.getHeight();
+        int w = bg.getWidth()/2.f;
+        int h = bg.getHeight()/2.f;
         
         float scale = h/rects[0].height;
         
