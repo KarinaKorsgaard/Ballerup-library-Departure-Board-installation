@@ -23,10 +23,10 @@ public:
     void setup(){
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
-        tidSted_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",25/2.);
-        mat_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",15/2.);
-        matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",14 / 2.);
-        number_f.load("fonts/BergenMono/BergenMono-Bold.otf",20 / 2.);
+        tidSted_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",25);
+        mat_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",15);
+        matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",14);
+        number_f.load("fonts/BergenMono/BergenMono-Bold.otf",20);
         
         rects = getPolyline(svg);
         shader.load("bp_generator/sharpen");
