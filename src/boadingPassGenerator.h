@@ -67,8 +67,8 @@ public:
         
         ofImage bg;
         bg.load("bp_generator/boarding_back-01.png");
-        int w = bg.getWidth()/2.;
-        int h = bg.getHeight()/2.;
+        int w = bg.getWidth();
+        int h = bg.getHeight();
         
         float scale = h/rects[0].height;
         
@@ -95,7 +95,7 @@ public:
         bg.draw(0,0,w,h);
         
         ofSetColor(0);
-        ofTranslate(0, 18);
+        ofTranslate(0, 9);
         int numL = 1;
         string strupper = ofToUpper(d.destination);
         tidSted_f.drawString(strupper, layout["dest"].x*scale, layout["dest"].y*scale);
@@ -134,7 +134,7 @@ public:
         ofSetColor(255);
         string number = ofToString(writeToFile(),6,'0');
         
-        number_f.drawString(number,fbo.getWidth()-115,27);
+        number_f.drawString(number,fbo.getWidth()-115,27/2);
         
         ofPopMatrix();
         fbo.end();
