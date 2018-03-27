@@ -14,7 +14,7 @@
 
 class BoardingPassGenerator{
 public:
-    ofTrueTypeFont fontS;
+    ofTrueTypeFont fontS,fontB;
     
     
     ofFile printNumberFile;
@@ -23,7 +23,8 @@ public:
     void setup(){
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
-        fontS.load("bp_generator/Lato-Regular.ttf",18);
+        fontS.load("fonts/BergenMono/BergenMono-Regular.otf",18);
+        fontB.load("fonts/BergenMono/BergenMono-Bold.otf",18);
         rects = getPolyline(svg);
         shader.load("bp_generator/sharpen");
         
@@ -81,8 +82,8 @@ public:
         
         shader.load("bp_generator/sharpen");
         
-        ofTrueTypeFont fontB;
-        fontB.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",38);
+        ofTrueTypeFont fontL;
+        fontL.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",38);
         
  
         ofPushMatrix();
@@ -96,7 +97,7 @@ public:
         ofTranslate(0, 14);
         int numL = 1;
         string strupper = ofToUpper(d.destination);
-        fontB.drawString(strupper, layout["dest"].x*scale, layout["dest"].y*scale+25);
+        fontL.drawString(strupper, layout["dest"].x*scale, layout["dest"].y*scale+25);
 
         vector<int>materialIndx;
         materialIndx.resize(3);
@@ -131,7 +132,7 @@ public:
         ofSetColor(255);
         string number = ofToString(writeToFile(),6,'0');
         
-        fontS.drawString(number,fbo.getWidth()-100,50);
+        fontB.drawString(number,fbo.getWidth()-100,50);
         
         ofPopMatrix();
         fbo.end();

@@ -14,5 +14,5 @@ void main()
         // set black pixel in buffer
         tex = 0.;
     }
-    gl_FragColor = vec4(tex);
+    gl_FragColor = vec4(vec3(tex),1.);
 }
