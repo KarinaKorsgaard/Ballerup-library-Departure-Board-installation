@@ -12,7 +12,7 @@ void main()
     float grayscale = 0.2126 * tex.r + 0.7152 * tex.g + 0.0722 * tex.b;
     if(grayscale < .5){
         // set black pixel in buffer
-        tex = 0.;
+        //tex = 0.;
     }
     gl_FragColor = vec4(vec3(tex),1.);
 }

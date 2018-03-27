@@ -148,7 +148,7 @@ public:
         fbores.end();
         
         fbores.readToPixels(pix);
-        ofSaveImage(pix, "latest.png");
+        ofSaveImage(pix, "latest.png", OF_IMAGE_QUALITY_BEST);
         return "latest.png";
     }
         
