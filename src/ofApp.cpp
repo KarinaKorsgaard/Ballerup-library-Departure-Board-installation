@@ -36,7 +36,7 @@ void ofApp::setup(){
     //    //serial
     
     gui.setup();
-    gui.add(animationTime.set("AnimationTime",1.,5.,0.01));
+    gui.add(animationTime.set("AnimationTime",1., 1. ,0.01));
     gui.add(randomFlipInterval.set("max FlipInterval",1.,0.,10.));
     gui.add(materialSwapTime.set("materialSwapTime",15.,0.,40.));
     gui.loadFromFile("settings.xml");
@@ -50,7 +50,7 @@ void ofApp::setup(){
     //cout << "num letters " << _alphabet.size() << endl;
     
     font.load("fonts/BergenMono/BergenMono-Regular.otf", 45);
-    font.setLetterSpacing(0.8);
+    font.setLetterSpacing(0.7);
     ofRectangle r = font.getStringBoundingBox("Åg", 0, 0);
     charWidth = r.width*1.2; //
     charHeight = r.height*2.;
@@ -133,7 +133,7 @@ void ofApp::setup(){
     
     // json crap
     ofxJSONElement result;
-    std::string file = "travelData.json";
+    std::string file = "travel.json";
     
     // Now parse the JSON
     bool parsingSuccessful = result.open(file);
@@ -149,6 +149,8 @@ void ofApp::setup(){
     
     for(int i = 0; i<desitnations.size();i++){
         const Json::Value& beskrivelse = result[i];
+        
+        
         desitnations[i].destination = beskrivelse["destination"].asString();
         desitnations[i].number = gates[ofRandom(gates.size())];
 		desitnations[i].str = beskrivelse["destination"].asString()+".png";
@@ -163,20 +165,22 @@ void ofApp::setup(){
         else
             desitnations[i].emoji = &emojis["emojis/standart.png"];
         
-        int mat = 0;
-        int u = 0;
-        while(mat==0){
-            desitnations[i].material.push_back(beskrivelse["materiale"+ofToString(u+1)].asString());
-            desitnations[i].materialDescription.push_back(
-                                                          bpg.transformToCollumn( beskrivelse["materialeBeskriv"+ofToString(u+1)].asString())
-                                                          );
-            if(desitnations[i].material.back()==""){
-                desitnations[i].material.pop_back();
-                desitnations[i].materialDescription.pop_back();
-                mat = 1;
-            }
-            u++;
+      
+        desitnations[i].material.resize(beskrivelse["resources"].size());
+        desitnations[i].materialDescription.resize(beskrivelse["resources"].size());
+        desitnations[i].sources.resize(beskrivelse["resources"].size());
+        
+        for(int u = 0 ; u<beskrivelse["resources"].size();u++){
+            const Json::Value& titler = beskrivelse["resources"][u];
+            string tit = titler["title"].asString();
+            string src = titler["source"].asString();
+            string des = titler["description"].asString();
+            desitnations[i].material[u] = tit;
+            desitnations[i].sources[u] = src;
+            desitnations[i].materialDescription[u] = bpg.transformToCollumn(des);
         }
+        cout << desitnations[i].destination <<" : "<<desitnations[i].material.size() << endl;
+        
     }
     
     ofImage imgA;

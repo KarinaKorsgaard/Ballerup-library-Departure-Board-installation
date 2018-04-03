@@ -12,6 +12,7 @@ struct Destinations{
     string destination;
     string number;
     vector<string>material;
+    vector<string>sources;
     vector<vector<string>>materialDescription;
     double time;
     string str;
