@@ -163,7 +163,7 @@ void ofApp::setup(){
         else if(emojis.find(em+".jpg")!=emojis.end())
             desitnations[i].emoji = &emojis[em+".jpg"];
         else
-            desitnations[i].emoji = &emojis["emojis/standart.png"];
+            desitnations[i].emoji = &emojis["standart.png"];
         
       
         desitnations[i].material.resize(beskrivelse["resources"].size());

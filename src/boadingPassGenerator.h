@@ -16,7 +16,9 @@ class BoardingPassGenerator{
 public:
     ofTrueTypeFont tidSted_f,mat_f;
     ofTrueTypeFont matb_f, number_f;
-    
+    float scale;
+    int h,w;
+    ofImage bg;
     ofFile printNumberFile;
     int printNumber;
     
@@ -60,17 +62,19 @@ public:
             newFile << "0 beginning";
             newFile.close();
         }
+        
+
+        bg.load("bp_generator/boarding_back-01.png");
+        w = bg.getWidth();
+        h = bg.getHeight();
+        
+        scale = h/rects[0].height;
     }
     
     string generate(Destinations d, int current){
         ofEnableAntiAliasing();
         
-        ofImage bg;
-        bg.load("bp_generator/boarding_back-01.png");
-        int w = bg.getWidth();
-        int h = bg.getHeight();
         
-        float scale = h/rects[0].height;
         
         ofFbo fbo; // for composing
         ofDisableArbTex();
@@ -166,8 +170,8 @@ public:
     }
     
     vector<string> transformToCollumn(string str){
-        int w = layout["matb1"].width;
-        
+        int w = layout["matb1"].width*scale;
+       
         vector<string> result;
         string appending="";
         for(int i = 0; i<str.length();i++){
