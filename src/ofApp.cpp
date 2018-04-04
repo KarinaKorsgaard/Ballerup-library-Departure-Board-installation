@@ -21,7 +21,7 @@ void ofApp::setup(){
    // system("del %systemroot%\System32\spool\printers\* /Q /F /S");
    // system("net start spooler");
 	string cwd = ofFilePath::getCurrentWorkingDirectory();
-	string command = cwd + "\\bin\\data\\clearShortCut.lnk";
+	string command = cwd + "\\data\\clearShortCut.lnk";
 	system(command.c_str());
 	cout << command << endl;
     //serial.setup("COM3", baud); // windows example
@@ -354,7 +354,7 @@ void ofApp::printBoardingPass(int d){
     if(!debug)system(command.c_str());
    // cout << "lp "+ ofSplitString(cwd,"/bin")[0] + "/bin/data/boardingPasses/"+ desitnations[d].str << endl;
 #else
-	string command =cwd+"\\bin\\SumatraPDF.exe -print-to-default -print-settings \"fit\" "+ cwd +"\\bin\\data\\"+ boardingPass;
+	string command =cwd+"\\SumatraPDF.exe -print-to-default -print-settings \"fit\" "+ cwd +"\\data\\"+ boardingPass;
 	//system(command.c_str());
 	cout << command << endl;
 	cout << cwd << endl;
