@@ -131,7 +131,8 @@ class ofApp : public ofBaseApp{
         roundedRect(0,0,charWidth,charHeight,5);
         
         ofSetColor(c);
-        if(l!="")font.drawString(l, x, y);
+        if(l=="...")font.drawString(l, x-w*0.15, y);
+        else if(l!="")font.drawString(l, x, y);
         else emoji.draw(x,y);
         ofNoFill();
         ofSetLineWidth(0.5);
@@ -152,7 +153,14 @@ class ofApp : public ofBaseApp{
     }
     
     bool debug = true;
-
+    std::string ReplaceAll(std::string str, const std::string& from, const std::string& to) {
+        size_t start_pos = 0;
+        while((start_pos = str.find(from, start_pos)) != std::string::npos) {
+            str.replace(start_pos, from.length(), to);
+            start_pos += to.length(); // Handles case where 'to' is a substring of 'from'
+        }
+        return str;
+    }
 
     
 };

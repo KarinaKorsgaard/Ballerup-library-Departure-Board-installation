@@ -1,6 +1,7 @@
 [
 	{
 		"destination": "Rom",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Corriere della Sera", "source":"PressReader", "description": "Læs italienske aviser på din tablet."},
@@ -15,6 +16,7 @@
 	},
 	{
 		"destination": "Berlin",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Augsburger Allgemeine", "source":"PressReader", "description": "Læs tyske aviser på din tablet."},
@@ -29,6 +31,7 @@
 	},
 	{
 		"destination": "Mallorca",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "La Vanguardia", "source":"PressReader", "description": "Læs spanske aviser på din tablet."},
@@ -43,6 +46,7 @@
 	},
 	{
 		"destination": "Barcelona",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "La Vanguardia", "source":"PressReader", "description": "Læs spanske aviser på din tablet."},
@@ -57,6 +61,7 @@
 	},
 	{
 		"destination": "Paris",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Le Parisien", "source":"PressReader", "description": "Læs franske aviser på din tablet."},
@@ -71,6 +76,7 @@
 	},
 	{
 		"destination": "Nice",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Le Figaro", "source":"PressReader", "description": "Læs franske aviser på din tablet."},
@@ -85,6 +91,7 @@
 	},
 	{
 		"destination": "Stockholm",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Svenska Dagbladet", "source":"PressReader", "description": "Læs svenske aviser på din tablet."},
@@ -99,6 +106,7 @@
 	},
 	{
 		"destination": "Kreta",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Kathimerini", "source":"PressReader", "description": "Læs græske aviser på din tablet."},
@@ -112,6 +120,7 @@
 	},
 	{
 		"destination": "London",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "The London Free Press", "source":"PressReader", "description": "Læs engelske aviser på din tablet."},
@@ -126,6 +135,7 @@
 	},
 	{
 		"destination": "Edinburgh",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "The London Free Press", "source":"PressReader", "description": "Læs engelske aviser på din tablet."},
@@ -140,6 +150,7 @@
 	},
 	{
 		"destination": "Dublin",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Irish Independent", "source":"PressReader", "description": "Læs irske aviser på din tablet."},
@@ -153,6 +164,7 @@
 	},
 	{
 		"destination": "Kroatien",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "24sata", "source":"PressReader", "description": "Læs kroatiske aviser på din tablet."},
@@ -167,6 +179,7 @@
 	},
 	{
 		"destination": "Norge",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Aftenposten", "source":"PressReader", "description": "Læs norske aviser på din tablet."},
@@ -181,6 +194,7 @@
 	},
 	{
 		"destination": "Tyrkiet",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Hürriyet", "source":"PressReader", "description": "Læs tyrkiske aviser på din tablet."},
@@ -195,6 +209,7 @@
 	},
 	{
 		"destination": "Østrig",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Heute", "source":"PressReader", "description": "Læs østrigske aviser på din tablet."},
@@ -208,6 +223,7 @@
 	},
 	{
 		"destination": "New York",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "New York Post", "source":"PressReader", "description": "Læs amerikanske aviser på din tablet."},
@@ -222,6 +238,7 @@
 	},
 	{
 		"destination": "Miami",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "South Florida Times", "source":"PressReader", "description": "Læs amerikanske aviser på din tablet."},
@@ -236,6 +253,7 @@
 	},
 	{
 		"destination": "San Francisco",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "San Francisco Chronicle", "source":"PressReader", "description": "Læs amerikanske aviser på din tablet."},
@@ -249,6 +267,7 @@
 	},
 	{
 		"destination": "Thailand",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Bangkok Post", "source":"PressReader", "description": "Læs thailandske aviser på din tablet"},
@@ -263,6 +282,7 @@
 	},
 	{
 		"destination": "Australien",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "The Guardian Australia", "source":"PressReader", "description": "Læs austalske aviser på din tablet"},
@@ -277,6 +297,7 @@
 	},
 	{
 		"destination": "København",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Architectural Digest", "source":"RB Digital", "description": "Læs op på arkitekturens nyheder inden din hovedstadstur."},
@@ -290,6 +311,7 @@
 	},
 	{
 		"destination": "Bornholm",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Cycling Active", "source":"RB Digital", "description": "Smid dette cykelblad bag på cyklen og læs det ved næste rasteplads."},
@@ -302,6 +324,7 @@
 	},
 	{
 		"destination": "Egypten",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Youm7", "source":"PressReader", "description": "Læs egyptiske aviser på din tablet."},
@@ -316,6 +339,7 @@
 	},
 	{
 		"destination": "Tokyo",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Mainichi Shimbun", "source":"PressReader", "description": "Læs japanske aviser på din tablet"},
@@ -330,6 +354,7 @@
 	},
 	{
 		"destination": "Toscana",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Corriere Fiorentino", "source":"PressReader", "description": "Læs italienske aviser på din tablet."},
@@ -344,6 +369,7 @@
 	},
 	{
 		"destination": "Mexico",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "El Universal", "source":"PressReader", "description": "Læs mexikanske aviser på din tablet"},
@@ -358,6 +384,7 @@
 	},
 	{
 		"destination": "Brasilien",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Folha de S. Paulo", "source":"PressReader", "description": "Læs brasilianske aviser på din tablet"},
@@ -372,6 +399,7 @@
 	},
 	{
 		"destination": "Kina",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "China Daily", "source":"PressReader", "description": "Læs kinesiske aviser på din tablet"},
@@ -386,6 +414,7 @@
 	},
 	{
 		"destination": "Kenya",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Daily Nation", "source":"PressReader", "description": "Læs kenyanske aviser på din tablet"},
@@ -400,6 +429,7 @@
 	},
 	{
 		"destination": "Prag",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Mladá fronta DNES", "source":"PressReader", "description": "Læs tjekkiske aviser på din tablet"},
@@ -414,6 +444,7 @@
 	},
 	{
 		"destination": "Amsterdam",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "NRC Handelsblad", "source":"PressReader", "description": "Læs hollandske aviser på din tablet."},
@@ -428,6 +459,7 @@
 	},
 	{
 		"destination": "Lissabon",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Jornal de Noticias", "source":"PressReader", "description": "Læs portugisiske aviser på din tablet"},
@@ -440,6 +472,7 @@
 	},
 	{
 		"destination": "Island",
+		"emoji": "default",
 		"resources": 
 		[
 			{"title": "Fréttablaðið", "source":"PressReader", "description": "Læs islandske aviser på din tablet"},

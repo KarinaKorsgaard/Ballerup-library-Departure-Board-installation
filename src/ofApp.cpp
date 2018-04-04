@@ -50,7 +50,7 @@ void ofApp::setup(){
     //cout << "num letters " << _alphabet.size() << endl;
     
     font.load("fonts/BergenMono/BergenMono-Regular.otf", 45);
-    font.setLetterSpacing(0.7);
+    font.setLetterSpacing(0.5);
     ofRectangle r = font.getStringBoundingBox("Åg", 0, 0);
     charWidth = r.width*1.2; //
     charHeight = r.height*2.;
@@ -76,8 +76,7 @@ void ofApp::setup(){
     ofDirectory dir;
     dir.listDir("emojis");
     dir.allowExt(".png");
-   // cout<< "emoji dir "<< dir.size()<<endl;
-    
+
     for(int i = 0; i<dir.size();i++){
         ofImage e;
         e.load(dir.getPath(i));
@@ -87,6 +86,19 @@ void ofApp::setup(){
         emojis[ofSplitString(dir.getPath(i),slash)[1]].allocate(charWidth, charHeight, GL_RGBA);
         emojis[ofSplitString(dir.getPath(i),slash)[1]].loadData(b, GL_RGBA, GL_UNSIGNED_BYTE);
        // cout << dir.getPath(i)<< endl;
+    }
+    ofDirectory flags;
+    flags.listDir("emojis"+slash+"flags");
+    flags.allowExt(".png");
+    
+    for(int i = 0; i<flags.size();i++){
+        ofImage e;
+        e.load(flags.getPath(i));
+        e.resize(charWidth, charWidth * e.getHeight()/e.getWidth());
+        //cout << dir.getPath(i) << endl;
+        ofBufferObject b = drawTexture(ofColor(255), charWidth, charHeight, "", e);
+        emojis[ofSplitString(flags.getPath(i),slash)[2]].allocate(charWidth, charHeight, GL_RGBA);
+        emojis[ofSplitString(flags.getPath(i),slash)[2]].loadData(b, GL_RGBA, GL_UNSIGNED_BYTE);
     }
     
     ofImage arr;
@@ -156,15 +168,18 @@ void ofApp::setup(){
 		desitnations[i].str = beskrivelse["destination"].asString()+".png";
         
         string em = beskrivelse["emoji"].asString();
+        string dest = ReplaceAll(desitnations[i].destination," ","_");
         if(emojis.find(em)!=emojis.end())
             desitnations[i].emoji = &emojis[em];
         else if(emojis.find(em+".png")!=emojis.end())
             desitnations[i].emoji = &emojis[em+".png"];
         else if(emojis.find(em+".jpg")!=emojis.end())
             desitnations[i].emoji = &emojis[em+".jpg"];
+        else if(emojis.find(dest+".png")!=emojis.end())
+            desitnations[i].emoji = &emojis[em+".jpg"];
         else
             desitnations[i].emoji = &emojis["standart.png"];
-        
+     
       
         desitnations[i].material.resize(beskrivelse["resources"].size());
         desitnations[i].materialDescription.resize(beskrivelse["resources"].size());
@@ -177,7 +192,7 @@ void ofApp::setup(){
             string des = titler["description"].asString();
             desitnations[i].material[u] = tit;
             desitnations[i].sources[u] = src;
-            desitnations[i].materialDescription[u] = bpg.transformToCollumn(des);
+            desitnations[i].materialDescription[u] = bpg.transformToCollumn(des+" Findes på: "+src);
         }
         cout << desitnations[i].destination <<" : "<<desitnations[i].material.size() << endl;
         
