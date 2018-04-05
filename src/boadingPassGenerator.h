@@ -26,8 +26,8 @@ public:
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
         tidSted_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",35);
-        mat_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",15);
-        matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",15);
+        mat_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",17);
+        matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",17);
         matb_f.setLineHeight(matb_f.getLineHeight()*1.1);
         //matb_f.setLetterSpacing(1.1);
   //      matb_fbold.load("fonts/HaasGrotesk/NHaasGroteskDSPro-65Md.otf",16);
@@ -107,9 +107,10 @@ public:
         general.push_back("");
         vector<string>concat =transformToCollumn("Find de andre "+ofToString(d.material.size()-3)+" anbefalinger på", g.width*scale, matb_f);
         general.insert( general.end(), concat.begin(), concat.end() );
-        concat = transformToCollumn("www.bib.ballerup.dk/e-materialer", g.width*scale, mat_f);
-        for(int i = 0;i<concat.size();i++)cout<<concat[i]<<endl;
-        general.insert( general.end(), concat.begin(), concat.end() );
+        //concat = transformToCollumn("www.bib.ballerup.dk/e-materialer", g.width*scale, mat_f);
+		general.push_back("www.bib.ballerup.dk/");
+		general.push_back("e-materialer");
+        //general.insert( general.end(), concat.begin(), concat.end() );
        
         ofFbo fbo; // for composing
         ofDisableArbTex();
