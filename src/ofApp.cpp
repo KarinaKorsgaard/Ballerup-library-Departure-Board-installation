@@ -192,7 +192,7 @@ void ofApp::setup(){
             string des = titler["description"].asString();
             desitnations[i].material[u] = tit;
             desitnations[i].sources[u] = src;
-            desitnations[i].materialDescription[u] = bpg.transformToCollumn(des+" Findes på: "+src);
+            desitnations[i].materialDescription[u] = des+" Findes på: "+src;
         }
         cout << desitnations[i].destination <<" : "<<desitnations[i].material.size() << endl;
         
@@ -267,7 +267,7 @@ void ofApp::update(){
     
     if(input>-1){
         if (input < MIN(desitnations.size(),NUM_DESTINATIONS))printBoardingPass(input);
-        if (input == 11) {
+        if (input == SHUFFLE_BUTTON) {
             for (int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS); i++) {
                 destination_indxes[i] += MIN(desitnations.size(),NUM_DESTINATIONS);
                 destination_indxes[i] = destination_indxes[i] % desitnations.size();
@@ -398,6 +398,7 @@ void ofApp::readArduino(){
     if(tempinput == MOTION_INPUT){
         motioninput = true;
     }
+
     else if(tempinput>-1) {
         
         if(p_input!=tempinput){

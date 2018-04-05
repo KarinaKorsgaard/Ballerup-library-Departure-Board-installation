@@ -25,10 +25,14 @@ public:
     void setup(){
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
-        tidSted_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",25);
+        tidSted_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",35);
         mat_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",15);
-        matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",14);
-        number_f.load("fonts/BergenMono/BergenMono-Bold.otf",20);
+        matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",15);
+        matb_f.setLineHeight(matb_f.getLineHeight()*1.1);
+        //matb_f.setLetterSpacing(1.1);
+  //      matb_fbold.load("fonts/HaasGrotesk/NHaasGroteskDSPro-65Md.otf",16);
+        number_f.load("fonts/BergenMono/BergenMono-Bold.otf",28);
+        //matb_f.setLetterSpacing(1.2);
         
         rects = getPolyline(svg);
         shader.load("bp_generator/sharpen");
@@ -44,6 +48,9 @@ public:
         layout["matb1"] = rects[6];
         layout["matb2"] = rects[7];
         layout["matb3"] = rects[8];
+        
+        layout["general"] = rects[0];
+        
         
         string newLine = "\r\n";
 #ifdef __APPLE__
@@ -68,43 +75,13 @@ public:
         w = bg.getWidth();
         h = bg.getHeight();
         
-        scale = h/rects[0].height;
+        scale = h/rects[9].height;
+        cout <<"bp scale " <<scale<<" w: "<<w<<" h: "<<h<< endl;
     }
     
     string generate(Destinations d, int current){
         ofEnableAntiAliasing();
         
-        
-        
-        ofFbo fbo; // for composing
-        ofDisableArbTex();
-        fbo.allocate(w,h, GL_RGBA);
-        ofEnableArbTex();
-        
-        ofPixels pix;
-        pix.allocate(w,h,GL_RGBA);
-        
-        ofFbo fbores; // for final output
-        fbores.allocate(w,h,GL_RGBA);
-        
-        shader.load("bp_generator/sharpen");
-        
- 
- 
-        ofPushMatrix();
-        fbo.begin();
-        ofClear(255);
-        ofBackground(255);
-        
-        bg.draw(0,0,w,h);
-        
-        ofSetColor(0);
-        ofTranslate(0, 18);
-        int numL = 1;
-        string strupper = ofToUpper(d.destination);
-        tidSted_f.drawString(strupper, layout["dest"].x*scale, layout["dest"].y*scale);
-        tidSted_f.drawString(ofGetTimestampString("%H%M"), layout["time"].x*scale-3, layout["time"].y*scale);
-
         vector<int>materialIndx;
         materialIndx.resize(3);
         if(d.material.size()>3){
@@ -118,44 +95,91 @@ public:
                 temporary = floorf(ofRandom(d.material.size()));
             materialIndx[2] = temporary;
             
-           // cout <<"numbers: "<< materialIndx[0]<<materialIndx[1]<<materialIndx[2]<<endl;
+            // cout <<"numbers: "<< materialIndx[0]<<materialIndx[1]<<materialIndx[2]<<endl;
         }
         else{
             for(int u = 0; u<MIN(3,d.material.size());u++)
                 materialIndx[u] = u;
         }
+        
+        ofRectangle g = layout["general"];
+        vector<string> general = transformToCollumn("Med biblioteket har du online adgang til en verden af bøger, film, musik, blade og aviser, som er lette at tage med på rejsen.", g.width*scale, matb_f);
+        general.push_back("");
+        vector<string>concat =transformToCollumn("Find de andre "+ofToString(d.material.size()-3)+" anbefalinger på", g.width*scale, matb_f);
+        general.insert( general.end(), concat.begin(), concat.end() );
+        concat = transformToCollumn("www.bib.ballerup.dk/e-materialer", g.width*scale, mat_f);
+        for(int i = 0;i<concat.size();i++)cout<<concat[i]<<endl;
+        general.insert( general.end(), concat.begin(), concat.end() );
+       
+        ofFbo fbo; // for composing
+        ofDisableArbTex();
+        fbo.allocate(w,h, GL_RGBA);
+        ofEnableArbTex();
+        
+        ofPixels pix;
+        pix.allocate(w,h,GL_RGBA);
+        
+
+ 
+  
+        fbo.begin();
+        ofClear(255);
+        ofBackground(255);
+        
+        bg.draw(0,0,w,h);
+        
+        ofSetColor(0);
+
+        ofPushMatrix();
+        ofTranslate(0,tidSted_f.stringHeight("Å"));
+        tidSted_f.drawString(toUpper(d.destination), layout["dest"].x*scale, layout["dest"].y*scale);
+        tidSted_f.drawString(ofGetTimestampString("%H%M"), layout["time"].x*scale, layout["time"].y*scale);
+        ofPopMatrix();
+    
+        ofPushMatrix();
+        ofTranslate(0,mat_f.stringHeight("Å"));
         for(int u = 0; u<MIN(3,d.material.size());u++){
             int mi = materialIndx[u];
-            string mat = "mat"+ofToString(mi+1);
-            string matb = "matb"+ofToString(mi+1);
-            
             ofRectangle a = rects[u+3];
             ofRectangle b = rects[u+6];
-            mat_f.drawString(d.material[mi], a.x*scale, a.y*scale);
-            drawCollumn(d.materialDescription[mi],b.x*scale, b.y*scale, 2);
+            mat_f.drawString(toUpper(d.material[mi]), a.x*scale, a.y*scale);
+            vector<string>description = transformToCollumn(d.materialDescription[mi], b.width*scale, matb_f);
+            drawCollumn(description ,b.x*scale, b.y*scale, matb_f , 2);
         }
+        drawCollumn(general, g.x*scale, g.y*scale, matb_f, 30);
+        ofPopMatrix();
+        
+        
+        
         
         ofSetColor(255);
         string number = ofToString(writeToFile(),6,'0');
-        
-        number_f.drawString(number,fbo.getWidth()-115,27);
-        
-        ofPopMatrix();
+        number_f.drawString(number,fbo.getWidth()-number_f.stringWidth(number)-50,70);
         fbo.end();
-        
-        fbores.begin();
-        ofClear(255);
-        shader.begin();
-        
-        fbo.draw(0,0);
-        shader.end();
-        fbores.end();
-        
-        fbores.readToPixels(pix);
+
+        fbo.readToPixels(pix);
         ofSaveImage(pix, "latest.png", OF_IMAGE_QUALITY_BEST);
         return "latest.png";
     }
-        
+    
+    
+    
+    
+    std::string ReplaceAll(std::string str, const std::string& from, const std::string& to) {
+        size_t start_pos = 0;
+        while((start_pos = str.find(from, start_pos)) != std::string::npos) {
+            str.replace(start_pos, from.length(), to);
+            start_pos += to.length(); // Handles case where 'to' is a substring of 'from'
+        }
+        return str;
+    }
+    string toUpper(string s){
+        string res = ofToUpper(s);
+        res=ReplaceAll(res,"æ","Æ");
+        res=ReplaceAll(res,"ø","Ø");
+        res=ReplaceAll(res,"å","Å");
+        return res;
+    }
     
     // helper functions
     vector<ofRectangle> getPolyline(ofxSVG svg){
@@ -169,8 +193,8 @@ public:
         return polys;
     }
     
-    vector<string> transformToCollumn(string str){
-        int w = layout["matb1"].width*scale;
+    vector<string> transformToCollumn(string str, int w, ofTrueTypeFont f){
+        
        
         vector<string> result;
         string appending="";
@@ -182,7 +206,7 @@ public:
             }
             appending.append(c);
             
-            if(matb_f.stringWidth(appending) > w){
+            if(f.stringWidth(appending) > w){
                 // find last space
                 string thisLine;
                 string toNextLine;
@@ -200,14 +224,14 @@ public:
         return result;
     }
     
-    void drawCollumn(vector<string> s, int x, int y, int maxLine = 10 ){
+    void drawCollumn(vector<string> s, int x, int y, ofTrueTypeFont f,int maxLine = 10 ){
         
         if(maxLine<s.size()){
             s[maxLine-1].pop_back();
             s[maxLine-1].append("...");
         }
         for(int i = 0; i < MIN(s.size(),maxLine); i++){
-            matb_f.drawString(s[i], x, y+i*matb_f.getLineHeight() );
+            f.drawString(s[i], x, y+i*f.getLineHeight() );
         }
     }
     bool isSpace(unsigned int c){
@@ -216,7 +240,7 @@ public:
         || c == 0x2002
         || c == 0x2003 || c == 0x2004 || c == 0x2005 || c == 0x2006 || c == 0x2007 || c == 0x2028
         || c == 0x2029
-        || c == 0x2008 || c == 0x2009 || c == 0x200A || c == 0x202F || c == 0x205F || c == 0x3000
+        || c == 0x2008 || c == 0x2009 || c == 0x200A || c == 0x202F || c == 0x205F || c == 0x3000 || c == '/'
         //    //https://en.wikipedia.org/wiki/Whitespace_character
         //    || c == 0x0009 //tab
         //    || c == 0x000A //line feed

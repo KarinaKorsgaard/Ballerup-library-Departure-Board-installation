@@ -13,7 +13,7 @@ struct Destinations{
     string number;
     vector<string>material;
     vector<string>sources;
-    vector<vector<string>>materialDescription;
+    vector<string>materialDescription;
     double time;
     string str;
     ofTexture * emoji;

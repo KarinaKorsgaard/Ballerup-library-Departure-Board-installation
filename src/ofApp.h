@@ -10,6 +10,7 @@
 #include <codecvt>
 #define NUM_DESTINATIONS 10
 #define MOTION_INPUT 10
+#define SHUFFLE_BUTTON 11
 
 /*struct Destinations{
     string destination;
