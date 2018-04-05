@@ -9,8 +9,8 @@
 #include "boadingPassGenerator.h"
 #include <codecvt>
 #define NUM_DESTINATIONS 10
-#define MOTION_INPUT 10
-#define SHUFFLE_BUTTON 11
+#define MOTION_INPUT 11
+#define SHUFFLE_BUTTON 10
 
 /*struct Destinations{
     string destination;

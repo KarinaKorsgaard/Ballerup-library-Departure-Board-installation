@@ -262,11 +262,12 @@ void ofApp::update(){
     }
     
     
-    if(!isInitialized && !debug)initialiseArdiono();
-   // else readArduino();
+    isInitialized = serial.isInitialized();
+    if(!isInitialized)initialiseArdiono();
+    else readArduino();
     
     if(input>-1){
-        if (input < MIN(desitnations.size(),NUM_DESTINATIONS))printBoardingPass(input);
+        if (input-97 < MIN(desitnations.size(),NUM_DESTINATIONS))printBoardingPass(input-97);
         if (input == SHUFFLE_BUTTON) {
             for (int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS); i++) {
                 destination_indxes[i] += MIN(desitnations.size(),NUM_DESTINATIONS);
@@ -281,16 +282,12 @@ void ofApp::update(){
                 
             }
         }
-
-        
-        input = -1;
-        //if(debug)cout <<"processed "<< input << endl;
-    }
-    if (motioninput) {
-        doRandomFlip(5);
-        motioninput=false;
+        if (input == MOTION_INPUT) {
+            doRandomFlip(5);
+        }
     }
     
+    input = -1;
 }
 
 //--------------------------------------------------------------
@@ -370,7 +367,8 @@ void ofApp::printBoardingPass(int d){
 
 //--------------------------------------------------------------
 void ofApp::readArduino(){
-    int tempinput = -1;
+    
+    int tempInput = -1;
     nTimesRead = 0;
     nBytesRead = 0;
     int nRead  = 0;  // a temp variable to keep count per read
@@ -390,22 +388,14 @@ void ofApp::readArduino(){
     
     bSendSerialMessage = false;
     readTime = ofGetElapsedTimef();
-
-    string fromArduino = string(bytesReadString);
-    char fa = fromArduino[0]-'0';
-    tempinput = fa;
     
-    if(tempinput == MOTION_INPUT){
-        motioninput = true;
-    }
-
-    else if(tempinput>-1) {
-        
-        if(p_input!=tempinput){
-            p_input=tempinput;
-            input = tempinput;
-            if(debug)cout <<"From Arduino "<< input << endl;
-        }
+    string fromArduino = string(bytesReadString);
+    char fa = fromArduino[0];
+    tempInput = fa;
+    
+    if(tempInput>-1 && tempInput!=0) {
+        input = tempInput-97;
+        cout <<"From Arduino "<< input << endl;
     }
 }
 //--------------------------------------------------------------
