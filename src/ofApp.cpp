@@ -412,7 +412,7 @@ void ofApp::initialiseArdiono(){
     serial.setup(0, baud); //open the first device
     cout << "on mac"<< endl;
 #else
-    serial.setup(0, baud); // windows example
+	serial.setup("COM4", baud); // windows example
     cout << "on windows"<< endl;
 #endif
     //serial.setup("COM4", baud); // windows example
