@@ -412,7 +412,7 @@ void ofApp::initialiseArdiono(){
     serial.setup(0, baud); //open the first device
     cout << "on mac"<< endl;
 #else
-	serial.setup("COM3", baud); // windows example
+	serial.setup("COM4", baud); // windows example
     cout << "on windows"<< endl;
 #endif
     //serial.setup("COM4", baud); // windows example
@@ -468,7 +468,7 @@ void ofApp::keyPressed(int key){
 void ofApp::keyReleased(int key){
     if(debug)doRandomFlip(5);
 	int k = key - '0';
-	if(k<desitnations.size())
+	if(k<desitnations.size() && k>-1)
 		printBoardingPass(k);
     
     if(key == 'd') {

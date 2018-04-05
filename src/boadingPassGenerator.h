@@ -35,6 +35,7 @@ public:
         //matb_f.setLetterSpacing(1.2);
         
         rects = getPolyline(svg);
+		cout << rects.size() << endl;
         shader.load("bp_generator/sharpen");
         
         layout["dest"] = rects[1];
@@ -81,11 +82,11 @@ public:
     
     string generate(Destinations d, int current){
         ofEnableAntiAliasing();
-        
+		cout << "line 1" << endl;
         vector<int>materialIndx;
         materialIndx.resize(3);
         if(d.material.size()>3){
-            
+			cout << "line 2" << endl;
             materialIndx[0] = current;
             int temporary = current;
             while(temporary==materialIndx[0])
@@ -94,24 +95,28 @@ public:
             while(temporary == materialIndx[0] || temporary == materialIndx[1])
                 temporary = floorf(ofRandom(d.material.size()));
             materialIndx[2] = temporary;
-            
+			cout << "line 3" << endl;
             // cout <<"numbers: "<< materialIndx[0]<<materialIndx[1]<<materialIndx[2]<<endl;
         }
         else{
             for(int u = 0; u<MIN(3,d.material.size());u++)
                 materialIndx[u] = u;
         }
-        
+		cout << "line 4" << endl;
         ofRectangle g = layout["general"];
+		cout << "line 5" << endl;
         vector<string> general = transformToCollumn("Med biblioteket har du online adgang til en verden af bøger, film, musik, blade og aviser, som er lette at tage med på rejsen.", g.width*scale, matb_f);
         general.push_back("");
+		cout << "line 6" << endl;
         vector<string>concat =transformToCollumn("Find de andre "+ofToString(d.material.size()-3)+" anbefalinger på", g.width*scale, matb_f);
-        general.insert( general.end(), concat.begin(), concat.end() );
+		cout << "line 7" << endl;
+		general.insert( general.end(), concat.begin(), concat.end() );
+		cout << "line 8" << endl;
         //concat = transformToCollumn("www.bib.ballerup.dk/e-materialer", g.width*scale, mat_f);
 		general.push_back("www.bib.ballerup.dk/");
 		general.push_back("e-materialer");
         //general.insert( general.end(), concat.begin(), concat.end() );
-       
+		cout << "line 9" << endl;
         ofFbo fbo; // for composing
         ofDisableArbTex();
         fbo.allocate(w,h, GL_RGBA);
@@ -126,28 +131,44 @@ public:
         fbo.begin();
         ofClear(255);
         ofBackground(255);
-        
+		cout << "line 10" << endl;
         bg.draw(0,0,w,h);
         
         ofSetColor(0);
 
         ofPushMatrix();
         ofTranslate(0,tidSted_f.stringHeight("Å"));
+
+		cout << "line 11" << endl;
         tidSted_f.drawString(toUpper(d.destination), layout["dest"].x*scale, layout["dest"].y*scale);
+		cout << "line 12" << endl;
         tidSted_f.drawString(ofGetTimestampString("%H%M"), layout["time"].x*scale, layout["time"].y*scale);
+		cout << "line 13" << endl;
         ofPopMatrix();
     
         ofPushMatrix();
         ofTranslate(0,mat_f.stringHeight("Å"));
         for(int u = 0; u<MIN(3,d.material.size());u++){
+			cout << "line 14" << endl;
             int mi = materialIndx[u];
+			cout << "line 15" << endl;
             ofRectangle a = rects[u+3];
+			cout << "line 16" << endl;
             ofRectangle b = rects[u+6];
+			cout << "line 17" << endl;
             mat_f.drawString(toUpper(d.material[mi]), a.x*scale, a.y*scale);
-            vector<string>description = transformToCollumn(d.materialDescription[mi], b.width*scale, matb_f);
-            drawCollumn(description ,b.x*scale, b.y*scale, matb_f , 2);
+			cout << "line 18" << endl;
+            vector<string>description = transformToCollumn(d.materialDescription[mi], 200, matb_f);
+			cout << "line 19" << endl;
+			cout << b.width*scale << endl;
+			cout << d.materialDescription[mi] << endl;
+			//for (int i = 0; i < description.size(); i++)cout << description[i] << endl;
+            drawCollumn(description ,b.x*scale, b.y*scale, matb_f);
+			cout << "line 20" << endl;
         }
+		cout << "line 21" << endl;
         drawCollumn(general, g.x*scale, g.y*scale, matb_f, 30);
+		cout << "line 22" << endl;
         ofPopMatrix();
         
         
@@ -155,10 +176,13 @@ public:
         
         ofSetColor(255);
         string number = ofToString(writeToFile(),6,'0');
+
+		cout << "line 23" << endl;
         number_f.drawString(number,fbo.getWidth()-number_f.stringWidth(number)-50,70);
         fbo.end();
 
         fbo.readToPixels(pix);
+		cout << "line 24" << endl;
         ofSaveImage(pix, "latest.png", OF_IMAGE_QUALITY_BEST);
         return "latest.png";
     }
@@ -190,6 +214,7 @@ public:
             p.setPolyWindingMode(OF_POLY_WINDING_ODD);
             vector<ofPolyline>& lines = const_cast<vector<ofPolyline>&>(p.getOutline());
             polys.push_back(lines[0].getBoundingBox());
+			cout << polys.back().width << endl;
         }
         return polys;
     }
