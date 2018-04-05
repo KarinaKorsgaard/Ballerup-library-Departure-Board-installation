@@ -358,7 +358,7 @@ void ofApp::printBoardingPass(int d){
 	//system(command.c_str());
 	cout << command << endl;
 	cout << cwd << endl;
-
+	cout << "what" << endl;
 	if(!debug)system(command.c_str());
 
 	//string t = ofToDataPath("test.bat");
