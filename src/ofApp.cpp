@@ -267,7 +267,11 @@ void ofApp::update(){
     else readArduino();
     
     if(input>-1){
-        if (input < MIN(desitnations.size(),NUM_DESTINATIONS))printBoardingPass(input);
+        if (input < MIN(desitnations.size(),NUM_DESTINATIONS) && !printing) {
+            printBoardingPass(input);
+            printing = true;
+            printId = input;
+        }
         if (input == SHUFFLE_BUTTON) {
             for (int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS); i++) {
                 destination_indxes[i] += MIN(desitnations.size(),NUM_DESTINATIONS);
@@ -288,6 +292,18 @@ void ofApp::update(){
     }
     
     input = -1;
+    
+    if(printing) {
+        printcounter+=ofGetLastFrameTime();
+        wh_destination[printId].changeString("Dit boardingpass");
+        wh_material[printId].changeString("printes nu...");
+        if(printcounter>5.) {
+            printing = false;
+            printcounter = 0.0;
+            int d = destination_indxes[printId]; wh_material[printId].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))],desitnations[d].emoji);
+            wh_destination[printId].changeString(desitnations[d].destination,desitnations[d].emoji);
+        }
+    }
 }
 
 //--------------------------------------------------------------
@@ -476,7 +492,7 @@ void ofApp::keyReleased(int key){
     if(debug)doRandomFlip(5);
 	int k = key - '0';
 	if(k<desitnations.size() && k>-1)
-		printBoardingPass(k);
+		input = k;
     
     if(key == 'd') {
 		debug = !debug;

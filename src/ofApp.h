@@ -85,6 +85,9 @@ class ofApp : public ofBaseApp{
     int p_input = -1;
     bool motioninput = false;
     bool isInitialized = false;
+    bool printing = false;
+    double printcounter = 0.0;
+    int printId;
     
     void roundedRect(float x, float y, float w, float h, float r) {
         ofBeginShape();

@@ -106,11 +106,12 @@ public:
         ofRectangle g = layout["general"];
         vector<string> general = transformToCollumn("Med biblioteket har du online adgang til en verden af bøger, film, musik, blade og aviser, som er lette at tage med på rejsen.", g.width*scale, matb_f);
         general.push_back("");
-        vector<string>concat =transformToCollumn("Find de andre "+ofToString(d.material.size()-3)+" anbefalinger på", g.width*scale, matb_f);
+        vector<string>concat =transformToCollumn("Find dem på www.bib.ballerup.dk/e-materialer", g.width*scale, matb_f);
 		general.insert( general.end(), concat.begin(), concat.end() );
+        
         //concat = transformToCollumn("www.bib.ballerup.dk/e-materialer", g.width*scale, mat_f);
-		general.push_back("www.bib.ballerup.dk/");
-		general.push_back("e-materialer");
+		//general.push_back("www.bib.ballerup.dk/e-materialer");
+		//general.push_back("e-materialer");
         //general.insert( general.end(), concat.begin(), concat.end() );
         ofFbo fbo; // for composing
         ofDisableArbTex();

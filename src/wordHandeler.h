@@ -53,11 +53,22 @@ public:
             
             if(characters[MAX(i-1,0)].getNewChar||i==0){
                 
+                int from = characters[i].from;
                 int end = getSubString(next_string,i,charInString);
-                int next = characters[i].from+1;
-                next = next%map.size();
                 
-                characters[i].update(ofGetLastFrameTime(), characters[i].from, next, end, animationTime);
+                int dist_to_next;
+                if(from <= end) {
+                    dist_to_next = end - from;
+                }
+                else {
+                    dist_to_next = (map.size() - from) + end;
+                }
+               
+               // if(from > end)cout <<dist_to_next<<" jumping: " <<jumpDistance<<" mapsize "<<map.size()<<" from:"<<from<<" end: "<<end << endl;
+                int next = (characters[i].from+1)%map.size();
+                
+                
+                characters[i].update(ofGetLastFrameTime()*(0.2*dist_to_next+1), from, next, end, animationTime);
                 
                 charInString++;
                 if(weird)charInString++;
