@@ -87,6 +87,7 @@ void ofApp::setup(){
         emojis[ofSplitString(dir.getPath(i),slash)[1]].loadData(b, GL_RGBA, GL_UNSIGNED_BYTE);
        // cout << dir.getPath(i)<< endl;
     }
+	/*
     ofDirectory flags;
     flags.listDir("emojis"+slash+"flags");
     flags.allowExt(".png");
@@ -94,13 +95,14 @@ void ofApp::setup(){
     for(int i = 0; i<flags.size();i++){
         ofImage e;
         e.load(flags.getPath(i));
+		cout << flags.getPath(i) << endl;
         e.resize(charWidth, charWidth * e.getHeight()/e.getWidth());
         //cout << dir.getPath(i) << endl;
         ofBufferObject b = drawTexture(ofColor(255), charWidth, charHeight, "", e);
         emojis[ofSplitString(flags.getPath(i),slash)[2]].allocate(charWidth, charHeight, GL_RGBA);
         emojis[ofSplitString(flags.getPath(i),slash)[2]].loadData(b, GL_RGBA, GL_UNSIGNED_BYTE);
     }
-    
+    */
     ofImage arr;
     arr.load("otherImages/arrow.png");
     arr.resize(charWidth, charWidth * arr.getHeight()/arr.getWidth());
