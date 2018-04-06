@@ -267,7 +267,7 @@ void ofApp::update(){
     else readArduino();
     
     if(input>-1){
-        if (input-97 < MIN(desitnations.size(),NUM_DESTINATIONS))printBoardingPass(input-97);
+        if (input < MIN(desitnations.size(),NUM_DESTINATIONS))printBoardingPass(input);
         if (input == SHUFFLE_BUTTON) {
             for (int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS); i++) {
                 destination_indxes[i] += MIN(desitnations.size(),NUM_DESTINATIONS);
@@ -394,7 +394,7 @@ void ofApp::readArduino(){
     tempInput = fa;
     
     if(tempInput>-1 && tempInput!=0) {
-        input = tempInput-97;
+        input = tempInput-97; //starting from char 'a'
         cout <<"From Arduino "<< input << endl;
     }
 }
@@ -407,23 +407,30 @@ void ofApp::initialiseArdiono(){
     // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
     // arduino users check in arduino app....
     int baud = 9600;
-	if(deviceList.size()>0) {
-#ifdef __APPLE__
-    serial.setup(0, baud); //open the first device
-    cout << "on mac"<< endl;
-#else
-	serial.setup("COM3", baud); // windows example
-    cout << "on windows"<< endl;
-#endif
-    //serial.setup("COM4", baud); // windows example
-    //serial.setup("/dev/tty.usbserial-1421", baud); // mac osx example
-    //serial.setup("/dev/ttyUSB0", baud); //linux example
+//    if(deviceList.size()>0) {
+//#ifdef __APPLE__
+//    serial.setup(0, baud); //open the first device
+//    cout << "on mac"<< endl;
+//#else
+//    serial.setup("COM3", baud); // windows example
+//    cout << "on windows"<< endl;
+//#endif
+//    //serial.setup("COM4", baud); // windows example
+//    //serial.setup("/dev/tty.usbserial-1421", baud); // mac osx example
+//    //serial.setup("/dev/ttyUSB0", baud); //linux example
+//
+    
+    for(int i = 0; i<deviceList.size();i++) {
+        cout<<i<<": "<<deviceList[i].getDeviceName()<<endl;
+        isInitialized = serial.isInitialized();
+        if(!isInitialized)serial.setup(deviceList[i].getDeviceName(), baud);
+    }
     
     nTimesRead = 0;
     nBytesRead = 0;
     readTime = 0;
     memset(bytesReadString, 0, 4);
-	}
+	//}
 
     isInitialized = serial.isInitialized();
     if(isInitialized)cout << "arduino is on"<<endl;
