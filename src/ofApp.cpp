@@ -422,7 +422,7 @@ void ofApp::initialiseArdiono(){
 //    //serial.setup("/dev/ttyUSB0", baud); //linux example
 //
     
-    for(int i = 0; i<deviceList.size();i++) {
+    for(int i = deviceList.size()-1; i>0;i--) {
         cout<<i<<": "<<deviceList[i].getDeviceName()<<endl;
         isInitialized = serial.isInitialized();
         if(!isInitialized)serial.setup(deviceList[i].getDeviceName(), baud);
