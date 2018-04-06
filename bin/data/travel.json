@@ -1,488 +1,1440 @@
-[
-	{
+[{
 		"destination": "Rom",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Corriere della Sera", "source":"PressReader", "description": "Læs italienske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Computer Arts Collection", "source":"RB Digital", "description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i storbyen."},
-			{"title": "Engle og dæmoner af Dan Brown", "source":"eReolen lydbøger", "description": "Hør den mens du følger hovedpersonen rundt i Rom."},
-			{"title": "Cæsar af Conn Iggulden", "source":"eReolen e-bøger", "description": "Et must for alle historienørder."},
-			{"title": "Rome af iMinds", "source":"eReolen Global", "description": "En historisk rejseguide gennem Roms gader."},
-			{"title": "Lær italiensk", "source":"Mango Languages", "description": "Ciao amico mio! Få venner på italiensk med et online sprogkursus."},
-			{"title": "Det søde liv af Federico Fellini ", "source":"Filmstriben", "description": "En romantisk klassisk film, der udspiller sig i Rom."}			
+		"resources": [{
+				"title": "Corriere della Sera",
+				"source": "PressReader",
+				"description": "Læs italienske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Computer Arts Collection",
+				"source": "RB Digital",
+				"description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i storbyen."
+			},
+			{
+				"title": "Engle og dæmoner af Dan Brown",
+				"source": "eReolen lydbøger",
+				"description": "Hør den mens du følger hovedpersonen rundt i Rom."
+			},
+			{
+				"title": "Cæsar af Conn Iggulden",
+				"source": "eReolen e-bøger",
+				"description": "Et must for alle historienørder."
+			},
+			{
+				"title": "Rome af iMinds",
+				"source": "eReolen Global",
+				"description": "En historisk rejseguide gennem Roms gader."
+			},
+			{
+				"title": "Lær italiensk",
+				"source": "Mango Languages",
+				"description": "Ciao amico mio! Få venner på italiensk med et online sprogkursus."
+			},
+			{
+				"title": "Det søde liv af Federico Fellini ",
+				"source": "Filmstriben",
+				"description": "En romantisk klassisk film, der udspiller sig i Rom."
+			}
 		]
 	},
 	{
 		"destination": "Berlin",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Augsburger Allgemeine", "source":"PressReader", "description": "Læs tyske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Do It Yourself", "source":"RB Digital", "description": "Lad dig inspirere til nye gør-det-selv projekter efter ferien med dette blad."},
-			{"title": "Lettipark af Judith Hermann", "source":"eReolen lydbøger", "description": "Denne tyske forfatter skriver noveller der får dig til at tænke."},
-			{"title": "Elleve dage i Berlin af Håkan Nesser", "source":"eReolen e-bøger", "description": "En sjov bog om et anderledes Berlin."},
-			{"title": "Pocket Berlin", "source":"eReolen e-bøger", "description": "En overskuelig rejseguide til din tablet."},
-			{"title": " Lær tysk", "source":"Mango Languages", "description": "Bestil din mad på tysk. Lær hvordan med et online sprogkursus."},
-			{"title": "En kvinde i Berlin af Max Färberböck", "source":"Filmstriben", "description": " Film baseret på en anonym kvindes dagbog fra 1945, der beretter om kvindernes rædsler."}
+		"resources": [{
+				"title": "Augsburger Allgemeine",
+				"source": "PressReader",
+				"description": "Læs tyske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Do It Yourself",
+				"source": "RB Digital",
+				"description": "Lad dig inspirere til nye gør-det-selv projekter efter ferien med dette blad."
+			},
+			{
+				"title": "Lettipark af Judith Hermann",
+				"source": "eReolen lydbøger",
+				"description": "Denne tyske forfatter skriver noveller der får dig til at tænke."
+			},
+			{
+				"title": "Elleve dage i Berlin af Håkan Nesser",
+				"source": "eReolen e-bøger",
+				"description": "En sjov bog om et anderledes Berlin."
+			},
+			{
+				"title": "Pocket Berlin",
+				"source": "eReolen e-bøger",
+				"description": "En overskuelig rejseguide til din tablet."
+			},
+			{
+				"title": " Lær tysk",
+				"source": "Mango Languages",
+				"description": "Bestil din mad på tysk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "En kvinde i Berlin af Max Färberböck",
+				"source": "Filmstriben",
+				"description": " Film baseret på en anonym kvindes dagbog fra 1945, der beretter om kvindernes rædsler."
+			}
 		]
 	},
 	{
 		"destination": "Mallorca",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "La Vanguardia", "source":"PressReader", "description": "Læs spanske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Runner's World", "source":"RB Digital", "description": "Tag dette blad med på din aktive ferie."},
-			{"title": "Verdens smukkeste mand af Lena Ackebo", "source":"eReolen lydbøger", "description": "Hør den på stranden og forestil dig hovedpersonerne bade i nærheden."},
-			{"title": "På mestrenes asfalt af Niels Christian Jung", "source":"eReolen e-bøger", "description": "Følg cykelsportens cykelryttere rundt på de berømte ruter."},
-			{"title": "Mallorca Travel Guide af Lonely Planet", "source":"eReolen Global", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær spansk", "source":"Mango Languages", "description": "Como estas? Få styr på de spanske gloser inden ferien."},
-			{"title": "Pans labyrint af Guillermo del Toro", "source":"Filmstriben", "description": "Eventyr film om en ung piges prøvelser i Spanien under 2. verdenskrig."}
+		"resources": [{
+				"title": "La Vanguardia",
+				"source": "PressReader",
+				"description": "Læs spanske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Runner's World",
+				"source": "RB Digital",
+				"description": "Tag dette blad med på din aktive ferie."
+			},
+			{
+				"title": "Verdens smukkeste mand af Lena Ackebo",
+				"source": "eReolen lydbøger",
+				"description": "Hør den på stranden og forestil dig hovedpersonerne bade i nærheden."
+			},
+			{
+				"title": "På mestrenes asfalt af Niels Christian Jung",
+				"source": "eReolen e-bøger",
+				"description": "Følg cykelsportens cykelryttere rundt på de berømte ruter."
+			},
+			{
+				"title": "Mallorca Travel Guide af Lonely Planet",
+				"source": "eReolen Global",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær spansk",
+				"source": "Mango Languages",
+				"description": "Como estas? Få styr på de spanske gloser inden ferien."
+			},
+			{
+				"title": "Pans labyrint af Guillermo del Toro",
+				"source": "Filmstriben",
+				"description": "Eventyr film om en ung piges prøvelser i Spanien under 2. verdenskrig."
+			}
 		]
 	},
 	{
 		"destination": "Barcelona",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "La Vanguardia", "source":"PressReader", "description": "Læs spanske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske 	på ferien."},
-			{"title": "World Soccer", "source":"RB Digital", "description": "Hold dig opdateret på fodboldnyhederne i fodboldstorbyen Barcelona."},
-			{"title": "Jeg vil give dig verden af Chufo Llorens", "source":"eReolen lydbøger", "description": "Romanen skildrer på smuk vis Barcelona i 1000-tallet."},
-			{"title": "Barca: Verdens bedste fodboldhold af Graham Hunter", "source":"eReolen e-bøger", "description": "Læs om det berømte fodboldhold, inden du besøger stadion."},
-			{"title": "Barcelona af Vide verden", "source":"eReolen", "description": "En række personlige skildringer om seværdigheder og livet i Barcelona"},
-			{"title": "Lær spansk", "source":"Mango Languages", "description": "Como estas? Få styr på de spanske gloser inden ferien."},
-			{"title": "Vickey Christina Barcelona af Woody Allen", "source":"Filmstriben", "description": "Frisindede hyldest til kærligheden i alle dens afskygninger."}
+		"resources": [{
+				"title": "La Vanguardia",
+				"source": "PressReader",
+				"description": "Læs spanske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politikenm EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "World Soccer",
+				"source": "RB Digital",
+				"description": "Hold dig opdateret på fodboldnyhederne i fodboldstorbyen Barcelona."
+			},
+			{
+				"title": "Jeg vil give dig verden af Chufo Llorens",
+				"source": "eReolen lydbøger",
+				"description": "Romanen skildrer på smuk vis Barcelona i 1000-tallet."
+			},
+			{
+				"title": "Barca: Verdens bedste fodboldhold af Graham Hunter",
+				"source": "eReolen e-bøger",
+				"description": "Læs om det berømte fodboldhold, inden du besøger stadion."
+			},
+			{
+				"title": "Barcelona af Vide verden",
+				"source": "eReolen",
+				"description": "En række personlige skildringer om seværdigheder og livet i Barcelona"
+			},
+			{
+				"title": "Lær spansk",
+				"source": "Mango Languages",
+				"description": "Como estas? Få styr på de spanske gloser inden ferien."
+			},
+			{
+				"title": "Vickey Christina Barcelona af Woody Allen",
+				"source": "Filmstriben",
+				"description": "Frisindede hyldest til kærligheden i alle dens afskygninger."
+			}
 		]
 	},
 	{
 		"destination": "Paris",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Le Parisien", "source":"PressReader", "description": "Læs franske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Vogue Paris", "source":"RB Digital", "description": "Et klassisk modeblad til dig der skal spankulere på Champ-Elysee."},
-			{"title": "Klokkeren fra Notre Dame af Victor Hugo", "source":"eReolen lydbøger", "description": "Nyd denne klassiker i byernes by."},
-			{"title": "Irene af Pierre LeMaitre", "source":"eReolen e-bøger", "description": "En original krimi fra en parisisk forfatter."},
-			{"title": "Paris: En storbyguide til eventyrlystne forældre af Roald Bergmann", "source":"eReolen e-bøger", "description": "Guide til 44 fantastiske steder for børn i Paris."},
-			{"title": "Lær fransk", "source":"Mango Languages", "description": "Lær fransk og snak kærlighedens sprog i Paris."},
-			{"title": "Anonyme romantikere af Jean-Pierre Améris", "source":"Filmstriben", "description": "To mennesker mødes mellem svedeture, klamme hænder og nervøs hikke i denne franske film."}
+		"resources": [{
+				"title": "Le Parisien",
+				"source": "PressReader",
+				"description": "Læs franske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Vogue Paris",
+				"source": "RB Digital",
+				"description": "Et klassisk modeblad til dig der skal spankulere på Champ-Elysee."
+			},
+			{
+				"title": "Klokkeren fra Notre Dame af Victor Hugo",
+				"source": "eReolen lydbøger",
+				"description": "Nyd denne klassiker i byernes by."
+			},
+			{
+				"title": "Irene af Pierre LeMaitre",
+				"source": "eReolen e-bøger",
+				"description": "En original krimi fra en parisisk forfatter."
+			},
+			{
+				"title": "Paris: En storbyguide til eventyrlystne forældre af Roald Bergmann",
+				"source": "eReolen e-bøger",
+				"description": "Guide til 44 fantastiske steder for børn i Paris."
+			},
+			{
+				"title": "Lær fransk",
+				"source": "Mango Languages",
+				"description": "Lær fransk og snak kærlighedens sprog i Paris."
+			},
+			{
+				"title": "Anonyme romantikere af Jean-Pierre Améris",
+				"source": "Filmstriben",
+				"description": "To mennesker mødes mellem svedeture, klamme hænder og nervøs hikke i denne franske film."
+			}
 		]
 	},
 	{
 		"destination": "Nice",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Le Figaro", "source":"PressReader", "description": "Læs franske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "The Knitter", "source":"RB Digital", "description": "Husk strikkepindende til de lyse aftener. Dette blad giver dig inspiration til nye opskrifter."},
-			{"title": "En lille lejlighed i Nice af Thorstein Thomsen", "source":"eReolen lydbøger", "description": "Små fortællinger fra Nice, hvor et dansk par køber lejlighed."},
-			{"title": "Lige nu af Aarhus 2017 projekt", "source":"eReolen GO", "description": "Har du store børn med på rejsen? Lad dem læse andre unges beretninger om at rejse."},
-			{"title": "Explore Nice & the French Riviera af Insight Guides", "source":"eReolen Global", "description": "En klassisk rejseguide med et kulturelt twist."},
-			{"title": "Lær fransk", "source":"Mango Languages", "description": "Bestil din vin på fransk. Lær hvordan med et online sprogkursus."},
-			{"title": "Amour af Michael Haneke", "source":"Filmstriben", "description": "En rørende film om at holde sammen når alderdommen tærer på værdigheden."}
+		"resources": [{
+				"title": "Le Figaro",
+				"source": "PressReader",
+				"description": "Læs franske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "The Knitter",
+				"source": "RB Digital",
+				"description": "Husk strikkepindende til de lyse aftener. Dette blad giver dig inspiration til nye opskrifter."
+			},
+			{
+				"title": "En lille lejlighed i Nice af Thorstein Thomsen",
+				"source": "eReolen lydbøger",
+				"description": "Små fortællinger fra Nice, hvor et dansk par køber lejlighed."
+			},
+			{
+				"title": "Lige nu af Aarhus 2017 projekt",
+				"source": "eReolen GO",
+				"description": "Har du store børn med på rejsen? Lad dem læse andre unges beretninger om at rejse."
+			},
+			{
+				"title": "Explore Nice & the French Riviera af Insight Guides",
+				"source": "eReolen Global",
+				"description": "En klassisk rejseguide med et kulturelt twist."
+			},
+			{
+				"title": "Lær fransk",
+				"source": "Mango Languages",
+				"description": "Bestil din vin på fransk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "Amour af Michael Haneke",
+				"source": "Filmstriben",
+				"description": "En rørende film om at holde sammen når alderdommen tærer på værdigheden."
+			}
 		]
 	},
 	{
 		"destination": "Stockholm",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Svenska Dagbladet", "source":"PressReader", "description": "Læs svenske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Popular Science", "source":"RB Digital", "description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i storbyen."},
-			{"title": "Britt-Marie var her af Fredrik Backman", "source":"eReolen lydbøger", "description": "Den svenske forfatter skriver så tårene triller af grin."},
-			{"title": "Døden & co af Lukas Moodysson", "source":"eReolen e-bøger", "description": "Den svenske forfatter skriver med samme barske indlevelse som han laver film."},
-			{"title": "Stockholm af Vide Verden", "source":"eReolen e-bøger", "description": "En rejseguide med personlige skildringer om seværdigheder og livet i Stockholm"},
-			{"title": "Lær svensk", "source":"Mango Languages", "description": "Grattis! Få styr på de svenske gloser inden ferien."},
-			{"title": "En due sad på en gren og funderede over tilværelsen af Roy Andersson", "source":"Filmstriben", "description": "Smuk og hudløs film af den svenske mesterinstruktør."}
+		"resources": [{
+				"title": "Svenska Dagbladet",
+				"source": "PressReader",
+				"description": "Læs svenske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Popular Science",
+				"source": "RB Digital",
+				"description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i storbyen."
+			},
+			{
+				"title": "Britt-Marie var her af Fredrik Backman",
+				"source": "eReolen lydbøger",
+				"description": "Den svenske forfatter skriver så tårene triller af grin."
+			},
+			{
+				"title": "Døden & co af Lukas Moodysson",
+				"source": "eReolen e-bøger",
+				"description": "Den svenske forfatter skriver med samme barske indlevelse som han laver film."
+			},
+			{
+				"title": "Stockholm af Vide Verden",
+				"source": "eReolen e-bøger",
+				"description": "En rejseguide med personlige skildringer om seværdigheder og livet i Stockholm"
+			},
+			{
+				"title": "Lær svensk",
+				"source": "Mango Languages",
+				"description": "Grattis! Få styr på de svenske gloser inden ferien."
+			},
+			{
+				"title": "En due sad på en gren og funderede over tilværelsen af Roy Andersson",
+				"source": "Filmstriben",
+				"description": "Smuk og hudløs film af den svenske mesterinstruktør."
+			}
 		]
 	},
 	{
 		"destination": "Kreta",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Kathimerini", "source":"PressReader", "description": "Læs græske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "HELLO! magazine", "source":"RB Digital", "description": "Få styr på sladderen mens du driver den på stranden."},
-			{"title": "Den sidste dans og andre historier af Victoria Hislop", "source":"eReolen lydbøger", "description": "10 noveller, der tager læseren med rundt i Grækenland og indfanger den græske folkestemning."},
-			{"title": "Doktor Proktors pruttepulver af Jo Nesbø", "source":"eReolen GO", "description": "Skal der ro på de mindste under rejsen, så download denne sjove e-bog."},
-			{"title": "Crete Travel Guide af Lonely Planet", "source":"eReolen Global", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær græsk", "source":"Mango Languages", "description": "Bestil din mad på græsk. Lær hvordan med et online sprogkursus."}
+		"resources": [{
+				"title": "Kathimerini",
+				"source": "PressReader",
+				"description": "Læs græske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "HELLO! magazine",
+				"source": "RB Digital",
+				"description": "Få styr på sladderen mens du driver den på stranden."
+			},
+			{
+				"title": "Den sidste dans og andre historier af Victoria Hislop",
+				"source": "eReolen lydbøger",
+				"description": "10 noveller, der tager læseren med rundt i Grækenland og indfanger den græske folkestemning."
+			},
+			{
+				"title": "Doktor Proktors pruttepulver af Jo Nesbø",
+				"source": "eReolen GO",
+				"description": "Skal der ro på de mindste under rejsen, så download denne sjove e-bog."
+			},
+			{
+				"title": "Crete Travel Guide af Lonely Planet",
+				"source": "eReolen Global",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær græsk",
+				"source": "Mango Languages",
+				"description": "Bestil din mad på græsk. Lær hvordan med et online sprogkursus."
+			}
 		]
 	},
 	{
 		"destination": "London",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "The London Free Press", "source":"PressReader", "description": "Læs engelske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "BBC TopGear Magazine", "source":"RB Digital", "description": "De engelske bilnørder har deres helt eget blad, som du kan læse på din tablet."},
-			{"title": "Fagre nye verden af Aldous Huxley", "source":"eReolen lydbøger", "description": "Lad dig rive med af den engelske forfatters dystre fremtidsskildringer."},
-			{"title": "Downtown af Torben Weirup", "source":"eReolen e-bøger", "description": "Følg forfatteren rundt i London med den rejsendes nysgerrige sind."},
-			{"title": "Oplev London af Lonely Planet", "source":"eReolen e-bøger", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær engelsk", "source":"Mango Languages", "description": "How do you do? Lær engelsk på din tablet."},
-			{"title": "Dame konge es spion af Tomas Alfredson", "source":"Filmstriben", "description": "Hæsblæsende krimi film om MI6 baseret på roman af John Le Carré"}
+		"resources": [{
+				"title": "The London Free Press",
+				"source": "PressReader",
+				"description": "Læs engelske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "BBC TopGear Magazine",
+				"source": "RB Digital",
+				"description": "De engelske bilnørder har deres helt eget blad, som du kan læse på din tablet."
+			},
+			{
+				"title": "Fagre nye verden af Aldous Huxley",
+				"source": "eReolen lydbøger",
+				"description": "Lad dig rive med af den engelske forfatters dystre fremtidsskildringer."
+			},
+			{
+				"title": "Downtown af Torben Weirup",
+				"source": "eReolen e-bøger",
+				"description": "Følg forfatteren rundt i London med den rejsendes nysgerrige sind."
+			},
+			{
+				"title": "Oplev London af Lonely Planet",
+				"source": "eReolen e-bøger",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær engelsk",
+				"source": "Mango Languages",
+				"description": "How do you do? Lær engelsk på din tablet."
+			},
+			{
+				"title": "Dame konge es spion af Tomas Alfredson",
+				"source": "Filmstriben",
+				"description": "Hæsblæsende krimi film om MI6 baseret på roman af John Le Carré"
+			}
 		]
 	},
 	{
 		"destination": "Edinburgh",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "The London Free Press", "source":"PressReader", "description": "Læs engelske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Alt om DATA", "source":"RB Digital", "description": "Med dette blad føles ventetiden i lufthavnen som sekunder."},
-			{"title": "En god gerning af Kate Atkinson", "source":"eReolen lydbøger", "description": "Et brutalt overfald i en bilkø i Edinburgh bliver startet på en grum mordgåde."},
-			{"title": "Vilde køtere af Ian Rankin", "source":"eReolen e-bøger", "description": "Følg forfatteren rundt i London med den rejsendes nysgerrige sind."},
-			{"title": "Scotland af Insight Guides", "source":"eReolen Global", "description": "En klassisk rejseguide med et kulturelt twist."},
-			{"title": "Lær engelsk", "source":"Mango Languages", "description": "How do you do? Lær engelsk på din tablet."},
-			{"title": "Young Adam af David Mackenzie", "source":"Filmstriben", "description": "Prisbelønnet skotsk krimi om rodløse eksistenser i Edinburgh."}
+		"resources": [{
+				"title": "The London Free Press",
+				"source": "PressReader",
+				"description": "Læs engelske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Alt om DATA",
+				"source": "RB Digital",
+				"description": "Med dette blad føles ventetiden i lufthavnen som sekunder."
+			},
+			{
+				"title": "En god gerning af Kate Atkinson",
+				"source": "eReolen lydbøger",
+				"description": "Et brutalt overfald i en bilkø i Edinburgh bliver startet på en grum mordgåde."
+			},
+			{
+				"title": "Vilde køtere af Ian Rankin",
+				"source": "eReolen e-bøger",
+				"description": "Følg forfatteren rundt i London med den rejsendes nysgerrige sind."
+			},
+			{
+				"title": "Scotland af Insight Guides",
+				"source": "eReolen Global",
+				"description": "En klassisk rejseguide med et kulturelt twist."
+			},
+			{
+				"title": "Lær engelsk",
+				"source": "Mango Languages",
+				"description": "How do you do? Lær engelsk på din tablet."
+			},
+			{
+				"title": "Young Adam af David Mackenzie",
+				"source": "Filmstriben",
+				"description": "Prisbelønnet skotsk krimi om rodløse eksistenser i Edinburgh."
+			}
 		]
 	},
 	{
 		"destination": "Dublin",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Irish Independent", "source":"PressReader", "description": "Læs irske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Conde Nast Traveler Magazine", "source":"RB Digital", "description": "Planlæg din næste rejse allerede i flyet hjem med dette lækre rejseblad."},
-			{"title": "En chance til af Sinéad Moriarty", "source":"eReolen lydbøger", "description": "En hjertevarm roman fra en Dublin-indfødt forfatter."},
-			{"title": "Portræt af kunstneren som ung mand af James Joyce", "source":"eReolen e-bøger", "description": "Selvbiografisk roman af den irske klassiker forfatter."},
-			{"title": "Pocket Dublin", "source":"eReolen e-bøger", "description": "En overskuelig rejseguide til din tablet."},
-			{"title": "Lær engelsk", "source":"Mango Languages", "description": "How do you do? Lær engelsk på din tablet."}
+		"resources": [{
+				"title": "Irish Independent",
+				"source": "PressReader",
+				"description": "Læs irske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Conde Nast Traveler Magazine",
+				"source": "RB Digital",
+				"description": "Planlæg din næste rejse allerede i flyet hjem med dette lækre rejseblad."
+			},
+			{
+				"title": "En chance til af Sinéad Moriarty",
+				"source": "eReolen lydbøger",
+				"description": "En hjertevarm roman fra en Dublin-indfødt forfatter."
+			},
+			{
+				"title": "Portræt af kunstneren som ung mand af James Joyce",
+				"source": "eReolen e-bøger",
+				"description": "Selvbiografisk roman af den irske klassiker forfatter."
+			},
+			{
+				"title": "Pocket Dublin",
+				"source": "eReolen e-bøger",
+				"description": "En overskuelig rejseguide til din tablet."
+			},
+			{
+				"title": "Lær engelsk",
+				"source": "Mango Languages",
+				"description": "How do you do? Lær engelsk på din tablet."
+			}
 		]
 	},
 	{
 		"destination": "Kroatien",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "24sata", "source":"PressReader", "description": "Læs kroatiske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "The Economist", "source":"RB Digital", "description": "Bliv klogere på verdens internationale nyheder med dette blad, mens du driver den på stranden."},
-			{"title": "Som om jeg ikke er der af Slavenka Drakulić", "source":"eReolen lydbøger", "description": "Barsk roman om de etniske udryddelser i begyndelsen af 1990erne."},
-			{"title": "Villads fra Valby har vikar af Anne Sofie Hammer", "source":"eReolen GO", "description": "Har du børn med på rejsen? Let stemningen i flyet med sjove e-bøger."},
-			{"title": "The Rough Guide to Croatia af Rough Guides", "source":"eReolen Global", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær kroatisk", "source":"source1", "Mango Languages": "Gdje je plaza? Find stranden på kroatisk med et online sprogkursus."},
-			{"title": "Projekcije af Zrinko Ogresta", "source":"Verdensbiblioteket", "description": "Kroatisk film om et hold psykologistuderende, hvis gruppemøde udvikler sig på en uventet måde."}
+		"resources": [{
+				"title": "24sata",
+				"source": "PressReader",
+				"description": "Læs kroatiske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "The Economist",
+				"source": "RB Digital",
+				"description": "Bliv klogere på verdens internationale nyheder med dette blad, mens du driver den på stranden."
+			},
+			{
+				"title": "Som om jeg ikke er der af Slavenka Drakulić",
+				"source": "eReolen lydbøger",
+				"description": "Barsk roman om de etniske udryddelser i begyndelsen af 1990erne."
+			},
+			{
+				"title": "Villads fra Valby har vikar af Anne Sofie Hammer",
+				"source": "eReolen GO",
+				"description": "Har du børn med på rejsen? Let stemningen i flyet med sjove e-bøger."
+			},
+			{
+				"title": "The Rough Guide to Croatia af Rough Guides",
+				"source": "eReolen Global",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær kroatisk",
+				"source": "source1",
+				"Mango Languages": "Gdje je plaza? Find stranden på kroatisk med et online sprogkursus."
+			},
+			{
+				"title": "Projekcije af Zrinko Ogresta",
+				"source": "Verdensbiblioteket",
+				"description": "Kroatisk film om et hold psykologistuderende, hvis gruppemøde udvikler sig på en uventet måde."
+			}
 		]
 	},
 	{
 		"destination": "Norge",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Aftenposten", "source":"PressReader", "description": "Læs norske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "SKI Magazine", "source":"RB Digital", "description": "Nyd dette blad med en varm kop kakao efter en lang dag på ski."},
-			{"title": "Ud og stjæle heste af Per Petterson", "source":"eReolen lydbøger", "description": "Anmelderost skæbnefortælling fra udkanten af Norge."},
-			{"title": "Frognerfisser af Alexia Bohwim", "source":"eReolen e-bøger", "description": "Velskrevet roman om misbrug og klasseskel i et moderne Oslo."},
-			{"title": "Norway af Insight Guides", "source":"eReolen Global", "description": "En klassisk rejseguide med et kulturelt twist."},
-			{"title": "Lær norsk", "source":"Mango Languages", "description": "God kveld! Få styr på de norske gloser inden ferien."},
-			{"title": "Sygt lykkelig af Anne Sewitsky", "source":"Filmstriben", "description": "Filmen er en sort komedie om utroskab langt ude på landet i Norge."}
+		"resources": [{
+				"title": "Aftenposten",
+				"source": "PressReader",
+				"description": "Læs norske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "SKI Magazine",
+				"source": "RB Digital",
+				"description": "Nyd dette blad med en varm kop kakao efter en lang dag på ski."
+			},
+			{
+				"title": "Ud og stjæle heste af Per Petterson",
+				"source": "eReolen lydbøger",
+				"description": "Anmelderost skæbnefortælling fra udkanten af Norge."
+			},
+			{
+				"title": "Frognerfisser af Alexia Bohwim",
+				"source": "eReolen e-bøger",
+				"description": "Velskrevet roman om misbrug og klasseskel i et moderne Oslo."
+			},
+			{
+				"title": "Norway af Insight Guides",
+				"source": "eReolen Global",
+				"description": "En klassisk rejseguide med et kulturelt twist."
+			},
+			{
+				"title": "Lær norsk",
+				"source": "Mango Languages",
+				"description": "God kveld! Få styr på de norske gloser inden ferien."
+			},
+			{
+				"title": "Sygt lykkelig af Anne Sewitsky",
+				"source": "Filmstriben",
+				"description": "Filmen er en sort komedie om utroskab langt ude på landet i Norge."
+			}
 		]
 	},
 	{
 		"destination": "Tyrkiet",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Hürriyet", "source":"PressReader", "description": "Læs tyrkiske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Wired", "source":"RB Digital", "description": "Bliv klogere på vores politiske og teknologiske verden med dette blad, mens du driver den på stranden."},
-			{"title": "Tæppehandlerens død af Karin Wahlberg", "source":"eReolen lydbøger", "description": "Et mord i Istanbul skaber ravage i hovedpersonens hjemby."},
-			{"title": "Istanbul af Orhan Pamuk", "source":"eReolen e-bøger", "description": "En smuk mosaik af personlige erindringer, historiske fakta og anekdoter om Istanbul."},
-			{"title": "Turkey af Lonely Planet", "source":"eReolen e-bøger", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær tyrkisk", "source":"Mango Languages", "description": "Bestil din mad på tyrkisk. Lær hvordan med et online sprogkursus."},
-			{"title": " Rødt hjerte af Halkawt Mustafa", "source":"Verdensbiblioteket", "description": "Kurdisk film om to teenagere, der er forelsket i hinanden. Men Sirin's far har lovet hende til en anden."}
+		"resources": [{
+				"title": "Hürriyet",
+				"source": "PressReader",
+				"description": "Læs tyrkiske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Wired",
+				"source": "RB Digital",
+				"description": "Bliv klogere på vores politiske og teknologiske verden med dette blad, mens du driver den på stranden."
+			},
+			{
+				"title": "Tæppehandlerens død af Karin Wahlberg",
+				"source": "eReolen lydbøger",
+				"description": "Et mord i Istanbul skaber ravage i hovedpersonens hjemby."
+			},
+			{
+				"title": "Istanbul af Orhan Pamuk",
+				"source": "eReolen e-bøger",
+				"description": "En smuk mosaik af personlige erindringer, historiske fakta og anekdoter om Istanbul."
+			},
+			{
+				"title": "Turkey af Lonely Planet",
+				"source": "eReolen e-bøger",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær tyrkisk",
+				"source": "Mango Languages",
+				"description": "Bestil din mad på tyrkisk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": " Rødt hjerte af Halkawt Mustafa",
+				"source": "Verdensbiblioteket",
+				"description": "Kurdisk film om to teenagere, der er forelsket i hinanden. Men Sirin's far har lovet hende til en anden."
+			}
 		]
 	},
 	{
 		"destination": "Østrig",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Heute", "source":"PressReader", "description": "Læs østrigske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Skiing", "source":"RB Digital", "description": "Nyd dette blad med en varm kop kakao efter en lang dag på ski."},
-			{"title": "Skaknovelle af Stefan Zweig", "source":"eReolen lydbøger", "description": "En østrigsk flygtning besejrer verdensmesteren i skak, fordi hans fængselstid har opøvet hans kombinationsevne."},
-			{"title": "Drømmenovelle af Arthur Schnitzler", "source":"eReolen e-bøger", "description": "Alle bør læse denne smukke østrigske novellesamling."},
-			{"title": "Wien af Vide Verden", "source":"eReolen e-bøger", "description": " En rejseguide med personlige skildringer om seværdigheder og livet i Wien."},
-			{"title": "Lær tysk", "source":"Mango Languages", "description": "Du kommer langt med lidt tysk kundskaber i Østrig. Tag et online sprogkursus.	"}
+		"resources": [{
+				"title": "Heute",
+				"source": "PressReader",
+				"description": "Læs østrigske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Skiing",
+				"source": "RB Digital",
+				"description": "Nyd dette blad med en varm kop kakao efter en lang dag på ski."
+			},
+			{
+				"title": "Skaknovelle af Stefan Zweig",
+				"source": "eReolen lydbøger",
+				"description": "En østrigsk flygtning besejrer verdensmesteren i skak, fordi hans fængselstid har opøvet hans kombinationsevne."
+			},
+			{
+				"title": "Drømmenovelle af Arthur Schnitzler",
+				"source": "eReolen e-bøger",
+				"description": "Alle bør læse denne smukke østrigske novellesamling."
+			},
+			{
+				"title": "Wien af Vide Verden",
+				"source": "eReolen e-bøger",
+				"description": " En rejseguide med personlige skildringer om seværdigheder og livet i Wien."
+			},
+			{
+				"title": "Lær tysk",
+				"source": "Mango Languages",
+				"description": "Du kommer langt med lidt tysk kundskaber i Østrig. Tag et online sprogkursus."
+			}
 		]
 	},
 	{
 		"destination": "New York",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "New York Post", "source":"PressReader", "description": "Læs amerikanske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "The New Yorker", "source":"RB Digital", "description": "'The Big Apple' har aldrig føltes tættere på, end med dette blad."},
-			{"title": "Brooklyn dårskab af Paul Auster", "source":"eReolen lydbøger", "description": "Følg New Yorker forfatteren rundt i byen med denne lydbog i ørene."},
-			{"title": "New York af Edward Rutherfurd", "source":"eReolen e-bøger", "description": "Roman om New Yorks historie fra byens fødsel og frem til i dag."},
-			{"title": "Oplev New York af Lonely Planet", "source":"eReolen e-bøger", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær engelsk", "source":"Mango Languages", "description": "How do you do? Lær engelsk på din tablet."},
-			{"title": "Carol af Todd Haynes", "source":"Filmstriben", "description": "Overklassefruen Carol er fanget i et mislykket ægteskab i 1950’ernes New York. En gnist tændes et uventet sted."}
+		"resources": [{
+				"title": "New York Post",
+				"source": "PressReader",
+				"description": "Læs amerikanske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "The New Yorker",
+				"source": "RB Digital",
+				"description": "'The Big Apple' har aldrig føltes tættere på, end med dette blad."
+			},
+			{
+				"title": "Brooklyn dårskab af Paul Auster",
+				"source": "eReolen lydbøger",
+				"description": "Følg New Yorker forfatteren rundt i byen med denne lydbog i ørene."
+			},
+			{
+				"title": "New York af Edward Rutherfurd",
+				"source": "eReolen e-bøger",
+				"description": "Roman om New Yorks historie fra byens fødsel og frem til i dag."
+			},
+			{
+				"title": "Oplev New York af Lonely Planet",
+				"source": "eReolen e-bøger",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær engelsk",
+				"source": "Mango Languages",
+				"description": "How do you do? Lær engelsk på din tablet."
+			},
+			{
+				"title": "Carol af Todd Haynes",
+				"source": "Filmstriben",
+				"description": "Overklassefruen Carol er fanget i et mislykket ægteskab i 1950’ernes New York. En gnist tændes et uventet sted."
+			}
 		]
 	},
 	{
 		"destination": "Miami",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "South Florida Times", "source":"PressReader", "description": "Læs amerikanske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Vegetarian Today", "source":"RB Digital", "description": "Tyvstart på det vegetariske Miami mind-set inden du lander med dette blad."},
-			{"title": "Mugge & vejfesten af Mikael Wulff", "source":"eReolen GO", "description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."},
-			{"title": "Razor Girl af Carl Hiaasen", "source":"eReolen Global", "description": "Denne hæsblæsende og ironiske thriller tager dig gennem Miamis gader."},
-			{"title": "Oplev Florida af Lonely Planet", "source":"eReolen e-bøger", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær engelsk", "source":"Mango Languages", "description": "How do you do? Lær engelsk på din tablet."},
-			{"title": "I love you Phillip Morris af John Requa", "source":"Filmstriben", "description": "Da Steve Russell flytter til Miami for at starte et nyt liv som bøsse, koster det et gigantisk overtræk og en tur i spjældet."}
+		"resources": [{
+				"title": "South Florida Times",
+				"source": "PressReader",
+				"description": "Læs amerikanske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Vegetarian Today",
+				"source": "RB Digital",
+				"description": "Tyvstart på det vegetariske Miami mind-set inden du lander med dette blad."
+			},
+			{
+				"title": "Mugge & vejfesten af Mikael Wulff",
+				"source": "eReolen GO",
+				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."
+			},
+			{
+				"title": "Razor Girl af Carl Hiaasen",
+				"source": "eReolen Global",
+				"description": "Denne hæsblæsende og ironiske thriller tager dig gennem Miamis gader."
+			},
+			{
+				"title": "Oplev Florida af Lonely Planet",
+				"source": "eReolen e-bøger",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær engelsk",
+				"source": "Mango Languages",
+				"description": "How do you do? Lær engelsk på din tablet."
+			},
+			{
+				"title": "I love you Phillip Morris af John Requa",
+				"source": "Filmstriben",
+				"description": "Da Steve Russell flytter til Miami for at starte et nyt liv som bøsse, koster det et gigantisk overtræk og en tur i spjældet."
+			}
 		]
 	},
 	{
 		"destination": "San Francisco",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "San Francisco Chronicle", "source":"PressReader", "description": "Læs amerikanske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Rolling Stone Magazine", "source":"RB Digital", "description": "Dybdegående artikler om amerikansk musik til flyveturen."},
-			{"title": "En vampyrs bekendelser af Anne Rice", "source":"eReolen lydbøger", "description": "Denne klassiker tager sit nervepirrende udspring i et lille værelse i San Francisco."},
-			{"title": "The Outside Lands af Hannah Kohler", "source":"eReolen Global", "description": "En tankevækkende roman om livet i San Francisco i en tid med oprør og Vietnamkrigen."},
-			{"title": "San Francisco af Insight Guides", "source":"eReolen Global", "description": "En klassisk rejseguide med et kulturelt twist."},
-			{"title": "Lær engelsk", "source":"Mango Languages", "description": "How do you do? Lær engelsk på din tablet."}
+		"resources": [{
+				"title": "San Francisco Chronicle",
+				"source": "PressReader",
+				"description": "Læs amerikanske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Rolling Stone Magazine",
+				"source": "RB Digital",
+				"description": "Dybdegående artikler om amerikansk musik til flyveturen."
+			},
+			{
+				"title": "En vampyrs bekendelser af Anne Rice",
+				"source": "eReolen lydbøger",
+				"description": "Denne klassiker tager sit nervepirrende udspring i et lille værelse i San Francisco."
+			},
+			{
+				"title": "The Outside Lands af Hannah Kohler",
+				"source": "eReolen Global",
+				"description": "En tankevækkende roman om livet i San Francisco i en tid med oprør og Vietnamkrigen."
+			},
+			{
+				"title": "San Francisco af Insight Guides",
+				"source": "eReolen Global",
+				"description": "En klassisk rejseguide med et kulturelt twist."
+			},
+			{
+				"title": "Lær engelsk",
+				"source": "Mango Languages",
+				"description": "How do you do? Lær engelsk på din tablet."
+			}
 		]
 	},
 	{
 		"destination": "Thailand",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Bangkok Post", "source":"PressReader", "description": "Læs thailandske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Backpacker", "source":"RB Digital", "description": "Alt hvad du har brug for i din rygsæk er din tablet og dette blad."},
-			{"title": "Mugge & vejfesten af Mikael Wulff", "source":"eReolen GO", "description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."},
-			{"title": "Smag på Thailand af Sofie Lisby", "source":"eReolen e-bøger", "description": "En anderledes rejseguide med fokus på Thailands restauranter og gadekøkkener."},
-			{"title": "Oplev Thailand af Lonely Planet", "source":"eReolen e-bøger", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær thailandsk", "source":"Mango Languages", "description": "Bestil din drink på thailandsk. Lær hvordan med et online sprogkursus."},
-			{"title": "Only god forgives af Nicolas Winding Refn", "source":"Filmstriben", "description": "Krimifilm om Thailandske narkobander."}
+		"resources": [{
+				"title": "Bangkok Post",
+				"source": "PressReader",
+				"description": "Læs thailandske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Backpacker",
+				"source": "RB Digital",
+				"description": "Alt hvad du har brug for i din rygsæk er din tablet og dette blad."
+			},
+			{
+				"title": "Mugge & vejfesten af Mikael Wulff",
+				"source": "eReolen GO",
+				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."
+			},
+			{
+				"title": "Smag på Thailand af Sofie Lisby",
+				"source": "eReolen e-bøger",
+				"description": "En anderledes rejseguide med fokus på Thailands restauranter og gadekøkkener."
+			},
+			{
+				"title": "Oplev Thailand af Lonely Planet",
+				"source": "eReolen e-bøger",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær thailandsk",
+				"source": "Mango Languages",
+				"description": "Bestil din drink på thailandsk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "Only god forgives af Nicolas Winding Refn",
+				"source": "Filmstriben",
+				"description": "Krimifilm om Thailandske narkobander."
+			}
 		]
 	},
 	{
 		"destination": "Australien",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "The Guardian Australia", "source":"PressReader", "description": "Læs austalske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Sport Diver", "source":"RB Digital", "description": "Dette blad er for dig, der vil snorkle eller dykke i Australiens smukke koralrev."},
-			{"title": "The Bee Hut af Dorothy Porter", "source":"eReolen Global", "description": "Læs australske Porters digte på originalsproget.""},
-			{"title": "Frode og alle de andre rødder af Ole Lund Kirkegaard", "source":"eReolen GO", "description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove e-bøger."},
-			{"title": "Australia Pocket Guide af Insight Guides", "source":"eReolen Global", "description": "En klassisk rejseguide med et kulturelt twist."},
-			{"title": "Lær engelsk", "source":"Mango Languages", "description": "How do you do? Lær engelsk på din tablet."},
-			{"title": "Candy af Neil Armfield", "source":"Filmstriben", "description": "Australsk drama om to unge kunstnere der lever i en rus af kærlighed og stofmisbrug."}
+		"resources": [{
+				"title": "The Guardian Australia",
+				"source": "PressReader",
+				"description": "Læs austalske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Sport Diver",
+				"source": "RB Digital",
+				"description": "Dette blad er for dig, der vil snorkle eller dykke i Australiens smukke koralrev."
+			},
+			{
+				"title": "The Bee Hut af Dorothy Porter",
+				"source": "eReolen Global",
+				"description": "Læs australske Porters digte på originalsproget."
+			}, {
+				"title": "Frode og alle de andre rødder af Ole Lund Kirkegaard",
+				"source": "eReolen GO",
+				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove e-bøger."
+			},
+			{
+				"title": "Australia Pocket Guide af Insight Guides",
+				"source": "eReolen Global",
+				"description": "En klassisk rejseguide med et kulturelt twist."
+			},
+			{
+				"title": "Lær engelsk",
+				"source": "Mango Languages",
+				"description": "How do you do? Lær engelsk på din tablet."
+			},
+			{
+				"title": "Candy af Neil Armfield",
+				"source": "Filmstriben",
+				"description": "Australsk drama om to unge kunstnere der lever i en rus af kærlighed og stofmisbrug."
+			}
 		]
 	},
 	{
 		"destination": "København",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Architectural Digest", "source":"RB Digital", "description": "Læs op på arkitekturens nyheder inden din hovedstadstur."},
-			{"title": "Dan Turell's København af Peder Bundgaard", "source":"eReolen lydbøger", "description": "Det bliver næsten ikke mere Københavnsk end denne mentale byvandring med Turell."},
-			{"title": "Sus af Jonas T. Bengtsson", "source":"eReolen e-bøger", "description": "En barsk og velskrevet roman fra Københavns Nordvestkvarter."},
-			{"title": "The Year of Living Danishly af Helen Russell", "source":"eReolen Global", "description": "Den engelske forfatter giver et sjovt blik på den danske mentalitet."},
-			{"title": "Pocket København", "source":"eReolen e-bøger", "description": "En overskuelig rejseguide til din tablet."},
-			{"title": "Lær dansk", "source":"Mango Languages", "description": "Har du brug for at træne dit danske? Tag et online sprogkursus."},
-			{"title": "Baby af Linda Wendel", "source":"Filmstriben", "description": "'Baby' er en filmatisering af Kirsten Thorups prisbelønnede debutroman. Rodløse storbymennesker forsøger at forstå kærligheden."}
+		"resources": [{
+				"title": "Architectural Digest",
+				"source": "RB Digital",
+				"description": "Læs op på arkitekturens nyheder inden din hovedstadstur."
+			},
+			{
+				"title": "Dan Turell's København af Peder Bundgaard",
+				"source": "eReolen lydbøger",
+				"description": "Det bliver næsten ikke mere Københavnsk end denne mentale byvandring med Turell."
+			},
+			{
+				"title": "Sus af Jonas T. Bengtsson",
+				"source": "eReolen e-bøger",
+				"description": "En barsk og velskrevet roman fra Københavns Nordvestkvarter."
+			},
+			{
+				"title": "The Year of Living Danishly af Helen Russell",
+				"source": "eReolen Global",
+				"description": "Den engelske forfatter giver et sjovt blik på den danske mentalitet."
+			},
+			{
+				"title": "Pocket København",
+				"source": "eReolen e-bøger",
+				"description": "En overskuelig rejseguide til din tablet."
+			},
+			{
+				"title": "Lær dansk",
+				"source": "Mango Languages",
+				"description": "Har du brug for at træne dit danske? Tag et online sprogkursus."
+			},
+			{
+				"title": "Baby af Linda Wendel",
+				"source": "Filmstriben",
+				"description": "'Baby' er en filmatisering af Kirsten Thorups prisbelønnede debutroman. Rodløse storbymennesker forsøger at forstå kærligheden."
+			}
 		]
 	},
 	{
 		"destination": "Bornholm",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Cycling Active", "source":"RB Digital", "description": "Smid dette cykelblad bag på cyklen og læs det ved næste rasteplads."},
-			{"title": "Nancy af Dennis Gade Kofod", "source":"eReolen lydbøger", "description": "Bornholm indhylles i en mystisk tåge, og snart er øen i undtagelsestilstand."},
-			{"title": "Bornholm af Palle Lauring", "source":"eReolen e-bøger", "description": "Med denne rejseskildring på tabletten, ser du Bornholm med nye øjne."},
-			{"title": "Bornholm: En storbyguide til eventyrlystne forældre af Roald Bergmann", "source":"eReolen e-bøger", "description": "Guide til 44 fantastiske steder for børn på Bornholm."},
-			{"title": "Lær dansk", "source":"Mango Languages", "description": "Har du brug for at træne dit danske? Tag et online sprogkursus."},
-			{"title": "Russerne paa Bornholm af Ole Askman", "source":"Filmstriben", "description": "Dokumentar om da Danmark blev befriet, men Bornholm blev glemt."}
+		"resources": [{
+				"title": "Cycling Active",
+				"source": "RB Digital",
+				"description": "Smid dette cykelblad bag på cyklen og læs det ved næste rasteplads."
+			},
+			{
+				"title": "Nancy af Dennis Gade Kofod",
+				"source": "eReolen lydbøger",
+				"description": "Bornholm indhylles i en mystisk tåge, og snart er øen i undtagelsestilstand."
+			},
+			{
+				"title": "Bornholm af Palle Lauring",
+				"source": "eReolen e-bøger",
+				"description": "Med denne rejseskildring på tabletten, ser du Bornholm med nye øjne."
+			},
+			{
+				"title": "Bornholm: En storbyguide til eventyrlystne forældre af Roald Bergmann",
+				"source": "eReolen e-bøger",
+				"description": "Guide til 44 fantastiske steder for børn på Bornholm."
+			},
+			{
+				"title": "Lær dansk",
+				"source": "Mango Languages",
+				"description": "Har du brug for at træne dit danske? Tag et online sprogkursus."
+			},
+			{
+				"title": "Russerne paa Bornholm af Ole Askman",
+				"source": "Filmstriben",
+				"description": "Dokumentar om da Danmark blev befriet, men Bornholm blev glemt."
+			}
 		]
 	},
 	{
 		"destination": "Egypten",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Youm7", "source":"PressReader", "description": "Læs egyptiske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "EARTH Magazine", "source":"RB Digital", "description": "Få styr på klodens hemmeligheder mens du daser i varmen."},
-			{"title": "Døden på Nilen af Agatha Christie", "source":"eReolen lydbøger", "description": "Denne klassiker skal nydes mens du sejler ned ad den berømte egyptiske flod."},
-			{"title": "Revolution for Dummies af Bassem Youssef", "source":"eReolen Global", "description": "Youssef, der kaldes for den arabiske John Stewart, skriver humoristisk om det arabiske forår."},
-			{"title": "Rejse i faraonernes rige af Arne Falk-Rønne", "source":"eReolen e-bøger", "description": "Journalist og eventyrer Arne Falk-Rønnes skildring af overleveringerne fra det klassiske Egypten."},
-			{"title": "Lær arabisk", "source":"Mango Languages", "description": "Bestil din mad på arabisk. Lær hvordan med et online sprogkursus."},
-			{"title": "I lyset af en revolution af Iben Haahr Andersen", "source":"Filmstriben", "description": "Dokumentarfilm om kvinder og kunst i Kairo under det arabiske forår."}
+		"resources": [{
+				"title": "Youm7",
+				"source": "PressReader",
+				"description": "Læs egyptiske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "EARTH Magazine",
+				"source": "RB Digital",
+				"description": "Få styr på klodens hemmeligheder mens du daser i varmen."
+			},
+			{
+				"title": "Døden på Nilen af Agatha Christie",
+				"source": "eReolen lydbøger",
+				"description": "Denne klassiker skal nydes mens du sejler ned ad den berømte egyptiske flod."
+			},
+			{
+				"title": "Revolution for Dummies af Bassem Youssef",
+				"source": "eReolen Global",
+				"description": "Youssef, der kaldes for den arabiske John Stewart, skriver humoristisk om det arabiske forår."
+			},
+			{
+				"title": "Rejse i faraonernes rige af Arne Falk-Rønne",
+				"source": "eReolen e-bøger",
+				"description": "Journalist og eventyrer Arne Falk-Rønnes skildring af overleveringerne fra det klassiske Egypten."
+			},
+			{
+				"title": "Lær arabisk",
+				"source": "Mango Languages",
+				"description": "Bestil din mad på arabisk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "I lyset af en revolution af Iben Haahr Andersen",
+				"source": "Filmstriben",
+				"description": "Dokumentarfilm om kvinder og kunst i Kairo under det arabiske forår."
+			}
 		]
 	},
 	{
 		"destination": "Tokyo",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Mainichi Shimbun", "source":"PressReader", "description": "Læs japanske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "ARTnews", "source":"RB Digital", "description": "Med dette blad føles ventetiden i lufthavnen som sekunder."},
-			{"title": "Hvad jeg taler om når jeg taler om at løbe af Haruki Murakami", "source":"eReolen lydbøger", "description": "Lyt til denne bog mens du går (eller løber) rundt i Murakamis Japan."},
-			{"title": "Kampen om kronen af Jan Kjær", "source":"eReolen e-bøger", "description": "Tegneserie inspireret af japansk manga til de store."},
-			{"title": "Pocket Tokyo", "source":"eReolen Global", "description": "En overskuelig rejseguide til din tablet."},
-			{"title": "Lær japansk", "source":"Mango Languages", "description": "Bestil din sushi på japansk. Lær hvordan med et online sprogkursus."},
-			{"title": "Lost in translation af Sofia Coppola", "source":"Filmstriben", "description": "Start turen rundt i Tokyo allerede i flyet med denne film."}
+		"resources": [{
+				"title": "Mainichi Shimbun",
+				"source": "PressReader",
+				"description": "Læs japanske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "ARTnews",
+				"source": "RB Digital",
+				"description": "Med dette blad føles ventetiden i lufthavnen som sekunder."
+			},
+			{
+				"title": "Hvad jeg taler om når jeg taler om at løbe af Haruki Murakami",
+				"source": "eReolen lydbøger",
+				"description": "Lyt til denne bog mens du går (eller løber) rundt i Murakamis Japan."
+			},
+			{
+				"title": "Kampen om kronen af Jan Kjær",
+				"source": "eReolen e-bøger",
+				"description": "Tegneserie inspireret af japansk manga til de store."
+			},
+			{
+				"title": "Pocket Tokyo",
+				"source": "eReolen Global",
+				"description": "En overskuelig rejseguide til din tablet."
+			},
+			{
+				"title": "Lær japansk",
+				"source": "Mango Languages",
+				"description": "Bestil din sushi på japansk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "Lost in translation af Sofia Coppola",
+				"source": "Filmstriben",
+				"description": "Start turen rundt i Tokyo allerede i flyet med denne film."
+			}
 		]
 	},
 	{
 		"destination": "Toscana",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Corriere Fiorentino", "source":"PressReader", "description": "Læs italienske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Wine Enthusiast Magazine", "source":"RB Digital", "description": "Med dette blad er du ekspert i vin inden flyet lander."},
-			{"title": "Toscana tur og retur af Åsa Hellberg", "source":"eReolen lydbøger", "description": "Lyt til denne bog om kærlighed og familiehemmeligheder i Toscana, mens du daser på stranden."},
-			{"title": "Toscana - af Helle Tesio", "source":"eReolen e-bøger", "description": "Om mad og mennesker fra uopdagede dale i Toscana."},
-			{"title": "Pocket Toscana", "source":"eReolen e-bøger", "description": "En overskuelig rejseguide til din tablet."},
-			{"title": "Lær italiensk", "source":"Mango Languages", "description": "Bestil din vin på italiensk. Lær hvordan med et online sprogkursus."},
-			{"title": "Springtur i Toscana af Paolo Virzì", "source":"Filmstriben", "description": "Italiensk film om venskab, skønhed og nedbrud i Toscana."}
+		"resources": [{
+				"title": "Corriere Fiorentino",
+				"source": "PressReader",
+				"description": "Læs italienske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Wine Enthusiast Magazine",
+				"source": "RB Digital",
+				"description": "Med dette blad er du ekspert i vin inden flyet lander."
+			},
+			{
+				"title": "Toscana tur og retur af Åsa Hellberg",
+				"source": "eReolen lydbøger",
+				"description": "Lyt til denne bog om kærlighed og familiehemmeligheder i Toscana, mens du daser på stranden."
+			},
+			{
+				"title": "Toscana - af Helle Tesio",
+				"source": "eReolen e-bøger",
+				"description": "Om mad og mennesker fra uopdagede dale i Toscana."
+			},
+			{
+				"title": "Pocket Toscana",
+				"source": "eReolen e-bøger",
+				"description": "En overskuelig rejseguide til din tablet."
+			},
+			{
+				"title": "Lær italiensk",
+				"source": "Mango Languages",
+				"description": "Bestil din vin på italiensk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "Springtur i Toscana af Paolo Virzì",
+				"source": "Filmstriben",
+				"description": "Italiensk film om venskab, skønhed og nedbrud i Toscana."
+			}
 		]
 	},
 	{
 		"destination": "Mexico",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "El Universal", "source":"PressReader", "description": "Læs mexikanske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Forbes Magazine", "source":"RB Digital", "description": "Bliv klogere på verdensøkonomien med dette blad, mens du driver den på stranden."},
-			{"title": "De to myr af Henrik Einspor", "source":"eReolen GO", "description": "Har du børn med på den lange rejse? Let stemningen i flyet med spændende lydbøger."},
-			{"title": "Jeg maler mit liv af Ester Bock", "source":"eReolen e-bøger", "description": "Denne roman bygger på den mexicanske maler Frida Kahlos facinerende liv og personlighed."},
-			{"title": "Mexico Travel Guide af Lonely Planet", "source":"eReolen Global", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær spansk", "source":"Mango Languages", "description": "Como estas? Få styr på de spanske gloser inden ferien."},
-			{"title": "Desierto af Jonás Cuarónì", "source":"Filmstriben", "description": "Mødet mellem amerikanere og mexicanere udvikler sig i en brutal og blodig retning."}
+		"resources": [{
+				"title": "El Universal",
+				"source": "PressReader",
+				"description": "Læs mexikanske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Forbes Magazine",
+				"source": "RB Digital",
+				"description": "Bliv klogere på verdensøkonomien med dette blad, mens du driver den på stranden."
+			},
+			{
+				"title": "De to myr af Henrik Einspor",
+				"source": "eReolen GO",
+				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med spændende lydbøger."
+			},
+			{
+				"title": "Jeg maler mit liv af Ester Bock",
+				"source": "eReolen e-bøger",
+				"description": "Denne roman bygger på den mexicanske maler Frida Kahlos facinerende liv og personlighed."
+			},
+			{
+				"title": "Mexico Travel Guide af Lonely Planet",
+				"source": "eReolen Global",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær spansk",
+				"source": "Mango Languages",
+				"description": "Como estas? Få styr på de spanske gloser inden ferien."
+			},
+			{
+				"title": "Desierto af Jonás Cuarónì",
+				"source": "Filmstriben",
+				"description": "Mødet mellem amerikanere og mexicanere udvikler sig i en brutal og blodig retning."
+			}
 		]
 	},
 	{
 		"destination": "Brasilien",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Folha de S. Paulo", "source":"PressReader", "description": "Læs brasilianske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Digital SLR Photography", "source":"RB Digital", "description": "Lær hvordan du fanger Brasiliens mange farver på foto med dette blad."},
-			{"title": "Elise og den brugte hund af Bjarne Reuter", "source":"eReolen GO", "description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."},
-			{"title": "Perfekte dage af Raphael Montes", "source":"eReolen e-bøger", "description": "Den brasilienske forfatters thriller får det til at løbe koldt ned af ryggen på dig."},
-			{"title": "The Rough Guide to Brazil af Rough Guides", "source":"eReolen Global", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær portugisisk", "source":"Mango Languages", "description": "Onde fica a praia? Find stranden på portugisisk med et online sprogkursus."},
-			{"title": "The pilgrim af Daniel Augusto", "source":"Filmstriben", "description": "Filmen er en krønike om Paulo Coelhos vej til at blive en af de mest indflydelsesrige forfattere i brasiliansk historie."}
+		"resources": [{
+				"title": "Folha de S. Paulo",
+				"source": "PressReader",
+				"description": "Læs brasilianske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Digital SLR Photography",
+				"source": "RB Digital",
+				"description": "Lær hvordan du fanger Brasiliens mange farver på foto med dette blad."
+			},
+			{
+				"title": "Elise og den brugte hund af Bjarne Reuter",
+				"source": "eReolen GO",
+				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."
+			},
+			{
+				"title": "Perfekte dage af Raphael Montes",
+				"source": "eReolen e-bøger",
+				"description": "Den brasilienske forfatters thriller får det til at løbe koldt ned af ryggen på dig."
+			},
+			{
+				"title": "The Rough Guide to Brazil af Rough Guides",
+				"source": "eReolen Global",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær portugisisk",
+				"source": "Mango Languages",
+				"description": "Onde fica a praia? Find stranden på portugisisk med et online sprogkursus."
+			},
+			{
+				"title": "The pilgrim af Daniel Augusto",
+				"source": "Filmstriben",
+				"description": "Filmen er en krønike om Paulo Coelhos vej til at blive en af de mest indflydelsesrige forfattere i brasiliansk historie."
+			}
 		]
 	},
 	{
 		"destination": "Kina",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "China Daily", "source":"PressReader", "description": "Læs kinesiske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Esquire", "source":"RB Digital", "description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i menneskemylderet."},
-			{"title": "Maleren fra Shanghai af J. C. Epstein", "source":"eReolen lydbøger", "description": "Den kinesiske billedkunstner Pan Yuliang er i centrum i denne smukke fortælling"},
-			{"title": "Det kinesiske køkken af Deh-Ta Hsiung", "source":"eReolen e-bøger", "description": "Tag de lækre retter med hjem i køkkenet med denne kogebog."},
-			{"title": "Oplev Kina af Lonely Planet", "source":"eReolen e-bøger", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær kinesisk", "source":"Mango Languages", "description": "Bestil dine dumplings på kinesisk. Lær hvordan med et online sprogkursus."},
-			{"title": "The flowers of war af Yimou Zhang", "source":"Filmstriben", "description": "En gruppe børn er fanget i et kloster under japanernes invasion af den kinesiske by Nanjing i 1937."}
+		"resources": [{
+				"title": "China Daily",
+				"source": "PressReader",
+				"description": "Læs kinesiske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Esquire",
+				"source": "RB Digital",
+				"description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i menneskemylderet."
+			},
+			{
+				"title": "Maleren fra Shanghai af J. C. Epstein",
+				"source": "eReolen lydbøger",
+				"description": "Den kinesiske billedkunstner Pan Yuliang er i centrum i denne smukke fortælling"
+			},
+			{
+				"title": "Det kinesiske køkken af Deh-Ta Hsiung",
+				"source": "eReolen e-bøger",
+				"description": "Tag de lækre retter med hjem i køkkenet med denne kogebog."
+			},
+			{
+				"title": "Oplev Kina af Lonely Planet",
+				"source": "eReolen e-bøger",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær kinesisk",
+				"source": "Mango Languages",
+				"description": "Bestil dine dumplings på kinesisk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "The flowers of war af Yimou Zhang",
+				"source": "Filmstriben",
+				"description": "En gruppe børn er fanget i et kloster under japanernes invasion af den kinesiske by Nanjing i 1937."
+			}
 		]
 	},
 	{
 		"destination": "Kenya",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Daily Nation", "source":"PressReader", "description": "Læs kenyanske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "National Geographic", "source":"RB Digital", "description": "Storslået læsning om vores vidunderlige verden, skal læses i storslåede omgivelser"},
-			{"title": "Den afrikanske jomfru af Helle Vincentz", "source":"eReolen lydbøger", "description": "En hårdrejsende lydbog om kenyas mørke sider."},
-			{"title": "Den afrikanske farm af Karen Blixen", "source":"eReolen e-bøger", "description": "Læs Blixens eventyrlige klassiker i forfatterens eget Afrika."},
-			{"title": "East Africa Travel Guide af Lonely Planet", "source":"eReolen Global", "description": "Den klassiske rejseguide vejer ingenting på din tablet."},
-			{"title": "Lær swahili", "source":"Mango Languages", "description": "Hello rafiki! Få venner på swahili med et online sprogkursus."},
-			{"title": "Taking Root af Lisa Merton", "source":"Filmstriben", "description": "Filmen følger den første afrikanske kvinde, der har vundet Nobels Fredspris."}
+		"resources": [{
+				"title": "Daily Nation",
+				"source": "PressReader",
+				"description": "Læs kenyanske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "National Geographic",
+				"source": "RB Digital",
+				"description": "Storslået læsning om vores vidunderlige verden, skal læses i storslåede omgivelser"
+			},
+			{
+				"title": "Den afrikanske jomfru af Helle Vincentz",
+				"source": "eReolen lydbøger",
+				"description": "En hårdrejsende lydbog om kenyas mørke sider."
+			},
+			{
+				"title": "Den afrikanske farm af Karen Blixen",
+				"source": "eReolen e-bøger",
+				"description": "Læs Blixens eventyrlige klassiker i forfatterens eget Afrika."
+			},
+			{
+				"title": "East Africa Travel Guide af Lonely Planet",
+				"source": "eReolen Global",
+				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+			},
+			{
+				"title": "Lær swahili",
+				"source": "Mango Languages",
+				"description": "Hello rafiki! Få venner på swahili med et online sprogkursus."
+			},
+			{
+				"title": "Taking Root af Lisa Merton",
+				"source": "Filmstriben",
+				"description": "Filmen følger den første afrikanske kvinde, der har vundet Nobels Fredspris."
+			}
 		]
 	},
 	{
 		"destination": "Prag",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Mladá fronta DNES", "source":"PressReader", "description": "Læs tjekkiske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "World Literature Today", "source":"RB Digital", "description": "Smid benene op efter gåturen i Prags gader og nyd dette blad med en varm kop kaffe."},
-			{"title": "Vinter i Prag af Madeleine Albright", "source":"eReolen lydbøger", "description": "Den tidligere amerikansk udenrigsminister fletter familiehistorien sammen med Tjekkoslovakiets historie og jødernes skæbne i tiden omkring 2. verdenskrig"},
-			{"title": "Dagbøger af Franz Kafka", "source":"eReolen", "description": "Læs Kafkas dagbøger inden du besøger hans hus i Prag."},
-			{"title": "Pocket Prag", "source":"eReolen e-bøger", "description": "En overskuelig rejseguide til din tablet."},
-			{"title": "Lær tjekkisk", "source":"Mango Languages", "description": "Bestil din øl på tjekkisk. Lær hvordan med et online sprogkursus."},
-			{"title": "Prag af Ole Christian Madsen", "source":"Filmstriben", "description": "Under et pars tur til Prag, hvor de skal hente Christoffers fars lig hjem, krakelerer forholdet."}
+		"resources": [{
+				"title": "Mladá fronta DNES",
+				"source": "PressReader",
+				"description": "Læs tjekkiske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "World Literature Today",
+				"source": "RB Digital",
+				"description": "Smid benene op efter gåturen i Prags gader og nyd dette blad med en varm kop kaffe."
+			},
+			{
+				"title": "Vinter i Prag af Madeleine Albright",
+				"source": "eReolen lydbøger",
+				"description": "Den tidligere amerikansk udenrigsminister fletter familiehistorien sammen med Tjekkoslovakiets historie og jødernes skæbne i tiden omkring 2. verdenskrig"
+			},
+			{
+				"title": "Dagbøger af Franz Kafka",
+				"source": "eReolen",
+				"description": "Læs Kafkas dagbøger inden du besøger hans hus i Prag."
+			},
+			{
+				"title": "Pocket Prag",
+				"source": "eReolen e-bøger",
+				"description": "En overskuelig rejseguide til din tablet."
+			},
+			{
+				"title": "Lær tjekkisk",
+				"source": "Mango Languages",
+				"description": "Bestil din øl på tjekkisk. Lær hvordan med et online sprogkursus."
+			},
+			{
+				"title": "Prag af Ole Christian Madsen",
+				"source": "Filmstriben",
+				"description": "Under et pars tur til Prag, hvor de skal hente Christoffers fars lig hjem, krakelerer forholdet."
+			}
 		]
 	},
 	{
 		"destination": "Amsterdam",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "NRC Handelsblad", "source":"PressReader", "description": "Læs hollandske aviser på din tablet."},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Vanity Fair", "source":"RB Digital", "description": "Med dette blad føles ventetiden i lufthavnen som sekunder."},
-			{"title": "Eurotrash af Peter Grønlund", "source":"eReolen lydbøger", "description": "To venners dramatiske tur gennem Amsterdam, hvor ingenting lykkedes."},
-			{"title": "Amsterdam Stories af Nescio", "source":"eReolen Global", "description": "Ingen andre beskriver Amsterdams levende gader så smukt som Nescio."},
-			{"title": "Pocket Amsterdam", "source":"eReolen e-bøger", "description": "En overskuelig rejseguide til din tablet."},
-			{"title": "Lær hollandsk", "source":"Mango Languages", "description": "Hallo mijn vriend! Få venner på hollandsk med et online sprogkursus."},
-			{"title": "Tulipanfeber af Justin Chadwick", "source":"Filmstriben", "description": "Film om Amsterdam i 1630erne og den rasende tulipanfeber."}
+		"resources": [{
+				"title": "NRC Handelsblad",
+				"source": "PressReader",
+				"description": "Læs hollandske aviser på din tablet."
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Vanity Fair",
+				"source": "RB Digital",
+				"description": "Med dette blad føles ventetiden i lufthavnen som sekunder."
+			},
+			{
+				"title": "Eurotrash af Peter Grønlund",
+				"source": "eReolen lydbøger",
+				"description": "To venners dramatiske tur gennem Amsterdam, hvor ingenting lykkedes."
+			},
+			{
+				"title": "Amsterdam Stories af Nescio",
+				"source": "eReolen Global",
+				"description": "Ingen andre beskriver Amsterdams levende gader så smukt som Nescio."
+			},
+			{
+				"title": "Pocket Amsterdam",
+				"source": "eReolen e-bøger",
+				"description": "En overskuelig rejseguide til din tablet."
+			},
+			{
+				"title": "Lær hollandsk",
+				"source": "Mango Languages",
+				"description": "Hallo mijn vriend! Få venner på hollandsk med et online sprogkursus."
+			},
+			{
+				"title": "Tulipanfeber af Justin Chadwick",
+				"source": "Filmstriben",
+				"description": "Film om Amsterdam i 1630erne og den rasende tulipanfeber."
+			}
 		]
 	},
 	{
 		"destination": "Lissabon",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Jornal de Noticias", "source":"PressReader", "description": "Læs portugisiske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "All About History", "source":"RB Digital", "description": "Læs bladet i flyet og føl historiens vingesus."},
-			{"title": "Billeder fra Lissabon af Frank Sebastian Hansen", "source":"eReolen lydbøger", "description": "En rørende rejse ind i Portugals kolonihistorie."},
-			{"title": "Kain af José Saramago", "source":"eReolen e-bøger", "description": "Portugals litterære stjerne nyfortæller Abel og Kains bibelhistorie."},
-			{"title": "Pocket Lissabon", "source":"eReolen e-bøger", "description": "En overskuelig rejseguide til din tablet."}
+		"resources": [{
+				"title": "Jornal de Noticias",
+				"source": "PressReader",
+				"description": "Læs portugisiske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "All About History",
+				"source": "RB Digital",
+				"description": "Læs bladet i flyet og føl historiens vingesus."
+			},
+			{
+				"title": "Billeder fra Lissabon af Frank Sebastian Hansen",
+				"source": "eReolen lydbøger",
+				"description": "En rørende rejse ind i Portugals kolonihistorie."
+			},
+			{
+				"title": "Kain af José Saramago",
+				"source": "eReolen e-bøger",
+				"description": "Portugals litterære stjerne nyfortæller Abel og Kains bibelhistorie."
+			},
+			{
+				"title": "Pocket Lissabon",
+				"source": "eReolen e-bøger",
+				"description": "En overskuelig rejseguide til din tablet."
+			}
 		]
 	},
 	{
 		"destination": "Island",
 		"emoji": "default",
-		"resources": 
-		[
-			{"title": "Fréttablaðið", "source":"PressReader", "description": "Læs islandske aviser på din tablet"},
-			{"title": "Danske aviser", "source":"PressReader", "description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."},
-			{"title": "Q Magazine", "source":"RB Digital", "description": "Læs bladet i flyet og fordyb dig i musikkens nyeste tendenser."},
-			{"title": "Fisk har ingen fødder af Jón Kalman Stefánsson", "source":"eReolen lydbøger", "description": "En gribende slægthistorie om flækken Reflavik og det sted, hvor man er tættest på døden."},
-			{"title": "DNA af Yrsa Sigurdardottir", "source":"eReolen e-bøger", "description": "Iskold krimi til de kolde dage på klippeøen."},
-			{"title": "Iceland af Insight Guides", "source":"eReolen Global", "description": "En klassisk rejseguide med et kulturelt twist."},
-			{"title": "Lær islandsk", "source":"Mango Languages", "description": "Halló vinur minn! Få venner på islandsk med et online sprogkursus."},
-			{"title": "Dybet af Baltasar Kormákur", "source":"Filmstriben", "description": "Filmen er baseret på den sande historie om en fisker og et uforklarligt videnskabeligt fænomen."}
+		"resources": [{
+				"title": "Fréttablaðið",
+				"source": "PressReader",
+				"description": "Læs islandske aviser på din tablet"
+			},
+			{
+				"title": "Danske aviser",
+				"source": "PressReader",
+				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+			},
+			{
+				"title": "Q Magazine",
+				"source": "RB Digital",
+				"description": "Læs bladet i flyet og fordyb dig i musikkens nyeste tendenser."
+			},
+			{
+				"title": "Fisk har ingen fødder af Jón Kalman Stefánsson",
+				"source": "eReolen lydbøger",
+				"description": "En gribende slægthistorie om flækken Reflavik og det sted, hvor man er tættest på døden."
+			},
+			{
+				"title": "DNA af Yrsa Sigurdardottir",
+				"source": "eReolen e-bøger",
+				"description": "Iskold krimi til de kolde dage på klippeøen."
+			},
+			{
+				"title": "Iceland af Insight Guides",
+				"source": "eReolen Global",
+				"description": "En klassisk rejseguide med et kulturelt twist."
+			},
+			{
+				"title": "Lær islandsk",
+				"source": "Mango Languages",
+				"description": "Halló vinur minn! Få venner på islandsk med et online sprogkursus."
+			},
+			{
+				"title": "Dybet af Baltasar Kormákur",
+				"source": "Filmstriben",
+				"description": "Filmen er baseret på den sande historie om en fisker og et uforklarligt videnskabeligt fænomen."
+			}
 		]
 	}
 ]

@@ -145,7 +145,7 @@ public:
             ofRectangle a = rects[u+3];
             ofRectangle b = rects[u+6];
             mat_f.drawString(toUpper(d.material[mi]), a.x*scale, a.y*scale);
-            vector<string>description = transformToCollumn(d.materialDescription[mi], layout["mat1"].width, matb_f);
+            vector<string>description = transformToCollumn(d.materialDescription[mi], layout["mat1"].width*scale, matb_f);
 			//for (int i = 0; i < description.size(); i++)cout << description[i] << endl;
             drawCollumn(description ,b.x*scale, b.y*scale, matb_f);
         }
