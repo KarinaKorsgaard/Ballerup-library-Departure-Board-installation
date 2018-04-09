@@ -59,7 +59,9 @@ class ofApp : public ofBaseApp{
     ofxPanel gui;
     ofParameter<float>animationTime;
     ofParameter<float>randomFlipInterval;
+    ofParameter<int>randomFlipAmount;
     ofParameter<float>materialSwapTime;
+    ofParameter<float>printTime;
     
     std::map<char,char> map;
     
@@ -79,12 +81,18 @@ class ofApp : public ofBaseApp{
     float        readTime;                    // when did we last read?
 
     ofSerial    serial;
-    void initialiseArdiono();
-    void readArduino();
+
+    
     int input = -1;
     int p_input = -1;
     bool motioninput = false;
-    bool isInitialized = false;
+
+    void readArduino();
+    void echoArduino();
+    bool echo = false;
+    double echoTimer = 0.0;
+    int deviceCount = 0;
+    
     bool printing = false;
     double printcounter = 0.0;
     int printId;

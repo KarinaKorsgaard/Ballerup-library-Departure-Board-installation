@@ -146,17 +146,13 @@ public:
             ofRectangle b = rects[u+6];
             mat_f.drawString(toUpper(d.material[mi]), a.x*scale, a.y*scale);
             vector<string>description = transformToCollumn(d.materialDescription[mi], layout["mat1"].width*scale, matb_f);
-			//for (int i = 0; i < description.size(); i++)cout << description[i] << endl;
             drawCollumn(description ,b.x*scale, b.y*scale, matb_f);
         }
         drawCollumn(general, g.x*scale, g.y*scale, matb_f, 30);
         ofPopMatrix();
-        
-        
-        
-        
+
         ofSetColor(255);
-        string number = ofToString(writeToFile(),6,'0');
+        string number = "#"+ofToString(writeToFile(),6,'0');
         number_f.drawString(number,fbo.getWidth()-number_f.stringWidth(number)-50,70);
         fbo.end();
 

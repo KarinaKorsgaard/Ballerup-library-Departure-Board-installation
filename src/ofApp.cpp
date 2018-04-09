@@ -3,8 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     // serial
-    serial.listDevices();
-    vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
+   // serial.listDevices();
+   // vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
     bpg.setup();
     
 
@@ -14,7 +14,7 @@ void ofApp::setup(){
     int baud = 9600;
 #ifdef __APPLE__
     system("cancel -a"); // clears print que
-    serial.setup(0, baud); //open the first device
+    //serial.setup(0, baud); //open the first device
    // cout << "on mac"<< endl;
 #else
    // system("net stop spooler");
@@ -38,7 +38,9 @@ void ofApp::setup(){
     gui.setup();
     gui.add(animationTime.set("AnimationTime",1., 1. ,0.01));
     gui.add(randomFlipInterval.set("max FlipInterval",1.,0.,10.));
+    gui.add(randomFlipAmount.set("flipAmount",1 ,0 , 10));
     gui.add(materialSwapTime.set("materialSwapTime",15.,0.,40.));
+    gui.add(printTime.set("printTime",9.,1.,20.));
     gui.loadFromFile("settings.xml");
     
 
@@ -148,6 +150,7 @@ void ofApp::setup(){
     // json crap
     ofxJSONElement result;
     std::string file = "travel.json";
+  
     
     // Now parse the JSON
     bool parsingSuccessful = result.open(file);
@@ -264,9 +267,9 @@ void ofApp::update(){
     }
     
     
-    isInitialized = serial.isInitialized();
-    if(!isInitialized)initialiseArdiono();
-    else readArduino();
+    
+    if(!echo)echoArduino();
+    if(serial.isInitialized())readArduino();
     
     if(input>-1){
         if (input < MIN(desitnations.size(),NUM_DESTINATIONS) && !printing) {
@@ -289,7 +292,7 @@ void ofApp::update(){
             }
         }
         if (input == MOTION_INPUT) {
-            doRandomFlip(5);
+            doRandomFlip(randomFlipAmount);
         }
     }
     
@@ -299,7 +302,7 @@ void ofApp::update(){
         printcounter+=ofGetLastFrameTime();
         wh_destination[printId].changeString("Dit boardingpass");
         wh_material[printId].changeString("printes nu...");
-        if(printcounter>5.) {
+        if(printcounter>printTime) {
             printing = false;
             printcounter = 0.0;
             int d = destination_indxes[printId]; wh_material[printId].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))],desitnations[d].emoji);
@@ -314,7 +317,7 @@ void ofApp::draw(){
     ofSetColor(255);
     ofBackground(0);
     
-    if(debug)gui.draw();
+    
     ofPushMatrix();
     if(debug)ofScale(0.6, 0.6);
     if(debug)ofTranslate(0,150);
@@ -356,7 +359,7 @@ void ofApp::draw(){
     //ofTranslate(0, 1.05*charHeight);
     
     ofPopMatrix();
-    
+    if(debug)gui.draw();
 }
 //--------------------------------------------------------------
 void ofApp::printBoardingPass(int d){
@@ -380,12 +383,33 @@ void ofApp::printBoardingPass(int d){
 	//cout << path << endl;
 	
 #endif
+    
 
 }
 
+void ofApp::echoArduino() {
+    
+    echoTimer += ofGetLastFrameTime();
+    if(echoTimer>5. && !echo) {
+        serial.listDevices();
+        vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
+        echoTimer = 0.0;
+        int baud = 9600;
+        serial.setup(deviceList[deviceCount%deviceList.size()].getDeviceName(), baud);
+        
+        nTimesRead = 0;
+        nBytesRead = 0;
+        readTime = 0;
+        memset(bytesReadString, 0, 4);
+        
+        if(serial.isInitialized())serial.writeByte('q');
+        deviceCount++;
+        cout<<"no echo"<<endl;
+    }
+}
 //--------------------------------------------------------------
 void ofApp::readArduino(){
-    
+
     int tempInput = -1;
     nTimesRead = 0;
     nBytesRead = 0;
@@ -408,6 +432,11 @@ void ofApp::readArduino(){
     readTime = ofGetElapsedTimef();
     
     string fromArduino = string(bytesReadString);
+    if(fromArduino == "w") {
+        echo = true;
+        cout<< "arduino is on"<<endl;
+    }
+    
     char fa = fromArduino[0];
     tempInput = fa;
     
@@ -415,43 +444,6 @@ void ofApp::readArduino(){
         input = tempInput-97; //starting from char 'a'
         cout <<"From Arduino "<< input << endl;
     }
-}
-//--------------------------------------------------------------
-void ofApp::initialiseArdiono(){
-    serial.listDevices();
-    vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
-    
-    // this should be set to whatever com port your serial device is connected to.
-    // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
-    // arduino users check in arduino app....
-    int baud = 9600;
-//    if(deviceList.size()>0) {
-//#ifdef __APPLE__
-//    serial.setup(0, baud); //open the first device
-//    cout << "on mac"<< endl;
-//#else
-//    serial.setup("COM3", baud); // windows example
-//    cout << "on windows"<< endl;
-//#endif
-//    //serial.setup("COM4", baud); // windows example
-//    //serial.setup("/dev/tty.usbserial-1421", baud); // mac osx example
-//    //serial.setup("/dev/ttyUSB0", baud); //linux example
-//
-    
-    for(int i = deviceList.size()-1; i>0;i--) {
-        cout<<i<<": "<<deviceList[i].getDeviceName()<<endl;
-        isInitialized = serial.isInitialized();
-        if(!isInitialized)serial.setup(deviceList[i].getDeviceName(), baud);
-    }
-    
-    nTimesRead = 0;
-    nBytesRead = 0;
-    readTime = 0;
-    memset(bytesReadString, 0, 4);
-	//}
-
-    isInitialized = serial.isInitialized();
-    if(isInitialized)cout << "arduino is on"<<endl;
 }
 
 
@@ -491,7 +483,7 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-    if(debug)doRandomFlip(5);
+    if(debug)doRandomFlip(randomFlipAmount);
 	int k = key - '0';
 	if(k<desitnations.size() && k>-1)
 		input = k;
