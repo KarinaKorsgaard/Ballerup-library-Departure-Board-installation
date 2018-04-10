@@ -273,7 +273,7 @@ void ofApp::update(){
     
     if(input>-1){
         if (input < MIN(desitnations.size(),NUM_DESTINATIONS) && !printing) {
-            printBoardingPass(input);
+            printBoardingPass(destination_indxes[input]);
             printing = true;
             printId = input;
         }

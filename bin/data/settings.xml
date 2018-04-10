@@ -1,6 +1,8 @@
 <group>
-	<AnimationTime>0.49015</AnimationTime>
+	<AnimationTime>0.41095</AnimationTime>
 <group/>
 <max_FlipInterval>0</max_FlipInterval>
 <materialSwapTime>39.6</materialSwapTime>
+<flipAmount>1</flipAmount>
+	<printTime>9.455</printTime>
 </group>
