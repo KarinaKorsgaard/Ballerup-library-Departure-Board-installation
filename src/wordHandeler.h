@@ -63,12 +63,14 @@ public:
                 else {
                     dist_to_next = (map.size() - from) + end;
                 }
-               
+                dist_to_next = MAX(dist_to_next-10, 1);
                // if(from > end)cout <<dist_to_next<<" jumping: " <<jumpDistance<<" mapsize "<<map.size()<<" from:"<<from<<" end: "<<end << endl;
-                int next = (characters[i].from+1)%map.size();
+                unsigned int jump = (end - from) ;
+                
+                int next = (characters[i].from+dist_to_next)%map.size();
                 
                 
-                characters[i].update(ofGetLastFrameTime()*(0.2*dist_to_next+1), from, next, end, animationTime);
+                characters[i].update(ofGetLastFrameTime()*(0.2*dist_to_next+1), next, end, animationTime);
                 
                 charInString++;
                 if(weird)charInString++;
