@@ -252,19 +252,20 @@ void ofApp::update(){
     ofSetWindowTitle(ofToString(ofGetFrameRate()));
     timeSinceLastFlip += ofGetLastFrameTime();
     
-    for(int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS);i++){
-		desitnations[i].time += ofGetLastFrameTime();
+    for(int i = 0; i<wh_material.size();i++){
+		int d = destination_indxes[i];
+		desitnations[d].time += ofGetLastFrameTime();
         wh_destination[i].update(animationTime);
         wh_number[i].update(animationTime);
         wh_material[i].update(animationTime);
         wh_numberOfMaterials[i].update(animationTime);
         
         
-        if(desitnations[i].time > materialSwapTime){
-            desitnations[i].time = 0.0;
-            desitnations[i].currentMaterial++;
-            desitnations[i].currentMaterial = desitnations[i].currentMaterial%desitnations[i].material.size();
-            string newMaterial = desitnations[i].material[desitnations[i].currentMaterial];
+        if(desitnations[d].time > materialSwapTime){
+            desitnations[d].time = 0.0;
+            desitnations[d].currentMaterial++;
+            desitnations[d].currentMaterial = desitnations[d].currentMaterial%desitnations[d].material.size();
+            string newMaterial = desitnations[d].material[desitnations[d].currentMaterial];
             //if(newMaterial!=wh_material[i].next_string)
             wh_material[i].changeString(newMaterial);
         }
