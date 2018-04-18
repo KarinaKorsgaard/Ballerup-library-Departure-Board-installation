@@ -30,11 +30,7 @@ public:
     
     void setup(){
         
-        ofDisableArbTex();
-        fbo.allocate(w,h, GL_RGBA);
-        ofEnableArbTex();
-        
-        pix.allocate(w,h,GL_RGBA);
+
         
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
@@ -91,6 +87,12 @@ public:
         
         scale = h/rects[9].height;
         cout <<"bp scale " <<scale<<" w: "<<w<<" h: "<<h<< endl;
+        
+        ofDisableArbTex();
+        fbo.allocate(w,h, GL_RGBA);
+        ofEnableArbTex();
+        
+        pix.allocate(w,h,GL_RGBA);
         
 
     }

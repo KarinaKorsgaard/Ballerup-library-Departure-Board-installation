@@ -158,6 +158,7 @@ public:
         
         else{
             doEmoji = false;
+            correctMesh();
         }
     }
     bool pastEmoji(int a, int b){

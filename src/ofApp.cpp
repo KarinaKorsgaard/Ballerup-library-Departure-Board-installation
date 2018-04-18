@@ -37,17 +37,17 @@ void ofApp::setup(){
     
     gui.setup();
     gui.add(animationTime.set("AnimationTime",1., 1. ,0.01));
-    gui.add(randomFlipInterval.set("max FlipInterval",1.,0.,10.));
-    gui.add(randomFlipAmount.set("flipAmount",1 ,0 , 10));
-    gui.add(materialSwapTime.set("materialSwapTime",15.,0.,40.));
+    gui.add(randomFlipInterval.set("motion Interval",1.,0.,10.));
+    gui.add(randomFlipAmount.set("motion Amount",1 ,0 , 10));
+    gui.add(materialSwapTime.set("material Swap Time",15.,0.,40.));
     gui.add(printTime.set("printTime",9.,1.,20.));
     gui.loadFromFile("settings.xml");
     
 
-    string letters = "0 1 2 3 4 5 6 7 8 9 A B C D E F G H I J K L M N O P Q R S T U V X Y Z Æ Ø Å , . + ...";
+    string letters = "0 1 2 3 4 5 6 7 8 9 A Á B C D E É F G H I J K L M N O Ó Õ P Q R S T U V W X Y Z Æ Ø Å , . + ...";
     vector<string>_alphabet = ofSplitString(letters, " ");
     _alphabet.push_back(" ");
-    
+    //for(int i = 0; i<_alphabet.size();i++)cout<<_alphabet[i][0]<<endl;
     
     //cout << "num letters " << _alphabet.size() << endl;
     
@@ -190,16 +190,19 @@ void ofApp::setup(){
         desitnations[i].materialDescription.resize(beskrivelse["resources"].size());
         desitnations[i].sources.resize(beskrivelse["resources"].size());
         
+        cout << desitnations[i].destination <<" : "<<desitnations[i].material.size() << endl;
         for(int u = 0 ; u<beskrivelse["resources"].size();u++){
             const Json::Value& titler = beskrivelse["resources"][u];
             string tit = titler["title"].asString();
             string src = titler["source"].asString();
             string des = titler["description"].asString();
             desitnations[i].material[u] = tit;
+            cout<<"material "+tit<<endl;
             desitnations[i].sources[u] = src;
             desitnations[i].materialDescription[u] = des+" Findes på: "+src;
         }
-        cout << desitnations[i].destination <<" : "<<desitnations[i].material.size() << endl;
+        cout<< "------"<<endl;
+        
         
     }
     
@@ -231,9 +234,10 @@ void ofApp::setup(){
     
     for(int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS);i++){
         int d = destination_indxes[i];
+        desitnations[d].currentMaterial = ofRandom(desitnations[d].material.size());
         wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
         wh_number[i].changeString(desitnations[d].number,desitnations[d].emoji);
-        wh_material[i].changeString(desitnations[d].material[desitnations[i].currentMaterial],desitnations[d].emoji);
+        wh_material[i].changeString(desitnations[d].material[desitnations[d].currentMaterial],desitnations[d].emoji);
         wh_numberOfMaterials[i].changeString("+"+ofToString(desitnations[i].material.size()));
         desitnations[d].time = ofRandom(15);
     }
@@ -273,7 +277,7 @@ void ofApp::update(){
 
     if(input>-1){
         if (input < MIN(desitnations.size(),NUM_DESTINATIONS) && !printing) {
-            printBoardingPass(destination_indxes[input]);
+            printBoardingPass(destination_indxes[10-input]);
             printing = true;
             printId = input;
         }
@@ -285,7 +289,7 @@ void ofApp::update(){
                 int d = destination_indxes[i];
                 wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
                 wh_number[i].changeString(desitnations[d].number,desitnations[d].emoji);
-                wh_material[i].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))],desitnations[d].emoji);
+            wh_material[i].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))],desitnations[d].emoji);
                 
                 wh_numberOfMaterials[i].changeString("+"+ofToString(desitnations[d].material.size()));
                 
@@ -428,7 +432,7 @@ void ofApp::readArduino(){
     
     if(tempInput>-1 && tempInput!=0) {
         input = tempInput-97; //starting from char 'a'
-        cout <<"From Arduino "<< input << endl;
+        if(debug)cout <<"From Arduino "<< input << endl;
     }
 }
 
