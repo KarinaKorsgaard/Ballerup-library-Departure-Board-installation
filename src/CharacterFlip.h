@@ -68,15 +68,21 @@ public:
         shadeLower = tLow;
 
     }
-    
-    void update(double time, int _from, int next, int end, float at){
+    bool stopAnimation = false;
+    void update(double time, int next, int end, float at){
         
-        if(next!=end){
-            // cout << next <<" "<< end << endl;
+        if(next == end) {
+            stopAnimation = true;
+            // cout<< "from "<<from << " next "<< next << " end "<<end<<endl;
+        }
+        else stopAnimation = false;
+        
+        if(!stopAnimation){
+            
             if(!stopAtEmoji)localTime+=time;
             animationTime = at;
             
-            from = _from;
+        
             to = next;
             
             
@@ -114,10 +120,21 @@ public:
                     correctMesh();
                 }
                 else {
-                    localTime = 0.0;
-                    from = next;
+                    
+                    
+                    
                     getNewChar = true;
                     correctMesh();
+//
+//                    if(next == end) {
+//                        stopAnimation = true;
+//                        // cout<< "from "<<from << " next "<< next << " end "<<end<<endl;
+//                    }
+                    //else {
+                         from = next;
+                         localTime = 0.0;
+                    //}
+                    
                 }
             }
             

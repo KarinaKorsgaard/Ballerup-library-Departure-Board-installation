@@ -270,7 +270,7 @@ void ofApp::update(){
     
     if(!echo)echoArduino();
     if(serial.isInitialized())readArduino();
-    
+
     if(input>-1){
         if (input < MIN(desitnations.size(),NUM_DESTINATIONS) && !printing) {
             printBoardingPass(destination_indxes[input]);
@@ -364,25 +364,11 @@ void ofApp::draw(){
 //--------------------------------------------------------------
 void ofApp::printBoardingPass(int d){
     // print..
-	string cwd = ofFilePath::getCurrentWorkingDirectory();
-
-    string boardingPass = bpg.generate(desitnations[d], desitnations[d].currentMaterial);
-#ifdef __APPLE__
-	string command = "lp "+ ofSplitString(cwd,"/bin")[0] + "/bin/data/boardingPasses/"+ boardingPass;
-    if(!debug)system(command.c_str());
-   // cout << "lp "+ ofSplitString(cwd,"/bin")[0] + "/bin/data/boardingPasses/"+ desitnations[d].str << endl;
-#else
-	string command =cwd+"\\bin\\SumatraPDF.exe -print-to-default -print-settings \"fit\" "+ cwd +"\\bin\\data\\"+ boardingPass;
-	//system(command.c_str());
-	cout << command << endl;
-	cout << cwd << endl;
-	cout << "what" << endl;
-	if(!debug)system(command.c_str());
-
-	//string t = ofToDataPath("test.bat");
-	//cout << path << endl;
 	
-#endif
+
+    bpg.generate(desitnations[d], desitnations[d].currentMaterial);
+    //bpg.startThread(true, false);
+
     
 
 }
@@ -539,5 +525,10 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){
     
+}
+void ofApp::exit() {
+    
+    // stop the thread
+   // bpg.stopThread();
 }
 

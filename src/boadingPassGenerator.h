@@ -12,7 +12,8 @@
 #include "ofApp.h"
 #include "commonStructs.h"
 
-class BoardingPassGenerator{
+
+class BoardingPassGenerator {
 public:
     ofTrueTypeFont tidSted_f,mat_f;
     ofTrueTypeFont matb_f, number_f;
@@ -21,8 +22,20 @@ public:
     ofImage bg;
     ofFile printNumberFile;
     int printNumber;
+    Destinations MyDest;
+    int myCur = 0;
+    
+    ofFbo fbo;
+    ofPixels pix;
     
     void setup(){
+        
+        ofDisableArbTex();
+        fbo.allocate(w,h, GL_RGBA);
+        ofEnableArbTex();
+        
+        pix.allocate(w,h,GL_RGBA);
+        
         ofxSVG svg;
         svg.load("bp_generator/boardingtemplate.svg");
         tidSted_f.load("fonts/BergenMono/BergenMono-SemiBold.otf",35);
@@ -30,12 +43,12 @@ public:
         matb_f.load("fonts/HaasGrotesk/NHaasGroteskDSPro-55Rg.otf",17);
         matb_f.setLineHeight(matb_f.getLineHeight()*1.1);
         //matb_f.setLetterSpacing(1.1);
-  //      matb_fbold.load("fonts/HaasGrotesk/NHaasGroteskDSPro-65Md.otf",16);
+        //      matb_fbold.load("fonts/HaasGrotesk/NHaasGroteskDSPro-65Md.otf",16);
         number_f.load("fonts/BergenMono/BergenMono-Bold.otf",28);
         //matb_f.setLetterSpacing(1.2);
         
         rects = getPolyline(svg);
-		cout << rects.size() << endl;
+        cout << rects.size() << endl;
         shader.load("bp_generator/sharpen");
         
         layout["dest"] = rects[1];
@@ -71,22 +84,25 @@ public:
             newFile.close();
         }
         
-
+        
         bg.load("bp_generator/boarding_back-01.png");
         w = bg.getWidth();
         h = bg.getHeight();
         
         scale = h/rects[9].height;
         cout <<"bp scale " <<scale<<" w: "<<w<<" h: "<<h<< endl;
+        
+
     }
     
-    string generate(Destinations d, int current){
-        ofEnableAntiAliasing();
-		
+    
+    void generate(Destinations d, int current){
+        
+        
         vector<int>materialIndx;
         materialIndx.resize(3);
         if(d.material.size()>3){
-			
+            
             materialIndx[0] = current;
             int temporary = current;
             while(temporary==materialIndx[0])
@@ -95,49 +111,35 @@ public:
             while(temporary == materialIndx[0] || temporary == materialIndx[1])
                 temporary = floorf(ofRandom(d.material.size()));
             materialIndx[2] = temporary;
-			
+            
             // cout <<"numbers: "<< materialIndx[0]<<materialIndx[1]<<materialIndx[2]<<endl;
         }
         else{
             for(int u = 0; u<MIN(3,d.material.size());u++)
                 materialIndx[u] = u;
         }
-		
+        
         ofRectangle g = layout["general"];
         vector<string> general = transformToCollumn("Med biblioteket har du online adgang til en verden af bøger, film, musik, blade og aviser, som er lette at tage med på rejsen.", g.width*scale, matb_f);
         general.push_back("");
-        vector<string>concat =transformToCollumn("Find dem på www.bib.ballerup.dk/e-materialer", g.width*scale, matb_f);
-		general.insert( general.end(), concat.begin(), concat.end() );
+        vector<string>concat =transformToCollumn("Find dem på www.bib.ballerup.dk/afgangstavlen", g.width*scale, matb_f);
+        general.insert( general.end(), concat.begin(), concat.end() );
         
-        //concat = transformToCollumn("www.bib.ballerup.dk/e-materialer", g.width*scale, mat_f);
-		//general.push_back("www.bib.ballerup.dk/e-materialer");
-		//general.push_back("e-materialer");
-        //general.insert( general.end(), concat.begin(), concat.end() );
-        ofFbo fbo; // for composing
-        ofDisableArbTex();
-        fbo.allocate(w,h, GL_RGBA);
-        ofEnableArbTex();
         
-        ofPixels pix;
-        pix.allocate(w,h,GL_RGBA);
-        
-
- 
-  
         fbo.begin();
         ofClear(255);
         ofBackground(255);
         bg.draw(0,0,w,h);
         
         ofSetColor(0);
-
+        
         ofPushMatrix();
         ofTranslate(0,tidSted_f.stringHeight("Å"));
-
+        
         tidSted_f.drawString(toUpper(d.destination), layout["dest"].x*scale, layout["dest"].y*scale);
         tidSted_f.drawString(ofGetTimestampString("%H%M"), layout["time"].x*scale, layout["time"].y*scale);
         ofPopMatrix();
-    
+        
         ofPushMatrix();
         ofTranslate(0,mat_f.stringHeight("Å"));
         for(int u = 0; u<MIN(3,d.material.size());u++){
@@ -150,15 +152,39 @@ public:
         }
         drawCollumn(general, g.x*scale, g.y*scale, matb_f, 30);
         ofPopMatrix();
-
+        
         ofSetColor(255);
         string number = "#"+ofToString(writeToFile(),6,'0');
         number_f.drawString(number,fbo.getWidth()-number_f.stringWidth(number)-50,70);
         fbo.end();
-
+        
         fbo.readToPixels(pix);
         ofSaveImage(pix, "latest.png", OF_IMAGE_QUALITY_BEST);
+        
+        
+        //}
+        // }
+        string boardingPass = "latest.png";
+        string cwd = ofFilePath::getCurrentWorkingDirectory();
+#ifdef __APPLE__
+        string command = "lp "+ ofSplitString(cwd,"/bin")[0] + "/bin/data/boardingPasses/"+ boardingPass;
+        system(command.c_str());
+        // cout << "lp "+ ofSplitString(cwd,"/bin")[0] + "/bin/data/boardingPasses/"+ desitnations[d].str << endl;
+#else
+        string command =cwd+"\\bin\\SumatraPDF.exe -print-to-default -print-settings \"fit\" "+ cwd +"\\bin\\data\\"+ boardingPass;
+        //system(command.c_str());
+        cout << command << endl;
+        cout << cwd << endl;
+        cout << "what" << endl;
+        if(!debug)system(command.c_str());
+        
+        
+        //string t = ofToDataPath("test.bat");
+        //cout << path << endl;
+        
+#endif
         return "latest.png";
+        
     }
     
     
@@ -188,14 +214,14 @@ public:
             p.setPolyWindingMode(OF_POLY_WINDING_ODD);
             vector<ofPolyline>& lines = const_cast<vector<ofPolyline>&>(p.getOutline());
             polys.push_back(lines[0].getBoundingBox());
-			cout << polys.back().width << endl;
+            cout << polys.back().width << endl;
         }
         return polys;
     }
     
     vector<string> transformToCollumn(string str, int w, ofTrueTypeFont f){
         
-       
+        
         vector<string> result;
         string appending="";
         for(int i = 0; i<str.length();i++){
@@ -273,14 +299,17 @@ public:
         newFile.close();
         return printNumber;
     }
-
+    
     
 private:
     map<string,ofRectangle> layout;
     ofShader shader;
     vector<ofRectangle>rects;
     string latest;
-
+    
 };
 
+
+
 #endif /* boadingPassGenerator_h */
+
