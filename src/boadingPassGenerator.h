@@ -96,7 +96,7 @@ public:
     }
     
     
-    void generate(Destinations d, int current){
+    string generate(Destinations d, int current){
         
         
         vector<int>materialIndx;
@@ -176,7 +176,7 @@ public:
         cout << command << endl;
         cout << cwd << endl;
         cout << "what" << endl;
-        if(!debug)system(command.c_str());
+        system(command.c_str());
         
         
         //string t = ofToDataPath("test.bat");
