@@ -44,10 +44,10 @@ void ofApp::setup(){
     gui.loadFromFile("settings.xml");
     
 
-    string letters = "0 1 2 3 4 5 6 7 8 9 A Á B C D E É F G H I J K L M N O Ó Õ P Q R S T U V W X Y Z Æ Ø Å , . + ...";
+    string letters = "0 1 2 3 4 5 6 7 8 9 A Á B C D E É F G H I J K L M N O Ó Õ P Q R S T U V W X Y Z Æ Ø Å & ' , . + ...";
     vector<string>_alphabet = ofSplitString(letters, " ");
     _alphabet.push_back(" ");
-    //for(int i = 0; i<_alphabet.size();i++)cout<<_alphabet[i][0]<<endl;
+    for(int i = 0; i<_alphabet.size();i++)cout<<_alphabet[i][0]<<endl;
     
     //cout << "num letters " << _alphabet.size() << endl;
     
@@ -253,19 +253,20 @@ void ofApp::update(){
     timeSinceLastFlip += ofGetLastFrameTime();
     
     for(int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS);i++){
+		desitnations[i].time += ofGetLastFrameTime();
         wh_destination[i].update(animationTime);
         wh_number[i].update(animationTime);
         wh_material[i].update(animationTime);
         wh_numberOfMaterials[i].update(animationTime);
-        desitnations[i].time += ofGetLastFrameTime();
+        
         
         if(desitnations[i].time > materialSwapTime){
             desitnations[i].time = 0.0;
             desitnations[i].currentMaterial++;
             desitnations[i].currentMaterial = desitnations[i].currentMaterial%desitnations[i].material.size();
             string newMaterial = desitnations[i].material[desitnations[i].currentMaterial];
-            if(newMaterial!=wh_material[i].next_string)
-                wh_material[i].changeString(newMaterial);
+            //if(newMaterial!=wh_material[i].next_string)
+            wh_material[i].changeString(newMaterial);
         }
         
     }
@@ -277,9 +278,9 @@ void ofApp::update(){
 
     if(input>-1){
         if (input < MIN(desitnations.size(),NUM_DESTINATIONS) && !printing) {
-            printBoardingPass(destination_indxes[10-input]);
+            printBoardingPass(destination_indxes[9-input]);
             printing = true;
-            printId = input;
+            printId = 9-input;
         }
         if (input == SHUFFLE_BUTTON) {
             for (int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS); i++) {
@@ -289,7 +290,7 @@ void ofApp::update(){
                 int d = destination_indxes[i];
                 wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
                 wh_number[i].changeString(desitnations[d].number,desitnations[d].emoji);
-            wh_material[i].changeString(desitnations[d].material[int(ofRandom(desitnations[d].material.size()))],desitnations[d].emoji);
+            wh_material[i].changeString(desitnations[d].material[desitnations[d].currentMaterial],desitnations[d].emoji);
                 
                 wh_numberOfMaterials[i].changeString("+"+ofToString(desitnations[d].material.size()));
                 
