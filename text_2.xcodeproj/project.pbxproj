@@ -87,6 +87,7 @@
 		B66FF1E4206261BF00EB4CB7 /* sharpen.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = sharpen.vert; path = ../../boardingPassGenerator/bin/data/bp_generator/sharpen.vert; sourceTree = "<group>"; };
 		B66FF1E9206271D900EB4CB7 /* shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = shader.vert; path = bin/data/shader.vert; sourceTree = SOURCE_ROOT; };
 		B66FF1EA206271D900EB4CB7 /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = shader.frag; path = bin/data/shader.frag; sourceTree = SOURCE_ROOT; };
+		B68D78F22088DD81000C64B2 /* travel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = travel.json; path = bin/data/travel.json; sourceTree = SOURCE_ROOT; };
 		B87C60311EC1FE841C1ECD89 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../../addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
 		B9E16009E1772C6D00B20013 /* ofxSvg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSvg.cpp; path = ../../../addons/ofxSvg/src/ofxSvg.cpp; sourceTree = SOURCE_ROOT; };
 		C70D8946940288799E82131E /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../../addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
@@ -291,6 +292,7 @@
 				B66FF1DD20624F5600EB4CB7 /* commonStructs.h */,
 				B66FF1EA206271D900EB4CB7 /* shader.frag */,
 				B66FF1E9206271D900EB4CB7 /* shader.vert */,
+				B68D78F22088DD81000C64B2 /* travel.json */,
 				B66FF1E3206261BF00EB4CB7 /* sharpen.frag */,
 				B66FF1E4206261BF00EB4CB7 /* sharpen.vert */,
 			);

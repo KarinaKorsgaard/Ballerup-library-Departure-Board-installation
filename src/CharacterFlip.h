@@ -73,6 +73,7 @@ public:
         
         if(next == end) {
             stopAnimation = true;
+            correctMesh();
             // cout<< "from "<<from << " next "<< next << " end "<<end<<endl;
         }
         else stopAnimation = false;
@@ -99,7 +100,7 @@ public:
                 mesh.getVertices()[4].set(ofVec2f(0, charHeight));
                 mesh.getVertices()[5].set(ofVec2f(charWidth, charHeight));
             }
-            if(localTime > animationTime/2){
+            if(localTime >= animationTime/2 && localTime < animationTime){
                 if(!getNewChar){
                     getNewChar = true;
                 }
@@ -114,7 +115,7 @@ public:
                 mesh.getVertices()[4].set(ofVec2f(0-xpos, ypos+charHeight/2));
                 mesh.getVertices()[5].set(ofVec2f(charWidth+xpos, ypos+charHeight/2));
             }
-            if(localTime > animationTime){
+            if(localTime >= animationTime){
                 if(to == swapToEmoji && doEmoji) {
                     stopAtEmoji = true;
                     correctMesh();
@@ -132,6 +133,7 @@ public:
 //                    }
                     //else {
                          from = next;
+                         stopAnimation = true;
                          localTime = 0.0;
                     //}
                     

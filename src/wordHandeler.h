@@ -106,10 +106,16 @@ public:
         char c = (s[i]);
         weird = false;
         string result = s.substr(i,1);
+        
         if(c == '\303'){
             result = s.substr(i,2);
             weird = true;
+            //if(s[i+1] == '\225' || s[i+1] == '\265'){result = "Õ";cout<<"oooo"<<endl;}
+           // cout << (s[i+1]) <<endl;
         }
+        //cout << "Õ"[1] <<" "<< "õ"[1] << endl;
+       // if(result == "Õ" && weird)cout << result << endl;
+       // cout << "map "<<map.find("Õ")->second << endl;
         if(map.find(result)!=map.end())
             return map.find(result)->second;
         else return 0;
@@ -134,6 +140,11 @@ private:
         dst = ReplaceAll(dst,"æ", "Æ");
         dst = ReplaceAll(dst,"ø", "Ø");
         dst = ReplaceAll(dst,"å", "Å");
+        dst = ReplaceAll(dst,"é", "É");
+        dst = ReplaceAll(dst,"ó", "Ó");
+        dst = ReplaceAll(dst,"á", "Á");
+        dst = ReplaceAll(dst,"ð", "Õ");
+        dst = ReplaceAll(dst,"õ", "Õ");
         return dst;
     }
     std::string ReplaceAll(std::string str, const std::string& from, const std::string& to) {

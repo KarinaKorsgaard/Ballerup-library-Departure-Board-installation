@@ -47,7 +47,7 @@ void ofApp::setup(){
     string letters = "0 1 2 3 4 5 6 7 8 9 A Á B C D E É F G H I J K L M N O Ó Õ P Q R S T U V W X Y Z Æ Ø Å & ' , . + ...";
     vector<string>_alphabet = ofSplitString(letters, " ");
     _alphabet.push_back(" ");
-    for(int i = 0; i<_alphabet.size();i++)cout<<_alphabet[i][0]<<endl;
+    //for(int i = 0; i<_alphabet.size();i++)cout<<_alphabet[i][0]<<endl;
     
     //cout << "num letters " << _alphabet.size() << endl;
     
@@ -289,7 +289,9 @@ void ofApp::update(){
                 destination_indxes[i] = destination_indxes[i] % desitnations.size();
                 
                 int d = destination_indxes[i];
-                wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
+                //wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
+                wh_destination[i].changeString("Fréttablaðið",desitnations[d].emoji);
+                
                 wh_number[i].changeString(desitnations[d].number,desitnations[d].emoji);
             wh_material[i].changeString(desitnations[d].material[desitnations[d].currentMaterial],desitnations[d].emoji);
                 
@@ -470,6 +472,7 @@ void ofApp::doRandomFlip(int amount){
 }
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
+    if(key == 's')input = SHUFFLE_BUTTON;
 
 }
 
