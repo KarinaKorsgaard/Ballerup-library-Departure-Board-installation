@@ -110,7 +110,7 @@ public:
         if(c == '\303'){
             result = s.substr(i,2);
             weird = true;
-            //if(s[i+1] == '\225' || s[i+1] == '\265'){result = "Õ";cout<<"oooo"<<endl;}
+            if(s[i+1] == '\225' || s[i+1] == '\265'){result = "Õ";cout<<"oooo"<<endl;}
            // cout << (s[i+1]) <<endl;
         }
         //cout << "Õ"[1] <<" "<< "õ"[1] << endl;
@@ -145,6 +145,7 @@ private:
         dst = ReplaceAll(dst,"á", "Á");
         dst = ReplaceAll(dst,"ð", "Õ");
         dst = ReplaceAll(dst,"õ", "Õ");
+		//cout <<"test "<< "ð"[0] << endl;
         return dst;
     }
     std::string ReplaceAll(std::string str, const std::string& from, const std::string& to) {

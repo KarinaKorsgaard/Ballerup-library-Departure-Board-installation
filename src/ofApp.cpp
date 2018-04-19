@@ -289,8 +289,8 @@ void ofApp::update(){
                 destination_indxes[i] = destination_indxes[i] % desitnations.size();
                 
                 int d = destination_indxes[i];
-                //wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
-                wh_destination[i].changeString("Fréttablaðið",desitnations[d].emoji);
+                wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
+                //wh_destination[i].changeString("Fréttablaðið",desitnations[d].emoji);
                 
                 wh_number[i].changeString(desitnations[d].number,desitnations[d].emoji);
             wh_material[i].changeString(desitnations[d].material[desitnations[d].currentMaterial],desitnations[d].emoji);
