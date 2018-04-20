@@ -145,6 +145,11 @@ private:
         dst = ReplaceAll(dst,"á", "Á");
         dst = ReplaceAll(dst,"ð", "Ð");
         dst = ReplaceAll(dst,"õ", "Õ");
+		dst = ReplaceAll(dst, "ü", "Ü");
+		dst = ReplaceAll(dst, "ï", "Ï");
+		dst = ReplaceAll(dst, "ä", "Ä");
+		dst = ReplaceAll(dst, "ö", "Ö");
+		dst = ReplaceAll(dst, "ë", "Ë");
 		//cout <<"test "<< "ð"[0] << endl;
         return dst;
     }

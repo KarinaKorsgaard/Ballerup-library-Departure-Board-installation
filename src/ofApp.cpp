@@ -44,7 +44,7 @@ void ofApp::setup(){
     gui.loadFromFile("settings.xml");
     
 
-    string letters = "0 1 2 3 4 5 6 7 8 9 A Á B C D E É F G H I J K L M N O Ó Õ Ð P Q R S T U V W X Y Z Æ Ø Å & ' , . + : ...";
+    string letters = "0 1 2 3 4 5 6 7 8 9 A Á Ä B C D E É Ë F G H I Ï J K L M N O Ó Õ Ö Ð P Q R S T U Ü V W X Y Z Æ Ø Å & ' , . + : ...";
     vector<string>_alphabet = ofSplitString(letters, " ");
     _alphabet.push_back(" ");
     //for(int i = 0; i<_alphabet.size();i++)cout<<_alphabet[i][0]<<endl;
