@@ -473,7 +473,7 @@ void ofApp::doRandomFlip(int amount){
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     if(key == 's')input = SHUFFLE_BUTTON;
-
+	if (key == 'm')input = MOTION_INPUT;
 }
 
 //--------------------------------------------------------------

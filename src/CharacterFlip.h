@@ -211,7 +211,7 @@ public:
                 
                // ofDrawRectangle(0,mesh.getVertices()[0].y,tex->at(from).getWidth(),mesh.getVertices()[0].y);   
             }
-            else if(localTime >= animationTime/2 && localTime < animationTime){
+            else if(localTime >= animationTime/2){
                 // be on top of a
                 ofSetColor(255);
                 if(from == swapToEmoji && doEmoji)
@@ -236,9 +236,12 @@ public:
                 
              //   grade.end();
             }
-            else if (localTime >= animationTime){
+            /*else if (localTime >= animationTime){
+				if (from == swapToEmoji && doEmoji)
+					emoji->draw(0, 0);
+				else
                 tex->at(to).draw(0,0);
-            }
+            }*/
         }
     }
     
