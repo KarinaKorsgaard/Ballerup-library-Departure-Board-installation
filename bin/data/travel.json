@@ -1,6 +1,6 @@
 [{
 		"destination": "Rom",
-		"emoji": "default",
+		"emoji": "classical-building",
 		"resources": [{
 				"title": "Corriere della Sera",
 				"source": "PressReader",
@@ -45,7 +45,7 @@
 	},
 	{
 		"destination": "Berlin",
-		"emoji": "default",
+		"emoji": "beer",
 		"resources": [{
 				"title": "Augsburger Allgemeine",
 				"source": "PressReader",
@@ -90,7 +90,7 @@
 	},
 	{
 		"destination": "Mallorca",
-		"emoji": "default",
+		"emoji": "beach",
 		"resources": [{
 				"title": "La Vanguardia",
 				"source": "PressReader",
@@ -135,7 +135,7 @@
 	},
 	{
 		"destination": "Barcelona",
-		"emoji": "default",
+		"emoji": "wine",
 		"resources": [{
 				"title": "La Vanguardia",
 				"source": "PressReader",
@@ -180,7 +180,7 @@
 	},
 	{
 		"destination": "Paris",
-		"emoji": "default",
+		"emoji": "crossaint",
 		"resources": [{
 				"title": "Le Parisien",
 				"source": "PressReader",
@@ -225,7 +225,7 @@
 	},
 	{
 		"destination": "Nice",
-		"emoji": "default",
+		"emoji": "shopping-bags",
 		"resources": [{
 				"title": "Le Figaro",
 				"source": "PressReader",
@@ -270,7 +270,7 @@
 	},
 	{
 		"destination": "Stockholm",
-		"emoji": "default",
+		"emoji": "ice-hockey",
 		"resources": [{
 				"title": "Svenska Dagbladet",
 				"source": "PressReader",
@@ -315,7 +315,7 @@
 	},
 	{
 		"destination": "Kreta",
-		"emoji": "default",
+		"emoji": "classical-building",
 		"resources": [{
 				"title": "Kathimerini",
 				"source": "PressReader",
@@ -355,7 +355,7 @@
 	},
 	{
 		"destination": "London",
-		"emoji": "default",
+		"emoji": "umbrella",
 		"resources": [{
 				"title": "The London Free Press",
 				"source": "PressReader",
@@ -400,7 +400,7 @@
 	},
 	{
 		"destination": "Edinburgh",
-		"emoji": "default",
+		"emoji": "castle",
 		"resources": [{
 				"title": "The London Free Press",
 				"source": "PressReader",
@@ -445,7 +445,7 @@
 	},
 	{
 		"destination": "Dublin",
-		"emoji": "default",
+		"emoji": "guinnes",
 		"resources": [{
 				"title": "Irish Independent",
 				"source": "PressReader",
@@ -485,7 +485,7 @@
 	},
 	{
 		"destination": "Kroatien",
-		"emoji": "default",
+		"emoji": "beach",
 		"resources": [{
 				"title": "24sata",
 				"source": "PressReader",
@@ -530,7 +530,7 @@
 	},
 	{
 		"destination": "Norge",
-		"emoji": "default",
+		"emoji": "snow_mountain",
 		"resources": [{
 				"title": "Aftenposten",
 				"source": "PressReader",
@@ -575,7 +575,7 @@
 	},
 	{
 		"destination": "Tyrkiet",
-		"emoji": "default",
+		"emoji": "cat",
 		"resources": [{
 				"title": "Hürriyet",
 				"source": "PressReader",
@@ -620,7 +620,7 @@
 	},
 	{
 		"destination": "Østrig",
-		"emoji": "default",
+		"emoji": "cheese",
 		"resources": [{
 				"title": "Heute",
 				"source": "PressReader",
@@ -660,7 +660,7 @@
 	},
 	{
 		"destination": "New York",
-		"emoji": "default",
+		"emoji": "taxi",
 		"resources": [{
 				"title": "New York Post",
 				"source": "PressReader",
@@ -705,7 +705,7 @@
 	},
 	{
 		"destination": "Miami",
-		"emoji": "default",
+		"emoji": "beach",
 		"resources": [{
 				"title": "South Florida Times",
 				"source": "PressReader",
@@ -750,7 +750,7 @@
 	},
 	{
 		"destination": "San Francisco",
-		"emoji": "default",
+		"emoji": "sun",
 		"resources": [{
 				"title": "San Francisco Chronicle",
 				"source": "PressReader",
@@ -790,7 +790,7 @@
 	},
 	{
 		"destination": "Thailand",
-		"emoji": "default",
+		"emoji": "koala",
 		"resources": [{
 				"title": "Bangkok Post",
 				"source": "PressReader",
@@ -835,7 +835,7 @@
 	},
 	{
 		"destination": "Australien",
-		"emoji": "default",
+		"emoji": "koala",
 		"resources": [{
 				"title": "The Guardian Australia",
 				"source": "PressReader",
@@ -879,7 +879,7 @@
 	},
 	{
 		"destination": "København",
-		"emoji": "default",
+		"emoji": "bicycle",
 		"resources": [{
 				"title": "Architectural Digest",
 				"source": "RB Digital",
@@ -919,7 +919,7 @@
 	},
 	{
 		"destination": "Bornholm",
-		"emoji": "default",
+		"emoji": "sun",
 		"resources": [{
 				"title": "Cycling Active",
 				"source": "RB Digital",
@@ -954,7 +954,7 @@
 	},
 	{
 		"destination": "Egypten",
-		"emoji": "default",
+		"emoji": "pyramid",
 		"resources": [{
 				"title": "Youm7",
 				"source": "PressReader",
@@ -999,7 +999,7 @@
 	},
 	{
 		"destination": "Tokyo",
-		"emoji": "default",
+		"emoji": "unicorn",
 		"resources": [{
 				"title": "Mainichi Shimbun",
 				"source": "PressReader",
@@ -1044,7 +1044,7 @@
 	},
 	{
 		"destination": "Toscana",
-		"emoji": "default",
+		"emoji": "grapes",
 		"resources": [{
 				"title": "Corriere Fiorentino",
 				"source": "PressReader",
@@ -1089,7 +1089,7 @@
 	},
 	{
 		"destination": "Mexico",
-		"emoji": "default",
+		"emoji": "cactus",
 		"resources": [{
 				"title": "El Universal",
 				"source": "PressReader",
@@ -1134,7 +1134,7 @@
 	},
 	{
 		"destination": "Brasilien",
-		"emoji": "default",
+		"emoji": "beach",
 		"resources": [{
 				"title": "Folha de S. Paulo",
 				"source": "PressReader",
@@ -1179,7 +1179,7 @@
 	},
 	{
 		"destination": "Kina",
-		"emoji": "default",
+		"emoji": "dragon",
 		"resources": [{
 				"title": "China Daily",
 				"source": "PressReader",
@@ -1224,7 +1224,7 @@
 	},
 	{
 		"destination": "Kenya",
-		"emoji": "default",
+		"emoji": "desert",
 		"resources": [{
 				"title": "Daily Nation",
 				"source": "PressReader",
@@ -1269,7 +1269,7 @@
 	},
 	{
 		"destination": "Prag",
-		"emoji": "default",
+		"emoji": "castle",
 		"resources": [{
 				"title": "Mladá fronta DNES",
 				"source": "PressReader",
@@ -1314,7 +1314,7 @@
 	},
 	{
 		"destination": "Amsterdam",
-		"emoji": "default",
+		"emoji": "herb",
 		"resources": [{
 				"title": "NRC Handelsblad",
 				"source": "PressReader",
@@ -1359,7 +1359,7 @@
 	},
 	{
 		"destination": "Lissabon",
-		"emoji": "default",
+		"emoji": "wine",
 		"resources": [{
 				"title": "Jornal de Noticias",
 				"source": "PressReader",
@@ -1394,7 +1394,7 @@
 	},
 	{
 		"destination": "Island",
-		"emoji": "default",
+		"emoji": "snowman",
 		"resources": [{
 				"title": "Fréttablaðið",
 				"source": "PressReader",
