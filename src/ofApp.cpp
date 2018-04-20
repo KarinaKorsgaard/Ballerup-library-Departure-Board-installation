@@ -490,6 +490,8 @@ void ofApp::keyReleased(int key){
 		if (debug)ofShowCursor();
 		else ofHideCursor();
 
+
+
 	}
 }
 
