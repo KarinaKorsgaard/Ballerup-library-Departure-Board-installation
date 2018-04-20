@@ -6,7 +6,7 @@ void ofApp::setup(){
    // serial.listDevices();
    // vector <ofSerialDeviceInfo> deviceList = serial.getDeviceList();
     bpg.setup();
-    
+	ofHideCursor();
 
     // this should be set to whatever com port your serial device is connected to.
     // (ie, COM4 on a pc, /dev/tty.... on linux, /dev/tty... on a mac)
@@ -478,7 +478,7 @@ void ofApp::keyPressed(int key){
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
-    if(debug)doRandomFlip(randomFlipAmount);
+    //if(debug)doRandomFlip(randomFlipAmount);
 	int k = key - '0';
 	if(k<desitnations.size() && k>-1)
 		input = k;
@@ -487,6 +487,8 @@ void ofApp::keyReleased(int key){
 		debug = !debug;
 		if (!debug)ofSetFullscreen(true);
 		else ofSetFullscreen(false);
+		if (debug)ofShowCursor();
+		else ofHideCursor();
 
 	}
 }

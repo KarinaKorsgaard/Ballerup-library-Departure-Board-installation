@@ -82,6 +82,7 @@ public:
             
             if(!stopAtEmoji)localTime+=time;
             animationTime = at;
+			localTime = MIN(localTime, animationTime);
             
         
             to = next;
@@ -121,22 +122,17 @@ public:
                     correctMesh();
                 }
                 else {
-                    
-                    
-                    
-                    getNewChar = true;
-                    correctMesh();
-//
-//                    if(next == end) {
-//                        stopAnimation = true;
-//                        // cout<< "from "<<from << " next "<< next << " end "<<end<<endl;
-//                    }
-                    //else {
-                         from = next;
-                         stopAnimation = true;
-                         localTime = 0.0;
-                    //}
-                    
+
+
+
+					getNewChar = true;
+					correctMesh();
+
+					from = next;
+					stopAnimation = true;
+					localTime = 0.0;
+					//}
+
                 }
             }
             
