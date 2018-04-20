@@ -185,7 +185,7 @@ public:
     void draw(){
         
         
-        if(to<tex->size() && from < tex->size()){
+        if (to < tex->size() && from < tex->size()) {
             if(localTime < animationTime/2){
                 //draw a on top of b
                 ofSetColor(255);
@@ -211,7 +211,7 @@ public:
                 
                // ofDrawRectangle(0,mesh.getVertices()[0].y,tex->at(from).getWidth(),mesh.getVertices()[0].y);   
             }
-            if(localTime > animationTime/2){
+            else if(localTime >= animationTime/2 && localTime < animationTime){
                 // be on top of a
                 ofSetColor(255);
                 if(from == swapToEmoji && doEmoji)
@@ -236,7 +236,9 @@ public:
                 
              //   grade.end();
             }
-            
+            else if (localTime >= animationTime){
+                tex->at(to).draw(0,0);
+            }
         }
     }
     
