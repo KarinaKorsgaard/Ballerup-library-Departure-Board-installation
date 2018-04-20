@@ -129,7 +129,7 @@ class ofApp : public ofBaseApp{
         
         ofRectangle r;
         if(l != "")
-            r = font.getStringBoundingBox(l, 0, 0);
+            r = font.getStringBoundingBox("A", 0, 0);
         else
             r = ofRectangle(0,0,emoji.getWidth(),emoji.getHeight());
         

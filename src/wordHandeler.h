@@ -55,7 +55,8 @@ public:
                 
                 int from = characters[i].from;
                 int end = getSubString(next_string,i,charInString);
-                
+                //int end = getSubString(ofToUpperUnicode("ð"),i,charInString);
+            
                 int dist_to_next;
                 if(from <= end) {
                     dist_to_next = end - from;
@@ -102,7 +103,9 @@ public:
 
     
     int getSubString(string s,int itr, int i){
+        //s = ofToUpperUnicode("ð");
         if(itr>max_length-2 && wordIsToLong) return map["..."];
+        
         char c = (s[i]);
         weird = false;
         string result = s.substr(i,1);
@@ -110,12 +113,9 @@ public:
         if(c == '\303'){
             result = s.substr(i,2);
             weird = true;
-            if(s[i+1] == '\225' || s[i+1] == '\265'){result = "Õ";cout<<"oooo"<<endl;}
-           // cout << (s[i+1]) <<endl;
+            if(s[i+1] == '\260' || s[i+1] == '\220') result = "Ð";
         }
-        //cout << "Õ"[1] <<" "<< "õ"[1] << endl;
-       // if(result == "Õ" && weird)cout << result << endl;
-       // cout << "map "<<map.find("Õ")->second << endl;
+
         if(map.find(result)!=map.end())
             return map.find(result)->second;
         else return 0;
@@ -143,7 +143,7 @@ private:
         dst = ReplaceAll(dst,"é", "É");
         dst = ReplaceAll(dst,"ó", "Ó");
         dst = ReplaceAll(dst,"á", "Á");
-        dst = ReplaceAll(dst,"ð", "Õ");
+        dst = ReplaceAll(dst,"ð", "Ð");
         dst = ReplaceAll(dst,"õ", "Õ");
 		//cout <<"test "<< "ð"[0] << endl;
         return dst;
