@@ -498,7 +498,7 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-    doRandomFlip(randomFlipAmount);
+    if(debug)doRandomFlip(randomFlipAmount);
 }
 
 //--------------------------------------------------------------
