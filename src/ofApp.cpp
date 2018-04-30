@@ -287,8 +287,10 @@ void ofApp::update(){
             for (int i = 0; i<MIN(desitnations.size(),NUM_DESTINATIONS); i++) {
                 destination_indxes[i] += MIN(desitnations.size(),NUM_DESTINATIONS);
                 destination_indxes[i] = destination_indxes[i] % desitnations.size();
+            
                 
                 int d = destination_indxes[i];
+                desitnations[d].currentMaterial = ofRandom(desitnations[d].material.size());
                 wh_destination[i].changeString(desitnations[d].destination,desitnations[d].emoji);
                 //wh_destination[i].changeString("Fréttablaðið",desitnations[d].emoji);
                 
@@ -327,8 +329,7 @@ void ofApp::draw(){
     
     
     ofPushMatrix();
-    if(debug)ofScale(0.6, 0.6);
-    if(debug)ofTranslate(0,150);
+    if(debug)ofScale(0.4, 0.4);
     int totalLength = 2 + wh_destination[0].max_length + wh_number[0].max_length + wh_numberOfMaterials[0].max_length + wh_material[0].max_length;
     
     
@@ -497,7 +498,7 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-    
+    doRandomFlip(randomFlipAmount);
 }
 
 //--------------------------------------------------------------

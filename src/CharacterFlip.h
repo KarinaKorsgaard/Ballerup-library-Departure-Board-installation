@@ -19,7 +19,7 @@ public:
     bool getNewChar;
     
     ofSoundPlayer p;
-
+    
     ofTexture * emoji;
     
     vector<ofTexture> * tex;
@@ -33,16 +33,16 @@ public:
         charHeight = ch;
         animationTime = at;
         getNewChar = false;
-
-       // grade.load("grade");
+        
+        // grade.load("grade");
         p.load("flip3.wav");
         p.setLoop(false);
         
         tex = _tex;
-
+        
         localTime = 0.0;
         from = '0';
-
+        
         mesh.addVertex(ofVec2f(0, 0));
         mesh.addVertex(ofVec2f(charWidth, 0));
         
@@ -66,28 +66,33 @@ public:
         
         shadeUpper = tUp;
         shadeLower = tLow;
-
+        
     }
     bool stopAnimation = false;
     void update(double time, int next, int end, float at){
+        to = next;
+        animationTime = at;
         
         if(next == end) {
+            // from = end;
+            to = end;
             stopAnimation = true;
             correctMesh();
             // cout<< "from "<<from << " next "<< next << " end "<<end<<endl;
         }
-        else stopAnimation = false;
+        else {
+            if (!stopAtEmoji) localTime+=time;
+            localTime = MIN(localTime, animationTime);
+            // if (localTime >= animationTime) localTime = 0.0;
+            stopAnimation = false;
+        }
+        
         
         if(!stopAnimation){
             
-            if(!stopAtEmoji)localTime+=time;
-            animationTime = at;
-			localTime = MIN(localTime, animationTime);
-            
-        
-            to = next;
-            
-            
+            // if(!stopAtEmoji)localTime+=time;
+            // localTime+=time;
+            // localTime = MIN(localTime, animationTime);
             
             if(localTime < animationTime/2){
                 
@@ -119,21 +124,16 @@ public:
             if(localTime >= animationTime){
                 if(to == swapToEmoji && doEmoji) {
                     stopAtEmoji = true;
-                    correctMesh();
                 }
                 else {
-
-
-
-					getNewChar = true;
-					correctMesh();
-
-					from = next;
-					stopAnimation = true;
-					localTime = 0.0;
-					//}
-
+                    getNewChar = true;
+                    from = next;
+                    stopAnimation = true;
+                    // if(next != end)localTime = 0.0;
+                    localTime = 0.0;
+                    
                 }
+                correctMesh();
             }
             
             if(stopAtEmoji){
@@ -142,8 +142,6 @@ public:
             if(stopAtEmojiC>3.0){
                 stopAtEmojiC = 0.0;
                 stopAtEmoji = false; // start the time again
-                
-                
                 localTime = 0.0;
                 from = next;
                 getNewChar = true;
@@ -161,9 +159,9 @@ public:
     }
     bool pastEmoji(int a, int b){
         bool result = false;
-
+        
         if(a > (b + 2)%tex->size())result = true;
-
+        
         return result;
     }
     void correctMesh(){
@@ -180,64 +178,60 @@ public:
     
     void draw(){
         
-        
-        if (to < tex->size() && from < tex->size()) {
-            if(localTime < animationTime/2){
-                //draw a on top of b
-                ofSetColor(255);
-                
-                
-                
-                if(to == swapToEmoji && doEmoji)emoji->draw(0,0);
-                else tex->at(to).draw(0,0); // behind
-                
-                
-                if(from == swapToEmoji && doEmoji)emoji->bind();
-                else tex->at(from).bind();
-                mesh.draw();
-                if(from == swapToEmoji && doEmoji)emoji->unbind();
-                else tex->at(from).unbind();
-                
-                
-                ofSetColor(0,localTime/(animationTime/2)*255);
-              
-                shadeUpper->bind();
-                mesh.draw();
-                shadeUpper->unbind();
-                
-               // ofDrawRectangle(0,mesh.getVertices()[0].y,tex->at(from).getWidth(),mesh.getVertices()[0].y);   
+        if(!stopAnimation) {
+            if (to < tex->size() && from < tex->size()) {
+                if(localTime < animationTime/2){
+                    //draw a on top of b
+                    ofSetColor(255);
+                    
+                    
+                    
+                    if(to == swapToEmoji && doEmoji)emoji->draw(0,0);
+                    else tex->at(to).draw(0,0); // behind
+                    
+                    
+                    if(from == swapToEmoji && doEmoji)emoji->bind();
+                    else tex->at(from).bind();
+                    mesh.draw();
+                    if(from == swapToEmoji && doEmoji)emoji->unbind();
+                    else tex->at(from).unbind();
+                    
+                    
+                    ofSetColor(0,localTime/(animationTime/2)*255);
+                    
+                    shadeUpper->bind();
+                    mesh.draw();
+                    shadeUpper->unbind();
+                    
+                    // ofDrawRectangle(0,mesh.getVertices()[0].y,tex->at(from).getWidth(),mesh.getVertices()[0].y);
+                }
+                else if(localTime >= animationTime/2 ){
+                    // be on top of a
+                    ofSetColor(255);
+                    if(from == swapToEmoji && doEmoji)
+                        emoji->draw(0,0);
+                    else tex->at(from).draw(0,0); // behind
+                    
+                    // grade.begin();
+                    // grade.setUniform1f("amount", localTime/animationTime * 255);
+                    
+                    if(to == swapToEmoji && doEmoji)emoji->bind();
+                    else tex->at(to).bind();
+                    mesh.draw();
+                    if(to == swapToEmoji && doEmoji)emoji->unbind();
+                    else tex->at(to).unbind();
+                    
+                    ofSetColor(100,255-(localTime-animationTime/2)/(animationTime/2)*255);
+                    shadeLower->bind();
+                    mesh.draw();
+                    shadeLower->unbind();
+                    
+                }
             }
-            else if(localTime >= animationTime/2){
-                // be on top of a
-                ofSetColor(255);
-                if(from == swapToEmoji && doEmoji)
-                    emoji->draw(0,0);
-                else tex->at(from).draw(0,0); // behind
-                
-               // grade.begin();
-               // grade.setUniform1f("amount", localTime/animationTime * 255);
-                
-                if(to == swapToEmoji && doEmoji)emoji->bind();
-                else tex->at(to).bind();
-                mesh.draw();
-                if(to == swapToEmoji && doEmoji)emoji->unbind();
-                else tex->at(to).unbind();
-                
-                ofSetColor(100,255-(localTime-animationTime/2)/(animationTime/2)*255);
-                shadeLower->bind();
-                mesh.draw();
-                shadeLower->unbind();
-                
-              //  p.play();
-                
-             //   grade.end();
-            }
-            /*else if (localTime >= animationTime){
-				if (from == swapToEmoji && doEmoji)
-					emoji->draw(0, 0);
-				else
-                tex->at(to).draw(0,0);
-            }*/
+        }
+        else{
+            ofSetColor(255);
+            tex->at(from).draw(0,0); // behind
         }
     }
     
@@ -256,8 +250,8 @@ public:
         from = (from + r) % ls;
         doEmoji = false;
     }
-
-
+    
+    
     ofTexture * shadeUpper;
     ofTexture * shadeLower;
     
@@ -271,3 +265,4 @@ public:
 
 
 #endif /* CharacterFlip_h */
+
