@@ -1,5 +1,5 @@
 [{
-		"destination": "Rom",
+		"destination": "TESTTESTTEST",
 		"emoji": "classical-building",
 		"resources": [{
 				"title": "Corriere della Sera",
@@ -44,7 +44,7 @@
 		]
 	},
 	{
-		"destination": "Berlin",
+		"destination": "TESTTESTTEST",
 		"emoji": "beer",
 		"resources": [{
 				"title": "Augsburger Allgemeine",
@@ -89,7 +89,7 @@
 		]
 	},
 	{
-		"destination": "Mallorca",
+		"destination": "TESTTESTTEST",
 		"emoji": "beach",
 		"resources": [{
 				"title": "La Vanguardia",
@@ -134,7 +134,7 @@
 		]
 	},
 	{
-		"destination": "Barcelona",
+		"destination": "TESTTESTTEST",
 		"emoji": "wine",
 		"resources": [{
 				"title": "La Vanguardia",
@@ -179,7 +179,7 @@
 		]
 	},
 	{
-		"destination": "Paris",
+		"destination": "TESTTESTTEST",
 		"emoji": "crossaint",
 		"resources": [{
 				"title": "Le Parisien",
@@ -224,7 +224,7 @@
 		]
 	},
 	{
-		"destination": "Nice",
+		"destination": "TESTTESTTEST",
 		"emoji": "shopping-bags",
 		"resources": [{
 				"title": "Le Figaro",
@@ -269,7 +269,7 @@
 		]
 	},
 	{
-		"destination": "Stockholm",
+		"destination": "TESTTESTTEST",
 		"emoji": "ice-hockey",
 		"resources": [{
 				"title": "Svenska Dagbladet",
@@ -314,7 +314,7 @@
 		]
 	},
 	{
-		"destination": "Kreta",
+		"destination": "TESTTESTTEST",
 		"emoji": "classical-building",
 		"resources": [{
 				"title": "Kathimerini",
@@ -354,7 +354,7 @@
 		]
 	},
 	{
-		"destination": "London",
+		"destination": "TESTTESTTEST",
 		"emoji": "umbrella",
 		"resources": [{
 				"title": "The London Free Press",
