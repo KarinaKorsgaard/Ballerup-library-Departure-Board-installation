@@ -122,9 +122,9 @@ public:
         }
         
         ofRectangle g = layout["general"];
-        vector<string> general = transformToCollumn("TESTTESTTEST TESTTESTTEST TESTTESTTEST", g.width*scale, matb_f);
+        vector<string> general = transformToColumn("TESTTESTTEST TESTTESTTEST TESTTESTTEST", g.width*scale, matb_f);
         general.push_back("");
-        vector<string>concat =transformToCollumn("Find dem på www.bib.ballerup.dk/TESTTESTTEST", g.width*scale, matb_f);
+        vector<string>concat =transformToColumn("Find dem på www.bib.ballerup.dk/TESTTESTTEST", g.width*scale, matb_f);
         general.insert( general.end(), concat.begin(), concat.end() );
         
         
@@ -149,7 +149,7 @@ public:
             ofRectangle a = rects[u+3];
             ofRectangle b = rects[u+6];
             mat_f.drawString(toUpper(d.material[mi]), a.x*scale, a.y*scale);
-            vector<string>description = transformToCollumn(d.materialDescription[mi], layout["mat1"].width*scale, matb_f);
+            vector<string>description = transformToColumn(d.materialDescription[mi], layout["mat1"].width*scale, matb_f);
             drawCollumn(description ,b.x*scale, b.y*scale, matb_f);
         }
         drawCollumn(general, g.x*scale, g.y*scale, matb_f, 30);
