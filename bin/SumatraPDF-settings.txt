@@ -58,7 +58,7 @@ EnableTeXEnhancements = false
 DefaultDisplayMode = automatic
 DefaultZoom = fit page
 WindowState = 1
-WindowPos = 494 38 1344 1102
+WindowPos = 1230 8 1344 1740
 ShowToc = true
 SidebarDx = 0
 TocDy = 0
@@ -67,92 +67,12 @@ UseTabs = true
 
 FileStates [
 	[
-		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\print tests\øØÅåæÆ_justering.png
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = 0 0
-		PageNo = 1
-		Zoom = 200
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1164 0 1344 1740
-		ShowToc = false
-		SidebarDx = 0
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\print tests\genevaTest.bmp
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = 0 -1
-		PageNo = 1
-		Zoom = fit page
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1164 0 1344 1740
-		ShowToc = false
-		SidebarDx = 0
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\boardingPasses\øØÅåæÆ.png
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = single page
-		ScrollPos = 0 0
-		PageNo = 1
-		Zoom = 150
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1164 0 1344 1740
-		ShowToc = false
-		SidebarDx = 0
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
-		FilePath = C:\Users\Karina\Desktop\new trest.pdf
-		Favorites [
-		]
-		IsPinned = false
-		IsMissing = false
-		OpenCount = 0
-		UseDefaultState = false
-		DisplayMode = continuous
-		ScrollPos = 117 2
-		PageNo = 1
-		Zoom = 400
-		Rotation = 0
-		WindowState = 1
-		WindowPos = 1164 0 1344 1740
-		ShowToc = false
-		SidebarDx = 0
-		DisplayR2L = false
-		ReparseIdx = 0
-	]
-	[
 		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\boardingPasses\Prag.png
 		Favorites [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 1
 		UseDefaultState = false
 		DisplayMode = single page
 		ScrollPos = 0 -1
@@ -172,7 +92,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 1
 		UseDefaultState = false
 		DisplayMode = single page
 		ScrollPos = 0 -1
@@ -192,7 +112,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 2
 		UseDefaultState = false
 		DisplayMode = single page
 		ScrollPos = 284 96
@@ -212,7 +132,27 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = 0 0
+		PageNo = 1
+		Zoom = 200
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 1164 0 1344 1740
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\print tests\øØÅåæÆ_justering.png
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
 		UseDefaultState = false
 		DisplayMode = single page
 		ScrollPos = 0 0
@@ -232,7 +172,7 @@ FileStates [
 		]
 		IsPinned = false
 		IsMissing = false
-		OpenCount = 0
+		OpenCount = 1
 		UseDefaultState = false
 		DisplayMode = single page
 		ScrollPos = 0 0
@@ -246,10 +186,96 @@ FileStates [
 		DisplayR2L = false
 		ReparseIdx = 0
 	]
+	[
+		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\print tests\genevaTest.bmp
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = 0 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 1164 0 1344 1740
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\boardingPasses\øØÅåæÆ.png
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = single page
+		ScrollPos = 0 0
+		PageNo = 1
+		Zoom = 150
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 1164 0 1344 1740
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\Karina\Desktop\new trest.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = 117 2
+		PageNo = 1
+		Zoom = 400
+		Rotation = 0
+		WindowState = 1
+		WindowPos = 1164 0 1344 1740
+		ShowToc = false
+		SidebarDx = 0
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
 ]
 SessionData [
+	[
+		TabStates [
+			[
+				FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\boardingPasses\Prag.png
+				DisplayMode = single page
+				PageNo = 1
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = 0 -1
+				ShowToc = false
+			]
+			[
+				FilePath = C:\Users\Karina\Documents\of_v0.9.8_vs_release\apps\myApps\Ballerup_travel\bin\data\print tests\Tickets.svg
+				DisplayMode = automatic
+				PageNo = 1
+				Zoom = fit page
+				Rotation = 0
+				ScrollPos = 0 0
+				ShowToc = false
+			]
+		]
+		TabIndex = 1
+		WindowState = 1
+		WindowPos = 1230 8 1344 1740
+		SidebarDx = 0
+	]
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 506
+OpenCountWeek = 376
 
 # Settings after this line have not been recognized by the current version
