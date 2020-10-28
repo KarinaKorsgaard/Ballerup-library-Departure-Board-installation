@@ -2,179 +2,114 @@
 		"destination": "Rom",
 		"emoji": "classical-building",
 		"resources": [{
-				"title": "Corriere della Sera",
-				"source": "PressReader",
-				"description": "Læs italienske aviser på din tablet."
+				"title": "Arvetanten af Simonetta Agnello Hornby",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Slægtsroman der foregår på Sicilien."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Engle & dæmoner af Dan Brown",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Spændende historie med symbolforskeren Robert Langdon i hovedrollen."
 			},
 			{
-				"title": "Computer Arts Collection",
-				"source": "RB Digital",
-				"description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i storbyen."
+				"title": "Min geniale veninde af Elena Ferrante",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Få et indblik i kulturen, tidsånden og familielivet i 1950’ernes fattige Napoli."
 			},
 			{
-				"title": "Engle og dæmoner af Dan Brown",
-				"source": "eReolen lydbøger",
-				"description": "Hør den mens du følger hovedpersonen rundt i Rom."
+				"title": "Fascistkommunisten af Antonio Pennacchi",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Underholdende roman om en arbejderfamilie i efterkrigstidens Italien."
 			},
 			{
-				"title": "Cæsar af Conn Iggulden",
-				"source": "eReolen e-bøger",
-				"description": "Et must for alle historienørder."
+				"title": "Middag på italiensk af Ettore Scola",
+				"source": "Bibliotekets hylde under film",
+				"description": "En ærkeitaliensk film, som udspiller sig på en restaurant i Rom."
 			},
 			{
-				"title": "Rome af iMinds",
-				"source": "eReolen Global",
-				"description": "En historisk rejseguide gennem Roms gader."
-			},
-			{
-				"title": "Lær italiensk",
-				"source": "Mango Languages",
-				"description": "Ciao amico mio! Få venner på italiensk med et online sprogkursus."
-			},
-			{
-				"title": "Det søde liv af Federico Fellini ",
-				"source": "Filmstriben",
-				"description": "En romantisk klassisk film, der udspiller sig i Rom."
+				"title": "Det søde liv af Federico Fellini",
+				"source": "Bibliotekets hylde under film",
+				"description": "En forrygende satire over det moderne samfund, materialisme og 'det søde liv'."
 			}
 		]
 	},
 	{
 		"destination": "Berlin",
-		"emoji": "beer",
+		"emoji": "pretzel",
 		"resources": [{
-				"title": "Augsburger Allgemeine",
-				"source": "PressReader",
-				"description": "Læs tyske aviser på din tablet."
+				"title": "Den våde fisk af Volker Kutscher",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Stemningsfuld krimi der skildrer livet i Berlin i 1929."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Do It Yourself",
-				"source": "RB Digital",
-				"description": "Lad dig inspirere til nye gør-det-selv projekter efter ferien med dette blad."
+				"title": "Himlen over Berlin af Wim Wenders",
+				"source": "Bibliotekets hylde under film",
+				"description": "En poetisk film om englen Damiel, der bevæger sig rundt i Berlin."
 			},
 			{
 				"title": "Lettipark af Judith Hermann",
-				"source": "eReolen lydbøger",
-				"description": "Denne tyske forfatter skriver noveller der får dig til at tænke."
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Denne tyske forfatter skriver noveller, der får dig til at tænke."
 			},
 			{
 				"title": "Elleve dage i Berlin af Håkan Nesser",
-				"source": "eReolen e-bøger",
+				"source": "Bibliotekets hylde under romaner",
 				"description": "En sjov bog om et anderledes Berlin."
 			},
 			{
-				"title": "Pocket Berlin",
-				"source": "eReolen e-bøger",
-				"description": "En overskuelig rejseguide til din tablet."
+				"title": "Det der er af Peter Asmussen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Fortælling om hverdagsliv og drømme i DDR."
 			},
 			{
-				"title": "Lær tysk",
-				"source": "Mango Languages",
-				"description": "Bestil din mad på tysk. Lær hvordan med et online sprogkursus."
+				"title": "En kvinde i Berlin",
+				"source": "Bibliotekets hylde under 94.41",
+				"description": "En anonym kvindes dagbog om de rædsler kvinderne oplevede, da Den Røde Hær erobrede og besatte Berlin."
 			},
 			{
-				"title": "En kvinde i Berlin af Max Färberböck",
-				"source": "Filmstriben",
-				"description": " Film baseret på en anonym kvindes dagbog fra 1945, der beretter om kvindernes rædsler."
+				"title": "Good bye Lenin! af Wolfgang Becker",
+				"source": "Bibliotekets hylde under film",
+				"description": "En sjov komedie om Berlinmurens fald."
 			}
 		]
-	},
-	{
-		"destination": "Mallorca",
-		"emoji": "beach",
-		"resources": [{
-				"title": "La Vanguardia",
-				"source": "PressReader",
-				"description": "Læs spanske aviser på din tablet."
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Runner's World",
-				"source": "RB Digital",
-				"description": "Tag dette blad med på din aktive ferie."
-			},
-			{
-				"title": "Verdens smukkeste mand af Lena Ackebo",
-				"source": "eReolen lydbøger",
-				"description": "Hør den på stranden og forestil dig hovedpersonerne bade i nærheden."
-			},
-			{
-				"title": "På mestrenes asfalt af Niels Christian Jung",
-				"source": "eReolen e-bøger",
-				"description": "Følg cykelsportens cykelryttere rundt på de berømte ruter."
-			},
-			{
-				"title": "Mallorca Travel Guide af Lonely Planet",
-				"source": "eReolen Global",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær spansk",
-				"source": "Mango Languages",
-				"description": "Como estas? Få styr på de spanske gloser inden ferien."
-			},
-			{
-				"title": "Pans labyrint af Guillermo del Toro",
-				"source": "Filmstriben",
-				"description": "Eventyr film om en ung piges prøvelser i Spanien under 2. verdenskrig."
-			}
-		]
-	},
+	},	
 	{
 		"destination": "Barcelona",
 		"emoji": "wine",
 		"resources": [{
-				"title": "La Vanguardia",
-				"source": "PressReader",
-				"description": "Læs spanske aviser på din tablet."
+				"title": "Vindens skygge af Carlos Ruiz Zafón",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Barcelona i årene efter Den Spanske Borgerkrig. Fyldt med intriger, spænding og kærlighed."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politikenm EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "World Soccer",
-				"source": "RB Digital",
-				"description": "Hold dig opdateret på fodboldnyhederne i fodboldstorbyen Barcelona."
+				"title": "Havets katedral af Ildefonso Falcones",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En gribende historisk roman om livet i Barcelona i 1300-tallet."
 			},
 			{
 				"title": "Jeg vil give dig verden af Chufo Llorens",
-				"source": "eReolen lydbøger",
+				"source": "Bibliotekets hylde under romaner",
 				"description": "Romanen skildrer på smuk vis Barcelona i 1000-tallet."
 			},
 			{
-				"title": "Barca: Verdens bedste fodboldhold af Graham Hunter",
-				"source": "eReolen e-bøger",
-				"description": "Læs om det berømte fodboldhold, inden du besøger stadion."
+				"title": "G: det brænder på Ramblaen i Barcelona",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Spændingsroman om mord og brandstiftelse i Barcelona i slutningen af 1800-tallet."
 			},
 			{
-				"title": "Barcelona af Vide verden",
-				"source": "eReolen",
-				"description": "En række personlige skildringer om seværdigheder og livet i Barcelona"
-			},
-			{
-				"title": "Lær spansk",
-				"source": "Mango Languages",
-				"description": "Como estas? Få styr på de spanske gloser inden ferien."
+				"title": "Biutiful af Alejandro González Iñárritu",
+				"source": "Bibliotekets hylde under film",
+				"description": "Anmelderrost film om Uxbal, der hutler sig gennem tilværelsen som smågangster i Barcelona."
 			},
 			{
 				"title": "Vickey Christina Barcelona af Woody Allen",
-				"source": "Filmstriben",
-				"description": "Frisindede hyldest til kærligheden i alle dens afskygninger."
+				"source": "Bibliotekets hylde under film",
+				"description": "Hyldest til kærligheden i alle dens afskygninger."
+			},
+			{
+				"title": "Fejltagelsernes bog af Sanne Bjerg",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Finurlig fortælling om Vaclav, der skriver på en bog om fejltagelser."
 			}
 		]
 	},
@@ -182,89 +117,34 @@
 		"destination": "Paris",
 		"emoji": "crossaint",
 		"resources": [{
-				"title": "Le Parisien",
-				"source": "PressReader",
-				"description": "Læs franske aviser på din tablet."
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Vogue Paris",
-				"source": "RB Digital",
-				"description": "Et klassisk modeblad til dig der skal spankulere på Champ-Elysee."
+				"title": "Pindsvinets elegance af Muriel Barbery",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En luksuslejlighed danner rammen i denne roman om portnersken Renée og 12-årige Paloma."
 			},
 			{
 				"title": "Klokkeren fra Notre Dame af Victor Hugo",
-				"source": "eReolen lydbøger",
-				"description": "Nyd denne klassiker i byernes by."
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Nyd denne klassiker om livet i middelalderen i byernes by."
 			},
 			{
 				"title": "Irene af Pierre LeMaitre",
-				"source": "eReolen e-bøger",
-				"description": "En original krimi fra en parisisk forfatter."
+				"source": "Bibliotekets hylde under krimi",
+				"description": "En original krimi skrevet af en parisisk forfatter."
 			},
 			{
-				"title": "Paris: En storbyguide til eventyrlystne forældre af Roald Bergmann",
-				"source": "eReolen e-bøger",
-				"description": "Guide til 44 fantastiske steder for børn i Paris."
+				"title": "Vi ses deroppe af Albert Dupontel",
+				"source": "Bibliotekets hylde under film.",
+				"description": "Om to soldaterkammerater, der hutler sig gennem dagligdagen efter Første Verdenskrig."
 			},
 			{
-				"title": "Lær fransk",
-				"source": "Mango Languages",
-				"description": "Lær fransk og snak kærlighedens sprog i Paris."
-			},
+				"title": "Den skønneste chokoladebutik i Paris af Jenny Colgan",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En hjertevarm roman om to kvinders skæbne i Paris."
+			},			
 			{
-				"title": "Anonyme romantikere af Jean-Pierre Améris",
+				"title": "Den fabelagtige Amélie fra Montmartre af Jean-Pierre Jeunet",
 				"source": "Filmstriben",
-				"description": "To mennesker mødes mellem svedeture, klamme hænder og nervøs hikke i denne franske film."
-			}
-		]
-	},
-	{
-		"destination": "Nice",
-		"emoji": "shopping-bags",
-		"resources": [{
-				"title": "Le Figaro",
-				"source": "PressReader",
-				"description": "Læs franske aviser på din tablet."
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "The Knitter",
-				"source": "RB Digital",
-				"description": "Husk strikkepindende til de lyse aftener. Dette blad giver dig inspiration til nye opskrifter."
-			},
-			{
-				"title": "En lille lejlighed i Nice af Thorstein Thomsen",
-				"source": "eReolen lydbøger",
-				"description": "Små fortællinger fra Nice, hvor et dansk par køber lejlighed."
-			},
-			{
-				"title": "Lige nu af Aarhus 2017 projekt",
-				"source": "eReolen GO",
-				"description": "Har du store børn med på rejsen? Lad dem læse andre unges beretninger om at rejse."
-			},
-			{
-				"title": "Explore Nice & the French Riviera af Insight Guides",
-				"source": "eReolen Global",
-				"description": "En klassisk rejseguide med et kulturelt twist."
-			},
-			{
-				"title": "Lær fransk",
-				"source": "Mango Languages",
-				"description": "Bestil din vin på fransk. Lær hvordan med et online sprogkursus."
-			},
-			{
-				"title": "Amour af Michael Haneke",
-				"source": "Filmstriben",
-				"description": "En rørende film om at holde sammen når alderdommen tærer på værdigheden."
+				"description": "En charmerende film."
 			}
 		]
 	},
@@ -272,129 +152,114 @@
 		"destination": "Stockholm",
 		"emoji": "ice-hockey",
 		"resources": [{
-				"title": "Svenska Dagbladet",
-				"source": "PressReader",
-				"description": "Læs svenske aviser på din tablet."
+				"title": "Mit arbejde af Olga Ravn",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Gribende fortælling om fødselsdepression i en blanding af prosa, digte og breve."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Fanny og Aleksander af Ingmar Bergman",
+				"source": "Bibliotekets hylde under film",
+				"description": "En familiekrønike fra en svensk provinsby i begyndelsen af 1900-tallet."
 			},
 			{
-				"title": "Popular Science",
-				"source": "RB Digital",
-				"description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i storbyen."
+				"title": "Folk med angst af Fredrik Backman",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Humoristisk bog om et bankrøveri, der går galt."
 			},
 			{
-				"title": "Britt-Marie var her af Fredrik Backman",
-				"source": "eReolen lydbøger",
-				"description": "Den svenske forfatter skriver så tårene triller af grin."
+				"title": "Doktor Glas af Hjalmar Söderberg",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Psykologisk roman om en læge i 1800-tallets Stockholm, der udnytter sin stilling."
 			},
 			{
-				"title": "Døden & co af Lukas Moodysson",
-				"source": "eReolen e-bøger",
-				"description": "Den svenske forfatter skriver med samme barske indlevelse som han laver film."
+				"title": "Cash af Jens Lapidus",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Tre personers veje krydses i den stockholmske underverden omkring kokainhandel."
 			},
 			{
-				"title": "Stockholm af Vide Verden",
-				"source": "eReolen e-bøger",
-				"description": "En rejseguide med personlige skildringer om seværdigheder og livet i Stockholm"
-			},
-			{
-				"title": "Lær svensk",
-				"source": "Mango Languages",
-				"description": "Grattis! Få styr på de svenske gloser inden ferien."
-			},
-			{
-				"title": "En due sad på en gren og funderede over tilværelsen af Roy Andersson",
-				"source": "Filmstriben",
-				"description": "Smuk og hudløs film af den svenske mesterinstruktør."
+				"title": "Stockholm af Robert Budreau",
+				"source": "Bibliotekets hylde under film",
+				"description": "Dramakomedie om Stockholmsyndromet, der blev et begreb efter gidseldramaet på Norrmalmstorg i 1973."
 			}
 		]
 	},
 	{
 		"destination": "Kreta",
-		"emoji": "classical-building",
+		"emoji": "olives",
 		"resources": [{
-				"title": "Kathimerini",
-				"source": "PressReader",
-				"description": "Læs græske aviser på din tablet."
+				"title": "Et fald af Mogens Fjord Christensen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Et par tager på ferie, men kun manden vender hjem igen. Tankevækkende roman om parforhold og livskriser."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Øen af Victoria Hislop",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Underholdende og bevægende roman om en græsk families tragiske og dramatiske skæbne i flere generationer."
 			},
 			{
-				"title": "HELLO! magazine",
-				"source": "RB Digital",
-				"description": "Få styr på sladderen mens du driver den på stranden."
+				"title": "Den sidste dans og andre fortællinger af Victoria Hislop", 
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Indfanger den græske folkestemning og kultur i fortællinger om kærlighed, afsavn, hævn og forsoning."
 			},
 			{
-				"title": "Den sidste dans og andre historier af Victoria Hislop",
-				"source": "eReolen lydbøger",
-				"description": "10 noveller, der tager læseren med rundt i Grækenland og indfanger den græske folkestemning."
+				"title": "Arrangerede udflugter af Jette A. Kaarsbøl",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En underholdende roman om en ferie, der ikke helt går som forventet." 
 			},
 			{
-				"title": "Doktor Proktors pruttepulver af Jo Nesbø",
-				"source": "eReolen GO",
-				"description": "Skal der ro på de mindste under rejsen, så download denne sjove e-bog."
+				"title": "Zorba - grækeren af Michael Cacoyannis",
+				"source": "Bibliotekets hylde under film",
+				"description": "Et medrivende drama om mødet mellem to meget forskellige kulturer."
 			},
 			{
-				"title": "Crete Travel Guide af Lonely Planet",
-				"source": "eReolen Global",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær græsk",
-				"source": "Mango Languages",
-				"description": "Bestil din mad på græsk. Lær hvordan med et online sprogkursus."
+				"title": "Rejsen til Arkadien af Efie Beydin",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Anna forsøger at skrive speciale i Athen men familiens historie trænger sig på."
 			}
 		]
 	},
 	{
 		"destination": "London",
 		"emoji": "umbrella",
-		"resources": [{
-				"title": "The London Free Press",
-				"source": "PressReader",
-				"description": "Læs engelske aviser på din tablet."
+		"resources": [{			
+				"title": "Pride af Matthew Warchus",
+				"source": "Bibliotekets hylde under film",
+				"description": "Under den britiske minearbejderstrejke i 1984 skabes et udsædvanligt og umage sammenhold."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "BBC TopGear Magazine",
-				"source": "RB Digital",
-				"description": "De engelske bilnørder har deres helt eget blad, som du kan læse på din tablet."
+				"title": "Hvide tænder af Zadie Smith",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Varm skildring af livet i nutidens multikulturelle England."
 			},
 			{
 				"title": "Fagre nye verden af Aldous Huxley",
-				"source": "eReolen lydbøger",
-				"description": "Lad dig rive med af den engelske forfatters dystre fremtidsskildringer."
+				"source": "Bibliotekets hylde under science fiction",
+				"description": "Lad dig rive med af den engelske forfatters dystre fremtidsskildring."
 			},
 			{
-				"title": "Downtown af Torben Weirup",
-				"source": "eReolen e-bøger",
-				"description": "Følg forfatteren rundt i London med den rejsendes nysgerrige sind."
+				"title": "Rødt lys stop af S. J. Bolton",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "En serie mord i nutidens London viser sig at have forbindelse til Jack the Rippers mord i 1888."
 			},
 			{
-				"title": "Oplev London af Lonely Planet",
-				"source": "eReolen e-bøger",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+				"title": "Oliver Twist af Charles Dickens",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Klassikeren om forældreløse Oliver, der vokser op på fattiggården i en lille by udenfor London."
 			},
 			{
-				"title": "Lær engelsk",
-				"source": "Mango Languages",
-				"description": "How do you do? Lær engelsk på din tablet."
+				"title": "Mit knap så perfekte liv af Sophie Kinsella",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Underholdende bog som rammer ned i nutidens jagt på det perfekte liv."
 			},
 			{
-				"title": "Dame konge es spion af Tomas Alfredson",
-				"source": "Filmstriben",
-				"description": "Hæsblæsende krimi film om MI6 baseret på roman af John Le Carré"
+				"title": "High fidelity af Nick Hornby",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En varm, skarp, sørgmodig men også utrolig morsom roman."
+			},
+			{
+				"title": "26A af Diana Evans",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Sjov, bevægende, fabulerende og fascinerende."
 			}
 		]
 	},
@@ -402,259 +267,139 @@
 		"destination": "Edinburgh",
 		"emoji": "castle",
 		"resources": [{
-				"title": "The London Free Press",
-				"source": "PressReader",
-				"description": "Læs engelske aviser på din tablet."
+				"title": "Dødskunsten af Ambrose Parry",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Krimi der foregår i Victoriatidens Edinburgh."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Blodbrødre af Ian Rankin",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Første bog i den spændende krimiserie om John Rebus."
 			},
 			{
-				"title": "Alt om DATA",
-				"source": "RB Digital",
-				"description": "Med dette blad føles ventetiden i lufthavnen som sekunder."
+				"title": "Al kødets gang af Ambrose Parry",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "I viktoriatidens Edinburgh involveres en medicinstuderende og en tjenestepige i en mordsag."
 			},
 			{
-				"title": "En god gerning af Kate Atkinson",
-				"source": "eReolen lydbøger",
-				"description": "Et brutalt overfald i en bilkø i Edinburgh bliver startet på en grum mordgåde."
+				"title": "Trainspotting af Danny Boyle",
+				"source": "Bibliotekets hylde under film",
+				"description": "Filmen foregår i 1980'ernes Edinburgh. Fuld af heroin og kulsort humor." 
 			},
 			{
-				"title": "Vilde køtere af Ian Rankin",
-				"source": "eReolen e-bøger",
-				"description": "Følg forfatteren rundt i London med den rejsendes nysgerrige sind."
+				"title": "Den lille cafe ved den endeløse strand af Jenny Colgan",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Feel good roman om kærlighed, forviklinger og modgang."
 			},
 			{
-				"title": "Scotland af Insight Guides",
-				"source": "eReolen Global",
-				"description": "En klassisk rejseguide med et kulturelt twist."
-			},
-			{
-				"title": "Lær engelsk",
-				"source": "Mango Languages",
-				"description": "How do you do? Lær engelsk på din tablet."
-			},
-			{
-				"title": "Young Adam af David Mackenzie",
+				"title": "Sweet Sixteen af Ken Loach",
 				"source": "Filmstriben",
-				"description": "Prisbelønnet skotsk krimi om rodløse eksistenser i Edinburgh."
+				"description": "Bevægende film om 15-årige Liam, der vil redde sin mor ud af det kriminelle miljø." 
 			}
 		]
 	},
 	{
 		"destination": "Dublin",
-		"emoji": "guinnes",
+		"emoji": "shamrock",
 		"resources": [{
-				"title": "Irish Independent",
-				"source": "PressReader",
-				"description": "Læs irske aviser på din tablet."
+				"title": "Ulysses af James Joyce",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Romanen betragtes som ét af de vigtigste bidrag til moderne litteratur."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Bloody Sunday af Paul Greengrass",
+				"source": "Filmstriben",
+				"description": "Fiktionsfilm der følger de blodige begivenheder i Londonderry i 1972."
 			},
 			{
-				"title": "Conde Nast Traveler Magazine",
-				"source": "RB Digital",
-				"description": "Planlæg din næste rejse allerede i flyet hjem med dette lækre rejseblad."
+				"title": "Den klareste stjerne af Marian Keyes",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "I en lejlighed i Dublin har alle beboerne deres at slås med. En bog i chick-lit genren med fokus på tunge emner."
 			},
 			{
-				"title": "En chance til af Sinéad Moriarty",
-				"source": "eReolen lydbøger",
-				"description": "En hjertevarm roman fra en Dublin-indfødt forfatter."
+				"title": "The Guard af John Michael McDonagh",
+				"source": "Filmstriben",
+				"description": "Brendan Gleeson spiller en uortodoks politibejtent i denne krimikomedie, der er både spændende og fyldt med irsk humor."
 			},
 			{
-				"title": "Portræt af kunstneren som ung mand af James Joyce",
-				"source": "eReolen e-bøger",
-				"description": "Selvbiografisk roman af den irske klassiker forfatter."
+				"title": "Angelas aske af Frank McCourt",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Roman om en irsk-katolsk barndom med elskelige men håbløst fattige forældre i Limerick, Irland."
 			},
 			{
-				"title": "Pocket Dublin",
-				"source": "eReolen e-bøger",
-				"description": "En overskuelig rejseguide til din tablet."
-			},
-			{
-				"title": "Lær engelsk",
-				"source": "Mango Languages",
-				"description": "How do you do? Lær engelsk på din tablet."
+				"title": "Det er altså mit liv af Sinéad Moriarty",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En kærlighedshistorie med humor."
 			}
 		]
 	},
 	{
-		"destination": "Kroatien",
-		"emoji": "beach",
+		"destination": "Oslo",
+		"emoji": "skier",
 		"resources": [{
-				"title": "24sata",
-				"source": "PressReader",
-				"description": "Læs kroatiske aviser på din tablet."
+				"title": "Byens spor af Lars Saabye Christensen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En stemningsfuld roman, der er første bog i Oslotriologien."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "The Economist",
-				"source": "RB Digital",
-				"description": "Bliv klogere på verdens internationale nyheder med dette blad, mens du driver den på stranden."
-			},
-			{
-				"title": "Som om jeg ikke er der af Slavenka Drakulić",
-				"source": "eReolen lydbøger",
-				"description": "Barsk roman om de etniske udryddelser i begyndelsen af 1990erne."
-			},
-			{
-				"title": "Villads fra Valby har vikar af Anne Sofie Hammer",
-				"source": "eReolen GO",
-				"description": "Har du børn med på rejsen? Let stemningen i flyet med sjove e-bøger."
-			},
-			{
-				"title": "The Rough Guide to Croatia af Rough Guides",
-				"source": "eReolen Global",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær kroatisk",
-				"source": "source1",
-				"Mango Languages": "Gdje je plaza? Find stranden på kroatisk med et online sprogkursus."
-			},
-			{
-				"title": "Projekcije af Zrinko Ogresta",
-				"source": "Verdensbiblioteket",
-				"description": "Kroatisk film om et hold psykologistuderende, hvis gruppemøde udvikler sig på en uventet måde."
-			}
-		]
-	},
-	{
-		"destination": "Norge",
-		"emoji": "snow_mountain",
-		"resources": [{
-				"title": "Aftenposten",
-				"source": "PressReader",
-				"description": "Læs norske aviser på din tablet."
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "SKI Magazine",
-				"source": "RB Digital",
-				"description": "Nyd dette blad med en varm kop kakao efter en lang dag på ski."
-			},
-			{
-				"title": "Ud og stjæle heste af Per Petterson",
-				"source": "eReolen lydbøger",
-				"description": "Anmelderost skæbnefortælling fra udkanten af Norge."
+				"title": "Mænd i min situation af Per Petterson",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Med sine præcise og poetiske beskrivelser formår Per Petterson at trænge dybt ind i en kriseramt mands sjæl."
 			},
 			{
 				"title": "Frognerfisser af Alexia Bohwim",
-				"source": "eReolen e-bøger",
+				"source": "Bibliotekets hylde under romaner",
 				"description": "Velskrevet roman om misbrug og klasseskel i et moderne Oslo."
 			},
 			{
-				"title": "Norway af Insight Guides",
-				"source": "eReolen Global",
-				"description": "En klassisk rejseguide med et kulturelt twist."
-			},
-			{
-				"title": "Lær norsk",
-				"source": "Mango Languages",
-				"description": "God kveld! Få styr på de norske gloser inden ferien."
+				"title": "Sult af Knut Hamsun",
+				"source": "Bibliotkets hylde under romaner",
+				"description": "Om en ung digter der lever i fattigdom og sult i Kristiania."
 			},
 			{
 				"title": "Sygt lykkelig af Anne Sewitsky",
 				"source": "Filmstriben",
 				"description": "Filmen er en sort komedie om utroskab langt ude på landet i Norge."
+			},
+			{
+				"title": "De usynlige af Roy Jacobsen",
+				"source": "Bibliotkets hylde under romaner",
+				"description": "Roman om barske levevilkår og om at være i naturens og følelsernes vold."
 			}
 		]
 	},
 	{
-		"destination": "Tyrkiet",
-		"emoji": "cat",
+		"destination": "Istanbul",
+		"emoji": "mosque",
 		"resources": [{
-				"title": "Hürriyet",
-				"source": "PressReader",
-				"description": "Læs tyrkiske aviser på din tablet."
+				"title": "Dette fremmede i mig af Orhan Pamuk",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En velskrevet familiekrønike, der også er en kærlighedserklæring til Istanbul."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Wired",
-				"source": "RB Digital",
-				"description": "Bliv klogere på vores politiske og teknologiske verden med dette blad, mens du driver den på stranden."
+				"title": "Istanbul Istanbul af Burhan Sönmez",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "For at fordrive tiden mellem torturseancer fortæller fire fanger skiftevis hinanden historier."
 			},
 			{
 				"title": "Tæppehandlerens død af Karin Wahlberg",
-				"source": "eReolen lydbøger",
+				"source": "Bibliotekets hylde under krimi",
 				"description": "Et mord i Istanbul skaber ravage i hovedpersonens hjemby."
 			},
 			{
 				"title": "Istanbul af Orhan Pamuk",
-				"source": "eReolen e-bøger",
+				"source": "Bibliotekets hylde under biografier",
 				"description": "En smuk mosaik af personlige erindringer, historiske fakta og anekdoter om Istanbul."
 			},
 			{
-				"title": "Turkey af Lonely Planet",
-				"source": "eReolen e-bøger",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+				"title": "Janitshartræet af Jason Goodwin",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Historisk kriminalroman fra Istanbul i året 1836."
 			},
 			{
-				"title": "Lær tyrkisk",
-				"source": "Mango Languages",
-				"description": "Bestil din mad på tyrkisk. Lær hvordan med et online sprogkursus."
-			},
-			{
-				"title": " Rødt hjerte af Halkawt Mustafa",
-				"source": "Verdensbiblioteket",
-				"description": "Kurdisk film om to teenagere, der er forelsket i hinanden. Men Sirin's far har lovet hende til en anden."
-			}
-		]
-	},
-	{
-		"destination": "Østrig",
-		"emoji": "cheese",
-		"resources": [{
-				"title": "Heute",
-				"source": "PressReader",
-				"description": "Læs østrigske aviser på din tablet."
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Skiing",
-				"source": "RB Digital",
-				"description": "Nyd dette blad med en varm kop kakao efter en lang dag på ski."
-			},
-			{
-				"title": "Skaknovelle af Stefan Zweig",
-				"source": "eReolen lydbøger",
-				"description": "En østrigsk flygtning besejrer verdensmesteren i skak, fordi hans fængselstid har opøvet hans kombinationsevne."
-			},
-			{
-				"title": "Drømmenovelle af Arthur Schnitzler",
-				"source": "eReolen e-bøger",
-				"description": "Alle bør læse denne smukke østrigske novellesamling."
-			},
-			{
-				"title": "Wien af Vide Verden",
-				"source": "eReolen e-bøger",
-				"description": " En rejseguide med personlige skildringer om seværdigheder og livet i Wien."
-			},
-			{
-				"title": "Lær tysk",
-				"source": "Mango Languages",
-				"description": "Du kommer langt med lidt tysk kundskaber i Østrig. Tag et online sprogkursus."
+				"title": "Fugle uden vinger af Louis De Bernières",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Da Det Osmanniske Rige bryder sammen, forandres verden for altid."
 			}
 		]
 	},
@@ -662,338 +407,224 @@
 		"destination": "New York",
 		"emoji": "taxi",
 		"resources": [{
-				"title": "New York Post",
-				"source": "PressReader",
-				"description": "Læs amerikanske aviser på din tablet."
+				"title": "Ekstremt højt & utrolig tæt på af Jonathan Safran Foer",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Oscar mister sin far i New York den 11. september 2001. Men måske har hans far efterladt en sidste besked til ham?"
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "En pige uden lige af Marc Levy",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "For læsere af skønne romaner om kulturforskelle, kærlighed og familie."
 			},
 			{
-				"title": "The New Yorker",
-				"source": "RB Digital",
-				"description": "'The Big Apple' har aldrig føltes tættere på, end med dette blad."
+				"title": "Vita af Melania G. Mazzucco",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "I 1903 ankommer Diamante og Vita til Amerika, og nu venter et frygtindgydende liv i New Yorks immigrantmiljø."
 			},
 			{
-				"title": "Brooklyn dårskab af Paul Auster",
-				"source": "eReolen lydbøger",
-				"description": "Følg New Yorker forfatteren rundt i byen med denne lydbog i ørene."
+				"title": "Storm over Manhattan af Danielle Steel",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Da Manhattan bliver udsat for en oversvømmelse efter en orkan, bliver mange menneskers liv ændret for altid."
 			},
 			{
-				"title": "New York af Edward Rutherfurd",
-				"source": "eReolen e-bøger",
-				"description": "Roman om New Yorks historie fra byens fødsel og frem til i dag."
+				"title": "Munterhedens hus af Edith Wharton",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Om overklassens depraverede og overfladiske liv i USA i starten af det 20. århundrede."
 			},
 			{
-				"title": "Oplev New York af Lonely Planet",
-				"source": "eReolen e-bøger",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær engelsk",
-				"source": "Mango Languages",
-				"description": "How do you do? Lær engelsk på din tablet."
+				"title": "Brooklyn af John Crowley",
+				"source": "Bibliotekets hylde under film",
+				"description": "Filmen foregår i 1950'ernes Brooklyn, hvor irske Eilis forsøger at skabe sig et bedre liv."
 			},
 			{
 				"title": "Carol af Todd Haynes",
-				"source": "Filmstriben",
+				"source": "Bibliotekets hylde under film",
 				"description": "Overklassefruen Carol er fanget i et mislykket ægteskab i 1950’ernes New York. En gnist tændes et uventet sted."
 			}
 		]
 	},
 	{
-		"destination": "Miami",
-		"emoji": "beach",
-		"resources": [{
-				"title": "South Florida Times",
-				"source": "PressReader",
-				"description": "Læs amerikanske aviser på din tablet."
+		"destination": "Bogotá",
+		"emoji": "coffee",
+		"resources": [{			
+				"title": "Kærlighed i koleraens tid af Gabriel García Márquez",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Kærlighedsfortælling om en forsmået elsker, der må vente i mere end halvtreds år, før han får sin ungdoms elskede."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Tre minutter af Anders Roslund",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Spændende fortælling om svenske Piet Hoffmann, der er gået undercover hos colombianske narkogangstere."
 			},
 			{
-				"title": "Vegetarian Today",
-				"source": "RB Digital",
-				"description": "Tyvstart på det vegetariske Miami mind-set inden du lander med dette blad."
+				"title": "Cajambre af Armando Romero",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Roman om kulturforskelle, overtro og kærlighed. En humoristisk og tragisk fortælling."
 			},
 			{
-				"title": "Mugge & vejfesten af Mikael Wulff",
-				"source": "eReolen GO",
-				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."
+				"title": "Ingen er evig af Alejandro José López",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Om hævntørst, død og kærlighed i Colombia i 1990'erne."
 			},
 			{
-				"title": "Razor Girl af Carl Hiaasen",
-				"source": "eReolen Global",
-				"description": "Denne hæsblæsende og ironiske thriller tager dig gennem Miamis gader."
+				"title": "Beretning om en bortførelse af Gabriel García Márquez",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Dokumentarisk beretning om ti menneskers rædsler, da de blev bortført af narkoterrorister i starten af 1990'erne."
 			},
 			{
-				"title": "Oplev Florida af Lonely Planet",
-				"source": "eReolen e-bøger",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær engelsk",
-				"source": "Mango Languages",
-				"description": "How do you do? Lær engelsk på din tablet."
-			},
-			{
-				"title": "I love you Phillip Morris af John Requa",
+				"title": "Trækfugle af Cristina Gallego",
 				"source": "Filmstriben",
-				"description": "Da Steve Russell flytter til Miami for at starte et nyt liv som bøsse, koster det et gigantisk overtræk og en tur i spjældet."
+				"description": "En episk, bjergtagende fortælling om 1970’ernes narkohandel i Colombia."
 			}
 		]
 	},
 	{
-		"destination": "San Francisco",
-		"emoji": "sun",
-		"resources": [{
-				"title": "San Francisco Chronicle",
-				"source": "PressReader",
-				"description": "Læs amerikanske aviser på din tablet."
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Rolling Stone Magazine",
-				"source": "RB Digital",
-				"description": "Dybdegående artikler om amerikansk musik til flyveturen."
-			},
-			{
-				"title": "En vampyrs bekendelser af Anne Rice",
-				"source": "eReolen lydbøger",
-				"description": "Denne klassiker tager sit nervepirrende udspring i et lille værelse i San Francisco."
-			},
-			{
-				"title": "The Outside Lands af Hannah Kohler",
-				"source": "eReolen Global",
-				"description": "En tankevækkende roman om livet i San Francisco i en tid med oprør og Vietnamkrigen."
-			},
-			{
-				"title": "San Francisco af Insight Guides",
-				"source": "eReolen Global",
-				"description": "En klassisk rejseguide med et kulturelt twist."
-			},
-			{
-				"title": "Lær engelsk",
-				"source": "Mango Languages",
-				"description": "How do you do? Lær engelsk på din tablet."
-			}
-		]
-	},
-	{
-		"destination": "Thailand",
+		"destination": "Sidney",
 		"emoji": "koala",
 		"resources": [{
-				"title": "Bangkok Post",
-				"source": "PressReader",
-				"description": "Læs thailandske aviser på din tablet"
+				"title": "Perlesøsteren af Lucinda Riley",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Fjerde bind i den fængende slægtsroman om de syv søstre."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Australia af Baz Luhrmann",
+				"source": "Bibliotekets hylde under film",
+				"description": "Et medrivende og episk drama, der finder sted i Nordaustralien umiddelbart før 2. verdenskrig."
+			}, 
+			{
+				"title": "Flagermusmanden af Jo Nesbø",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Den norske kriminalbetjent Harry Hole sendes til Australien for at opklare mordet på en norsk kvinde."
 			},
 			{
-				"title": "Backpacker",
-				"source": "RB Digital",
-				"description": "Alt hvad du har brug for i din rygsæk er din tablet og dette blad."
+				"title": "Den sande historie om Kelly-banden af Peter Carey",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Romanbiografi om Ned Kelly. Den australske Robin Hood der levede et kort, fattigt og voldsomt liv."
 			},
 			{
-				"title": "Mugge & vejfesten af Mikael Wulff",
-				"source": "eReolen GO",
-				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."
-			},
-			{
-				"title": "Smag på Thailand af Sofie Lisby",
-				"source": "eReolen e-bøger",
-				"description": "En anderledes rejseguide med fokus på Thailands restauranter og gadekøkkener."
-			},
-			{
-				"title": "Oplev Thailand af Lonely Planet",
-				"source": "eReolen e-bøger",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær thailandsk",
-				"source": "Mango Languages",
-				"description": "Bestil din drink på thailandsk. Lær hvordan med et online sprogkursus."
-			},
-			{
-				"title": "Only god forgives af Nicolas Winding Refn",
+				"title": "Tracks af John Curran",
 				"source": "Filmstriben",
-				"description": "Krimifilm om Thailandske narkobander."
+				"description": "I 1977 vandrer en kvinde 2700 km gennem Australiens ørken sammen med en hund og fire dromedarer."
+			},
+			{
+				"title": "Vejen til Wildflower Hill af Kimberley Freeman",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Slægtsroman fyldt med kærlighed og familiehemmeligheder."
 			}
 		]
 	},
 	{
-		"destination": "Australien",
-		"emoji": "koala",
+		"destination": "New Delhi",
+		"emoji": "elephant",
 		"resources": [{
-				"title": "The Guardian Australia",
-				"source": "PressReader",
-				"description": "Læs austalske aviser på din tablet"
+				"title": "De andres liv af Neel Mukherjee",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Om familien Ghosh og den store kløft mellem rig og fattig i 1960-1970'ernes traditionsbundne Indien."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Den hvide tiger af Aravind Adiga",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En overraskende, satirisk og kritisk roman om forholdene i Indien."
 			},
 			{
-				"title": "Sport Diver",
-				"source": "RB Digital",
-				"description": "Dette blad er for dig, der vil snorkle eller dykke i Australiens smukke koralrev."
+				"title": "Bag det evigt smukke af Katherine Boo",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En barsk og usentimental historie fra et af Indiens utallige slumkvarterer."
 			},
 			{
-				"title": "The Bee Hut af Dorothy Porter",
-				"source": "eReolen Global",
-				"description": "Læs australske Porters digte på originalsproget."
-			}, {
-				"title": "Frode og alle de andre rødder af Ole Lund Kirkegaard",
-				"source": "eReolen GO",
-				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove e-bøger."
+				"title": "Delhis smukkeste hænder af Mikael Bergstrand",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En midaldrende svensk mand tager til det eksotiske og anderledes Indien for at vende om på sit liv."
 			},
 			{
-				"title": "Australia Pocket Guide af Insight Guides",
-				"source": "eReolen Global",
-				"description": "En klassisk rejseguide med et kulturelt twist."
+				"title": "Alvorlige mænd af Manu Joseph",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Underholdende og vittig bog om nutidens Indien."
 			},
 			{
-				"title": "Lær engelsk",
-				"source": "Mango Languages",
-				"description": "How do you do? Lær engelsk på din tablet."
+				"title": "Damekupeen af Anita Nair",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Fem kvinder mødes i togets damekupé; hver har de deres egen dramatiske historie at fortælle."
 			},
 			{
-				"title": "Candy af Neil Armfield",
-				"source": "Filmstriben",
-				"description": "Australsk drama om to unge kunstnere der lever i en rus af kærlighed og stofmisbrug."
+				"title": "Slumdog millionaire af Danny Boyle",
+				"source": "Bibliotekets hylde under film",
+				"description": "Fortælling fuld af drama, humor og kærlighed."
 			}
 		]
 	},
 	{
-		"destination": "København",
-		"emoji": "bicycle",
+		"destination": "Århus",
+		"emoji": "standart",
 		"resources": [{
-				"title": "Architectural Digest",
-				"source": "RB Digital",
-				"description": "Læs op på arkitekturens nyheder inden din hovedstadstur."
+				"title": "Luskefisefortællinger af Jens Blendstrup",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Humoristiske historier fra barndommens land i Århus i 1970'erne."
 			},
 			{
-				"title": "Dan Turell's København af Peder Bundgaard",
-				"source": "eReolen lydbøger",
-				"description": "Det bliver næsten ikke mere Københavnsk end denne mentale byvandring med Turell."
+				"title": "Jeg finder dig altid af Elsebeth Egholm",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Spændende krimi hvor man kommer vidt omkring i Århus og omegn."
 			},
 			{
-				"title": "Sus af Jonas T. Bengtsson",
-				"source": "eReolen e-bøger",
-				"description": "En barsk og velskrevet roman fra Københavns Nordvestkvarter."
+				"title": "Blækhat af Sissel-Jo Gazan",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Finurlig fortælling om Rosa, der vokser op i 1980'ernes Århus."
 			},
 			{
-				"title": "The Year of Living Danishly af Helen Russell",
-				"source": "eReolen Global",
-				"description": "Den engelske forfatter giver et sjovt blik på den danske mentalitet."
+				"title": "Gud taler ud af Henrik Ruben Genz",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En skæv, sjov og rørende film. Baseret på Jens Blendstrups selvbiografiske roman af samme navn."
 			},
 			{
-				"title": "Pocket København",
-				"source": "eReolen e-bøger",
-				"description": "En overskuelig rejseguide til din tablet."
+				"title": "Leroy og Lise af Jens Folmer Jepsen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Humoristisk roman der foregår i Århus."
 			},
 			{
-				"title": "Lær dansk",
-				"source": "Mango Languages",
-				"description": "Har du brug for at træne dit danske? Tag et online sprogkursus."
-			},
-			{
-				"title": "Baby af Linda Wendel",
-				"source": "Filmstriben",
-				"description": "'Baby' er en filmatisering af Kirsten Thorups prisbelønnede debutroman. Rodløse storbymennesker forsøger at forstå kærligheden."
+				"title": "De nøgne træer af Tage Skou-Hansen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Om nogle unge mennesker i en sabotagegruppe i besættelsestidens Århus."
 			}
 		]
 	},
 	{
-		"destination": "Bornholm",
-		"emoji": "sun",
-		"resources": [{
-				"title": "Cycling Active",
-				"source": "RB Digital",
-				"description": "Smid dette cykelblad bag på cyklen og læs det ved næste rasteplads."
-			},
-			{
-				"title": "Nancy af Dennis Gade Kofod",
-				"source": "eReolen lydbøger",
-				"description": "Bornholm indhylles i en mystisk tåge, og snart er øen i undtagelsestilstand."
-			},
-			{
-				"title": "Bornholm af Palle Lauring",
-				"source": "eReolen e-bøger",
-				"description": "Med denne rejseskildring på tabletten, ser du Bornholm med nye øjne."
-			},
-			{
-				"title": "Bornholm: En storbyguide til eventyrlystne forældre af Roald Bergmann",
-				"source": "eReolen e-bøger",
-				"description": "Guide til 44 fantastiske steder for børn på Bornholm."
-			},
-			{
-				"title": "Lær dansk",
-				"source": "Mango Languages",
-				"description": "Har du brug for at træne dit danske? Tag et online sprogkursus."
-			},
-			{
-				"title": "Russerne paa Bornholm af Ole Askman",
-				"source": "Filmstriben",
-				"description": "Dokumentar om da Danmark blev befriet, men Bornholm blev glemt."
-			}
-		]
-	},
-	{
-		"destination": "Egypten",
+		"destination": "Cairo",
 		"emoji": "pyramid",
 		"resources": [{
-				"title": "Youm7",
-				"source": "PressReader",
-				"description": "Læs egyptiske aviser på din tablet."
+				"title": "Café Karnak af Najíb Mahfūz", 
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Gennem stamgæsterne på en café tegnes et portræt af 1960'ernes totalitære Egypten."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "EARTH Magazine",
-				"source": "RB Digital",
-				"description": "Få styr på klodens hemmeligheder mens du daser i varmen."
+				"title": "Jeg løb mod Nilen af Alaa Al-Aswhany",
+				"source": "Bibliotekets hylde under romaner", 
+				"description": "Velskrevet roman om den egyptiske version af Det Arabiske Forår."
 			},
 			{
 				"title": "Døden på Nilen af Agatha Christie",
-				"source": "eReolen lydbøger",
+				"source": "Bibliotekets hylde under krimi",
 				"description": "Denne klassiker skal nydes mens du sejler ned ad den berømte egyptiske flod."
 			},
 			{
-				"title": "Revolution for Dummies af Bassem Youssef",
-				"source": "eReolen Global",
-				"description": "Youssef, der kaldes for den arabiske John Stewart, skriver humoristisk om det arabiske forår."
+				"title": "Yacoubians hus af Marwan Hamed",
+				"source": "Bibliotekets hylde under film",
+				"description": "Om mennesker og samfundsforhold i nutidens Egypten. Baseret på Alaa Al-Aswanys roman af samme navn."
 			},
 			{
-				"title": "Rejse i faraonernes rige af Arne Falk-Rønne",
-				"source": "eReolen e-bøger",
-				"description": "Journalist og eventyrer Arne Falk-Rønnes skildring af overleveringerne fra det klassiske Egypten."
+				"title": "Iris og Ruby af Rosie Thomas",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Roman om kvinder, slægtskab, venskab og kærlighed."
 			},
 			{
-				"title": "Lær arabisk",
-				"source": "Mango Languages",
-				"description": "Bestil din mad på arabisk. Lær hvordan med et online sprogkursus."
+				"title": "En dag i Cairo af Elisabeth Flensted-Jensen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Bogen foregår over én dag; den 9. oktober 2011, hvor Cairo er præget af demonstrationer og uroligheder."
 			},
 			{
-				"title": "I lyset af en revolution af Iben Haahr Andersen",
+				"title": "I lyset af revolutionen af Iben Haahr Andersen",
 				"source": "Filmstriben",
-				"description": "Dokumentarfilm om kvinder og kunst i Kairo under det arabiske forår."
+				"description": "Dokumentarfilm om kvinder og kunst i Cairo under Det Arabiske Forår."
 			}
 		]
 	},
@@ -1001,44 +632,39 @@
 		"destination": "Tokyo",
 		"emoji": "unicorn",
 		"resources": [{
-				"title": "Mainichi Shimbun",
-				"source": "PressReader",
-				"description": "Læs japanske aviser på din tablet"
+				"title": "Jeg kaldte ham slips af Milena Michiko Flašar", 
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En poetisk roman om at falde uden for normen og at finde uventet trøst og venskab, hvor man mindst venter det."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "Efter midnat af Haruki Murakami",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Smuk historie om menneskers virkelighed og deres evne til at blive en del af hinandens verden."
 			},
 			{
-				"title": "ARTnews",
-				"source": "RB Digital",
-				"description": "Med dette blad føles ventetiden i lufthavnen som sekunder."
-			},
-			{
-				"title": "Hvad jeg taler om når jeg taler om at løbe af Haruki Murakami",
-				"source": "eReolen lydbøger",
-				"description": "Lyt til denne bog mens du går (eller løber) rundt i Murakamis Japan."
-			},
-			{
-				"title": "Kampen om kronen af Jan Kjær",
-				"source": "eReolen e-bøger",
-				"description": "Tegneserie inspireret af japansk manga til de store."
-			},
-			{
-				"title": "Pocket Tokyo",
-				"source": "eReolen Global",
-				"description": "En overskuelig rejseguide til din tablet."
-			},
-			{
-				"title": "Lær japansk",
-				"source": "Mango Languages",
-				"description": "Bestil din sushi på japansk. Lær hvordan med et online sprogkursus."
-			},
-			{
-				"title": "Lost in translation af Sofia Coppola",
+				"title": "Dreaming Murakami af Nitesh Anjaan",
 				"source": "Filmstriben",
-				"description": "Start turen rundt i Tokyo allerede i flyet med denne film."
+				"description": "Filmen følger oversætteren Mette Holms arbejde med at oversætte Haruki Murakamis debutroman."
+			},
+			{
+				"title": "Mit liv som Geisha af Rob Marshall",
+				"source": "Bibliotekets hylde under film",
+				"description": "Den 9-årige fiskerpige Chiyo sælges i 1930erne til et geisha-hus i storbyen."
+			},
+			{
+				"title": "Senseis mappe af Hiromi Kawakami",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En smuk fortælling om ensomhed og kærlighed."
+			},
+			{
+				"title": "I misosuppen af Ryu Murakami",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En skræmmende men velskrevet og fascinerende historie fra Tokyos undergrund."
+			},
+			{
+				"title": "Den hengivne hr. X af Keigo Higashino",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Spændende krimi der udspiller sig i Tokyo."
 			}
 		]
 	},
@@ -1046,174 +672,104 @@
 		"destination": "Toscana",
 		"emoji": "grapes",
 		"resources": [{
-				"title": "Corriere Fiorentino",
-				"source": "PressReader",
-				"description": "Læs italienske aviser på din tablet."
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Wine Enthusiast Magazine",
-				"source": "RB Digital",
-				"description": "Med dette blad er du ekspert i vin inden flyet lander."
+				"title": "To uger i Toscana af Domenica de Rosa",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Hyggelig og charmerende fortælling, der foregår i et stemningsfyldt Toscana."
 			},
 			{
 				"title": "Toscana tur og retur af Åsa Hellberg",
-				"source": "eReolen lydbøger",
-				"description": "Lyt til denne bog om kærlighed og familiehemmeligheder i Toscana, mens du daser på stranden."
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Roman om kærlighed og familiehemmeligheder i Toscana."
 			},
 			{
-				"title": "Toscana - af Helle Tesio",
-				"source": "eReolen e-bøger",
-				"description": "Om mad og mennesker fra uopdagede dale i Toscana."
-			},
-			{
-				"title": "Pocket Toscana",
-				"source": "eReolen e-bøger",
-				"description": "En overskuelig rejseguide til din tablet."
-			},
-			{
-				"title": "Lær italiensk",
-				"source": "Mango Languages",
-				"description": "Bestil din vin på italiensk. Lær hvordan med et online sprogkursus."
+				"title": "Den femte spiller af Marco Malvaldi",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Krimi med masser af italiensk stemning."
 			},
 			{
 				"title": "Springtur i Toscana af Paolo Virzì",
 				"source": "Filmstriben",
 				"description": "Italiensk film om venskab, skønhed og nedbrud i Toscana."
+			},
+			{
+				"title": "Blodbøg af Finn Wiedemann",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Krimi om en pensioneret privatdetektiv der bliver involveret i en kvindes forsvinden."
 			}
 		]
 	},
 	{
-		"destination": "Mexico",
-		"emoji": "cactus",
-		"resources": [{
-				"title": "El Universal",
-				"source": "PressReader",
-				"description": "Læs mexikanske aviser på din tablet"
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Forbes Magazine",
-				"source": "RB Digital",
-				"description": "Bliv klogere på verdensøkonomien med dette blad, mens du driver den på stranden."
-			},
-			{
-				"title": "De to myr af Henrik Einspor",
-				"source": "eReolen GO",
-				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med spændende lydbøger."
-			},
-			{
-				"title": "Jeg maler mit liv af Ester Bock",
-				"source": "eReolen e-bøger",
-				"description": "Denne roman bygger på den mexicanske maler Frida Kahlos facinerende liv og personlighed."
-			},
-			{
-				"title": "Mexico Travel Guide af Lonely Planet",
-				"source": "eReolen Global",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær spansk",
-				"source": "Mango Languages",
-				"description": "Como estas? Få styr på de spanske gloser inden ferien."
-			},
-			{
-				"title": "Desierto af Jonás Cuarónì",
-				"source": "Filmstriben",
-				"description": "Mødet mellem amerikanere og mexicanere udvikler sig i en brutal og blodig retning."
-			}
-		]
-	},
-	{
-		"destination": "Brasilien",
+		"destination": "Rio de Janeiro",
 		"emoji": "beach",
 		"resources": [{
-				"title": "Folha de S. Paulo",
-				"source": "PressReader",
-				"description": "Læs brasilianske aviser på din tablet"
+				"title": "Alice af Cida de Souza Schmidt-Madsen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Vemodig skæbnefortælling om Alice, der vokser op i et fattigt hjem på den brasilianske højslette."
+				},
+			{
+				"title": "Stjernens time af Clarice Lispector",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Interessant roman om en ensom kvinde med identitetsproblemer."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
+				"title": "By i blodrød kappe af Asli Erdogan",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Roman om en kvindes kamp for at overleve i den barske by Rio de Janeiro."
 			},
 			{
-				"title": "Digital SLR Photography",
-				"source": "RB Digital",
-				"description": "Lær hvordan du fanger Brasiliens mange farver på foto med dette blad."
+				"title": "City of God af Fernando Meirelles",
+				"source": "Bibliotekets hylde under film",
+				"description": "En barsk film om livet i et slumkvarter i udknaten af Rio de Janeiro."
 			},
 			{
-				"title": "Elise og den brugte hund af Bjarne Reuter",
-				"source": "eReolen GO",
-				"description": "Har du børn med på den lange rejse? Let stemningen i flyet med sjove lydbøger."
+				"title": "Syersken af Frances de Pontes Peebles",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Romantisk drama i årene omkring revolutionen i Brasilien i 1930."
 			},
 			{
-				"title": "Perfekte dage af Raphael Montes",
-				"source": "eReolen e-bøger",
-				"description": "Den brasilienske forfatters thriller får det til at løbe koldt ned af ryggen på dig."
+				"title": "Zé af Bernard Mathieu",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "En politimand starter sin karriere i Brasilien med et mord, som det korrupte system forsøger at tie ihjel."
 			},
 			{
-				"title": "The Rough Guide to Brazil af Rough Guides",
-				"source": "eReolen Global",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær portugisisk",
-				"source": "Mango Languages",
-				"description": "Onde fica a praia? Find stranden på portugisisk med et online sprogkursus."
-			},
-			{
-				"title": "The pilgrim af Daniel Augusto",
-				"source": "Filmstriben",
-				"description": "Filmen er en krønike om Paulo Coelhos vej til at blive en af de mest indflydelsesrige forfattere i brasiliansk historie."
+				"title": "Varme lig af Patricia Melo",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Spændingsroman skrevet af en af Brasiliens bedst sælgende krimiforfattere."
 			}
 		]
 	},
 	{
-		"destination": "Kina",
+		"destination": "Shanghai",
 		"emoji": "dragon",
 		"resources": [{
-				"title": "China Daily",
-				"source": "PressReader",
-				"description": "Læs kinesiske aviser på din tablet"
+				"title": "Lenins kys af Yan Lianke",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Om det moderne Kinas tab af traditioner, værdier og naturressourcer i den hæmningsløse jagt på modernisering og vækst."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Esquire",
-				"source": "RB Digital",
-				"description": "Bladet kan passende nydes på et hotelværelse efter en lang dag i menneskemylderet."
+				"title": "Tre søstre af Bi Feiyu",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En fortælling om kvinderliv i det kommunistiske Kina under og efter Mao i 1960-80'erne."
 			},
 			{
 				"title": "Maleren fra Shanghai af J. C. Epstein",
-				"source": "eReolen lydbøger",
-				"description": "Den kinesiske billedkunstner Pan Yuliang er i centrum i denne smukke fortælling"
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Den kinesiske billedkunstner Pan Yuliang er i centrum i denne smukke fortælling."
 			},
 			{
-				"title": "Det kinesiske køkken af Deh-Ta Hsiung",
-				"source": "eReolen e-bøger",
-				"description": "Tag de lækre retter med hjem i køkkenet med denne kogebog."
+				"title": "Shanghai af Arabella Neuhaus",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Eftertænksom roman om forfatterens forældre som rejser til Shanghai i 1930'erne."
 			},
 			{
-				"title": "Oplev Kina af Lonely Planet",
-				"source": "eReolen e-bøger",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
+				"title": "Brødre af Yu Hua",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Samfundskritisk og humoristisk bog om forandringerne i det kinesiske samfund."
 			},
 			{
-				"title": "Lær kinesisk",
-				"source": "Mango Languages",
-				"description": "Bestil dine dumplings på kinesisk. Lær hvordan med et online sprogkursus."
+				"title": "Hvidløgsballaderne af Mo Yan",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Roman hvor kinesisk bureaukrati, undertrykkelse og korruption udstilles i voldsom grad."
 			},
 			{
 				"title": "The flowers of war af Yimou Zhang",
@@ -1223,42 +779,32 @@
 		]
 	},
 	{
-		"destination": "Kenya",
-		"emoji": "desert",
+		"destination": "Nairobi",
+		"emoji": "giraffe",
 		"resources": [{
-				"title": "Daily Nation",
-				"source": "PressReader",
-				"description": "Læs kenyanske aviser på din tablet"
+				"title": "Solsøsteren af Lucinda Riley",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Sjette bind i den fængende slægtsroman om de syv søstre."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "National Geographic",
-				"source": "RB Digital",
-				"description": "Storslået læsning om vores vidunderlige verden, skal læses i storslåede omgivelser"
+				"title": "For tæt på solen af Paula McLain",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Historisk roman om den engelske eventyrer Beryl Markham, der voksede op i Kenyas vildmark."
 			},
 			{
 				"title": "Den afrikanske jomfru af Helle Vincentz",
-				"source": "eReolen lydbøger",
-				"description": "En hårdrejsende lydbog om kenyas mørke sider."
+				"source": "Bibliotekets hylde under krimi",
+				"description": "En hårdrejsende bog om kenyas mørke sider."
 			},
 			{
 				"title": "Den afrikanske farm af Karen Blixen",
-				"source": "eReolen e-bøger",
-				"description": "Læs Blixens eventyrlige klassiker i forfatterens eget Afrika."
+				"source": "Bibliotekets hylde under 48.478",
+				"description": "Om livet på Karen Blixens kaffefarm i Kenya, hvor hun opholdt sig fra 1914-1931."
 			},
 			{
-				"title": "East Africa Travel Guide af Lonely Planet",
-				"source": "eReolen Global",
-				"description": "Den klassiske rejseguide vejer ingenting på din tablet."
-			},
-			{
-				"title": "Lær swahili",
-				"source": "Mango Languages",
-				"description": "Hello rafiki! Få venner på swahili med et online sprogkursus."
+				"title": "The constant gardener af Fernando Meirelles",
+				"source": "Bibliotekets hylde under film",
+				"description": "Da hans kone bliver brutalt myrdet, starter den britiske embedsmand sin egen efterforskning."
 			},
 			{
 				"title": "Taking Root af Lisa Merton",
@@ -1269,171 +815,151 @@
 	},
 	{
 		"destination": "Prag",
-		"emoji": "castle",
+		"emoji": "beer",
 		"resources": [{
-				"title": "Mladá fronta DNES",
-				"source": "PressReader",
-				"description": "Læs tjekkiske aviser på din tablet"
+				"title": "Tilværelsens ulidelige lethed af Milan Kundera",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Fortælling om kærlighed, frihed, samfundsforhold, meningsløshed og menneskets vilje."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "World Literature Today",
-				"source": "RB Digital",
-				"description": "Smid benene op efter gåturen i Prags gader og nyd dette blad med en varm kop kaffe."
+				"title": "Viktor Horšovský af Kenny Jess Brandt",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En historie om kærlighed, mord og svig i det dunkle og mystiske Prag."
 			},
 			{
 				"title": "Vinter i Prag af Madeleine Albright",
-				"source": "eReolen lydbøger",
-				"description": "Den tidligere amerikansk udenrigsminister fletter familiehistorien sammen med Tjekkoslovakiets historie og jødernes skæbne i tiden omkring 2. verdenskrig"
+				"source": "Bibliotekets hylde under biografier",
+				"description": "Albright fletter familiehistorien sammen med Tjekkoslovakiets historie og jødernes skæbne i tiden omkring 2. verdenskrig."
 			},
 			{
-				"title": "Dagbøger af Franz Kafka",
-				"source": "eReolen",
-				"description": "Læs Kafkas dagbøger inden du besøger hans hus i Prag."
+				"title": "Blindtunnel af Tove Alsterdal",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Krimi der peger tilbage på anden verdenskrig og udrensningen af sudetertyskere."
 			},
 			{
-				"title": "Pocket Prag",
-				"source": "eReolen e-bøger",
-				"description": "En overskuelig rejseguide til din tablet."
+				"title": "Jáchymov af Josef Haslinger",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Intens roman om livet bag jerntæppet."
 			},
 			{
-				"title": "Lær tjekkisk",
-				"source": "Mango Languages",
-				"description": "Bestil din øl på tjekkisk. Lær hvordan med et online sprogkursus."
-			},
-			{
-				"title": "Prag af Ole Christian Madsen",
-				"source": "Filmstriben",
-				"description": "Under et pars tur til Prag, hvor de skal hente Christoffers fars lig hjem, krakelerer forholdet."
+				"title": "Ve stinu af David Ondrícek",
+				"source": "Bibliotekets hylde under film",
+				"description": "Prag, 1953. Politikaptajn Hakl kommer på sporet af korruption og falske anklager mod jødiske borgere."
 			}
 		]
 	},
 	{
-		"destination": "Amsterdam",
-		"emoji": "herb",
+		"destination": "Reykjavik",
+		"emoji": "snow_mountain",
 		"resources": [{
-				"title": "NRC Handelsblad",
-				"source": "PressReader",
-				"description": "Læs hollandske aviser på din tablet."
+				"title": "Hundedage af Einar Már Guðmundsson",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Fabulerende fortælling om en dansk opdagelsesrejsende, der i 1809 gennemførte et statskup på Island."
 			},
 			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Vanity Fair",
-				"source": "RB Digital",
-				"description": "Med dette blad føles ventetiden i lufthavnen som sekunder."
-			},
-			{
-				"title": "Eurotrash af Peter Grønlund",
-				"source": "eReolen lydbøger",
-				"description": "To venners dramatiske tur gennem Amsterdam, hvor ingenting lykkedes."
-			},
-			{
-				"title": "Amsterdam Stories af Nescio",
-				"source": "eReolen Global",
-				"description": "Ingen andre beskriver Amsterdams levende gader så smukt som Nescio."
-			},
-			{
-				"title": "Pocket Amsterdam",
-				"source": "eReolen e-bøger",
-				"description": "En overskuelig rejseguide til din tablet."
-			},
-			{
-				"title": "Lær hollandsk",
-				"source": "Mango Languages",
-				"description": "Hallo mijn vriend! Få venner på hollandsk med et online sprogkursus."
-			},
-			{
-				"title": "Tulipanfeber af Justin Chadwick",
-				"source": "Filmstriben",
-				"description": "Film om Amsterdam i 1630erne og den rasende tulipanfeber."
-			}
-		]
-	},
-	{
-		"destination": "Lissabon",
-		"emoji": "wine",
-		"resources": [{
-				"title": "Jornal de Noticias",
-				"source": "PressReader",
-				"description": "Læs portugisiske aviser på din tablet"
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "All About History",
-				"source": "RB Digital",
-				"description": "Læs bladet i flyet og føl historiens vingesus."
-			},
-			{
-				"title": "Billeder fra Lissabon af Frank Sebastian Hansen",
-				"source": "eReolen lydbøger",
-				"description": "En rørende rejse ind i Portugals kolonihistorie."
-			},
-			{
-				"title": "Kain af José Saramago",
-				"source": "eReolen e-bøger",
-				"description": "Portugals litterære stjerne nyfortæller Abel og Kains bibelhistorie."
-			},
-			{
-				"title": "Pocket Lissabon",
-				"source": "eReolen e-bøger",
-				"description": "En overskuelig rejseguide til din tablet."
-			}
-		]
-	},
-	{
-		"destination": "Island",
-		"emoji": "snowman",
-		"resources": [{
-				"title": "Fréttablaðið",
-				"source": "PressReader",
-				"description": "Læs islandske aviser på din tablet"
-			},
-			{
-				"title": "Danske aviser",
-				"source": "PressReader",
-				"description": "Læs Politiken, EkstraBladet, BT, Jyllandsposten, Weekendavisen, Aarhus Stiftstidende og Berlingske på ferien."
-			},
-			{
-				"title": "Q Magazine",
-				"source": "RB Digital",
-				"description": "Læs bladet i flyet og fordyb dig i musikkens nyeste tendenser."
+				"title": "Månesten af Sjón",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Intens roman om Månestens oplevelser i Island; Den Spanske Syge, vulkanen Katlas udbrud og Islands selvstændighed."
 			},
 			{
 				"title": "Fisk har ingen fødder af Jón Kalman Stefánsson",
-				"source": "eReolen lydbøger",
-				"description": "En gribende slægthistorie om flækken Reflavik og det sted, hvor man er tættest på døden."
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Den lille flække Keflavik kommer til at præge Aris liv på godt og på ondt"
 			},
 			{
 				"title": "DNA af Yrsa Sigurdardottir",
-				"source": "eReolen e-bøger",
-				"description": "Iskold krimi til de kolde dage på klippeøen."
+				"source": "Bibliotekets hylde under krimi",
+				"description": "En kvinde myrdes brutalt i Reykjavik, muligvis er der en seriemorder på spil."
 			},
 			{
-				"title": "Iceland af Insight Guides",
-				"source": "eReolen Global",
-				"description": "En klassisk rejseguide med et kulturelt twist."
-			},
-			{
-				"title": "Lær islandsk",
-				"source": "Mango Languages",
-				"description": "Halló vinur minn! Få venner på islandsk med et online sprogkursus."
+				"title": "Blandt mænd og får af Grímur Hákonarson",
+				"source": "Bibliotekets hylde under film",
+				"description": "En finurlig fortælling om to stolte brødres kærlighed til deres får… og muligvis til hinanden."
 			},
 			{
 				"title": "Dybet af Baltasar Kormákur",
 				"source": "Filmstriben",
 				"description": "Filmen er baseret på den sande historie om en fisker og et uforklarligt videnskabeligt fænomen."
+			},
+			{
+				"title": "Havblik af Kristín Marja Baldursdóttir",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En spændende, humoristisk og rørende roman."
+			}
+		]
+	},
+	{
+		"destination": "Havana",
+		"emoji": "sun",
+		"resources": [{ 
+				"title": "Made in Cuba af Preben Haarup",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Spændingshistorie med et stort hjerte for Cuba."
+			},
+			{
+				"title": "Stille flyder Havanas gader af Jan Gustafsson",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Fortælling om en far og hans søn. Med Cuba og revolutionen, kærligheden og ambitionerne som bagtæppe."
+			},
+			{
+				"title": "Havana, min elskede af Daína Chaviano",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Kalejdoskopisk og eventyrlig historie med stor kærlighed til Cuba."
+			},
+			{
+				"title": "Maskespil i Havana af Leonardo Padura",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "En mordsag viser sig at have forbindelser helt op i magteliten på Cuba."
+			},
+			{
+				"title": "33 revolutioner af Canek Sanchez Guevara",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En beretning om et illusionsløst liv på Cuba, som revolutionens folk ellers havde store drømme om."
+			},
+			{
+				"title": "Che af Steven Soderbergh",
+				"source": "Filmstriben",
+				"description": "Film i to dele om Che Guevaras stærke engagement i den cubanske revolution."
+			},
+			{
+				"title": "Adiós Hemingway af Leonardo Padura",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "Krimi fra Havana der oser af cubansk stemning."
+			}
+		]
+	},
+	{
+		"destination": "Aalborg",
+		"emoji": "sun_cloud_rain",
+		"resources": [{
+				"title": "Nordkraft af Jacob Ejersbo",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Roman om narkomiljøet i Aalborg i første halvdel af halvfemserne."
+			},
+			{
+				"title": "Girafhuset af Gorm H. Rasmussen",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "En fortælling der emmer af Aalborg, gavtyvehistorier og vanvittige personligheder."
+			},
+			{
+				"title": "Hjemløs af Jakob Knudsen",
+				"source": "Bibliotekets hylde under krimi",
+				"description": "To drab og en bortførelse blandt hjemløsemiljøet i Aalborg."
+			},
+			{
+				"title": "Tretten er ude af Peder Hove",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Halvdokumentarisk roman om RAF-angrebet på lufthavnen i Aalborg 13. august 1940."
+			},
+			{
+				"title": "Drengene fra Sankt Petri af Bjarne Reuter",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Aalborg 1942; En gruppe unge drenge danner en hemmelig klub med det formål at gøre værnemagten til grin."
+			},
+			{
+				"title": "I dine Øjne af Malene Ravn",
+				"source": "Bibliotekets hylde under romaner",
+				"description": "Fortælling om en drengs hårde opvækst som søn af en ung ugift kvinde og en kineser."
 			}
 		]
 	}
